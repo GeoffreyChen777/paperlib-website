@@ -637,7 +637,7 @@ a:focus, a:hover {
 
 @media (max-width: 480px) {
     .hero-bg {
-        margin-top: -450px;
+        margin-top: -250px;
         width: 380px;
         height: 250px;
     }
