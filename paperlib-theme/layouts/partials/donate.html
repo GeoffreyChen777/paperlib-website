@@ -1,0 +1,30 @@
+{{ if .Site.Params.donate.enable }}
+{{ "<!-- Blog Section Start -->" | safeHTML }}
+<section class="blog section" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="title text-center">
+                    {{ with .Site.Params.donate.topTitle }}<h4>{{ . }}</h4>{{ end }}
+                    {{ with .Site.Params.donate.title }}<h2>{{ . }}</h2><span class="border" style="border: none !important;"></span>{{ end }}
+                    {{ with .Site.Params.donate.subtitle }}<p>{{ . }}</p>{{ end }}
+                </div>
+
+                {{ if .Site.Params.donate.button }}
+                <ul class="text-center list-inline wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".7s">
+                    <li class="list-inline-item">
+                        <a href="{{ with .Site.Params.donate.btnURL1 }}{{.}}{{ end }}" target="_blank" class="btn btn-main">{{ with .Site.Params.donate.btnText1 }}{{.}}{{ end }}</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="{{ with .Site.Params.donate.btnURL2 }}{{.}}{{ end }}" target="_blank" class="btn btn-main">{{ with .Site.Params.donate.btnText2 }}{{.}}{{ end }}</a>
+                    </li>
+                </ul>
+                {{ end }}
+            </div>
+        </div>
+        <div class="row">
+        </div>
+    </div>
+</section>
+{{ "<!-- Blog Section End -->" | safeHTML }}
+{{ end }}

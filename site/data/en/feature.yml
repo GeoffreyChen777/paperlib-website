@@ -1,0 +1,37 @@
+enable  : true
+item  :
+  - icon  : tf-ion-ios-download-outline
+    small: false
+    title : Scrape Metadata
+    description : >
+      Scrape paper’s metadata from arXiv, doi.org, DBLP, IEEE and our online engine.
+
+  - icon  : tf-ion-ios-star-half
+    small: false
+    title : Score, Flag and Note
+    description : >
+      Mark papers with multiple methods such as rating and flaging.
+
+  - icon  : tf-ion-ios-cloud-outline
+    small: false
+    title : Cloud Sync (BETA)
+    description : >
+      Access your library from everywhere with a sync database supported by MongoDB atlas.
+
+  - icon  : tf-ion-ios-folder-outline
+    small: false
+    title : Organise by Tags & Folders
+    description : >
+      Create tags and folders to let your library clean and tidy.
+
+  - icon  : tf-ion-ios-copy-outline
+    small: false
+    title : Export Citation
+    description : >
+      Export papers to bibtex or plain text.
+
+  - icon  : tf-laptop
+    small: true
+    title : Cross Platform
+    description : >
+      Paperlib support macOS (native) and windows (electron).

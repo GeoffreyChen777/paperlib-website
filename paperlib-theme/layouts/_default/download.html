@@ -1,0 +1,48 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ "<!-- Blog Section Start -->" | safeHTML }}
+
+<section class="download-area">
+    <div class="container" style="z-index: 10;">
+        <div class="row justify-content-between">
+            <div class="col-md-2">
+                <div class="row justify-content-end">
+                    <div>
+                        <a href="{{ with .Site.Params.download.btnURL1 }}{{.}}{{ end }}" target="_blank" class="btn btn-main">
+                            <i class="{{ with .Site.Params.download.icon1 }}{{.}}{{ end }} "></i>
+                            {{ with .Site.Params.download.btnText1 }}{{.}}{{ end }} 
+                        </a>
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                    <a href="{{ with .Site.Params.download.btnURL2 }}{{.}}{{ end }}" target="_blank" class="btn btn-main">
+                        <i class="{{ with .Site.Params.download.icon2 }}{{.}}{{ end }} "></i>    
+                        {{ with .Site.Params.download.btnText2 }}{{.}}{{ end }}
+                    </a>
+                </div>
+                <div class="row justify-content-end">
+                    <a href="{{ with .Site.Params.download.btnURL3 }}{{.}}{{ end }}" target="_blank" class="btn btn-main">
+                        <i class="{{ with .Site.Params.download.icon3 }}{{.}}{{ end }} "></i>
+                        {{ with .Site.Params.download.btnText3 }}{{.}}{{ end }}
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div id="releaseNote"></div>
+                <script> 
+                    var xhr= new XMLHttpRequest();
+                    xhr.open('GET', '{{ with .Site.Params.download.releaseNote }}{{.}}{{ end }}', true);
+                    xhr.onreadystatechange= function() {
+                        if (this.readyState==4 && this.status==200)                
+                            document.getElementById('releaseNote').innerHTML= this.responseText;
+                    };
+                    xhr.send();
+                </script> 
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,164 @@
+baseURL = "https://paperlib.geoch.top/"
+languageCode = "en-us"
+title = "Paperlib | Manage academic papers decently for CSer."
+theme = "paperlib-theme"
+summaryLength = 10
+
+# Build robots.txt file
+enableRobotsTXT = true
+# google analytics tracking id
+googleAnalytics = "G-MK8FN2RB1C" # your analitics ID
+
+# Multilangues setup
+# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
+defaultContentLanguageInSubdir = true
+DefaultContentLanguage = "en"
+
+# Site Params
+[params]
+logo = "images/logo.png"
+
+# Gestion des langues : FR / EN / NL / DE
+[[Params.listeLangues]]
+code = "en"
+[[Params.listeLangues]]
+code = "cn"
+
+# meta data
+author = "Geo"
+description = "Paperlib | Manage academic papers decently for CSer."
+
+# Gestion des langues : FR / EN / NL / DE
+[Languages]
+############# 1 - Site en ENGLISH
+[Languages.en]
+weight = 1
+languageCode = "en-us"
+title = "Paperlib"
+dateFormat = "January 2, 2006"
+home = "Home"
+logo = "images/logo.png"
+menufixed = false
+
+footerQuicklinkTitle = "Quicklinks"
+
+# cookies
+[params.cookies]
+enable = true
+expire_days = 2
+
+# Hero Area Section
+[Languages.en.params.hero]
+enable  = true
+heading = "Paperlib, to organise academic papers decently for CSer"
+description = "A simple academic paper management tool for CSer."
+button  = true
+btnText1 = "Download"
+btnURL1  = "download/"
+btnText2 = "Donate"
+btnURL2  = "#donate"
+imageURL   = "images/ui.png"
+moreLink = "Learn How to Use"
+
+[Languages.en.params.donate]
+enable  = true
+topTitle= "WE WANT TO THANK YOU"
+title   = "Donate."
+subtitle= ""
+button  = true
+btnText1 = "Buy me a coffee"
+btnURL1  = "https://www.buymeacoffee.com/geoffreychen777"
+btnText2 = "Wechat Pay"
+btnURL2  = "/images/wechat_pay.png"
+
+[Languages.en.params.download]
+btnText1 = "macOS"
+icon1 = "tf-ion-social-apple"
+btnURL1  = "https://paperlib.geoch.top/distribution/mac/latest.zip"
+btnText2 = "Windows"
+icon2 = "tf-ion-social-windows"
+btnURL2  = "https://paperlib.geoch.top/distribution/win/latest.zip"
+btnText3 = "Chrome Extension"
+icon3 = "tf-ion-social-chrome"
+btnURL3  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng"
+releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Fmac%2Fchangelog_en.html"
+
+############ 2 - Site cn CHINESE
+[Languages.cn]
+weight = 2
+languageCode = "zh-cn"
+title = "Paperlib"
+dateFormat = "2 January 2006"
+home = "Home"
+logo = "images/logo.png"
+menufixed = false
+
+footerQuicklinkTitle = "链接"
+
+# Hero Area Section
+[Languages.cn.params.hero]
+enable  = true
+heading = "Paperlib 呸啵哩哺，一个适合计算机学科的简单好用的论文管理工具"
+description = "简单！好用！"
+button  = true
+btnText1 = "下载"
+btnURL1  = "download/"
+btnText2 = "捐赠"
+btnURL2  = "#donate"
+imageURL   = "images/ui.png"
+moreLink = "学习如何使用"
+
+[Languages.cn.params.donate]
+enable  = true
+topTitle= "我们感谢您的"
+title   = "捐赠."
+subtitle= ""
+button  = true
+btnText1 = "Buy me a coffee"
+btnURL1  = "https://www.buymeacoffee.com/geoffreychen777"
+btnText2 = "微信"
+btnURL2  = "/images/wechat_pay.png"
+
+[Languages.cn.params.download]
+btnText1 = "macOS"
+icon1 = "tf-ion-social-apple"
+btnURL1  = "https://paperlib.geoch.top/distribution/mac/latest.zip"
+btnText2 = "Windows"
+icon2 = "tf-ion-social-windows"
+btnURL2  = "https://paperlib.geoch.top/distribution/win/latest.zip"
+btnText3 = "Chrome Extension"
+icon3 = "tf-ion-social-chrome"
+btnURL3  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng"
+releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Fmac%2Fchangelog_cn.html"
+
+# Site Menus
+[menu]
+# Navbar Menus
+[[menu.nav]]
+name    = "download"
+url     = "download"
+weight  = 1
+[[menu.nav]]
+name    = "blog"
+url     = "blog"
+weight  = 2
+[[menu.nav]]
+name    = "Github"
+url     = "https://github.com/GeoffreyChen777/paperlib"
+weight  = 3
+
+# Footer Quick links Menu
+[[menu.quicklink]]
+name    = "about me"
+url     = "https://geoch.top/about/"
+weight  = 1
+[[menu.quicklink]]
+name    = "Github"
+url     = "https://github.com/GeoffreyChen777/paperlib"
+weight  = 2
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

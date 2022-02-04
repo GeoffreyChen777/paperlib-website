@@ -1,0 +1,37 @@
+enable  : true
+item  :
+  - icon  : tf-ion-ios-download-outline
+    small: false
+    title : 自动获取元数据
+    description : >
+      从 arXiv，doi.org，DBLP，IEEE，以及我们的标题提取引擎尽可能为每一篇论文匹配精确的信息。
+
+  - icon  : tf-ion-ios-star-half
+    small: false
+    title : 评分、标记、笔记
+    description : >
+      多种方式对论文进行评价标记，包括打分，旗帜标记，记录自定义笔记，来记录一些方法俗称等，如 ResNet，以方便快速检索。
+
+  - icon  : tf-ion-ios-cloud-outline
+    small: false
+    title : 云同步 (BETA)
+    description : >
+      基于 MongoDB atlas，我们提供数据库云同步功能，跨 Win Mac 平台随处访问您的论文库。
+
+  - icon  : tf-ion-ios-folder-outline
+    small: false
+    title : 使用标签和文件夹进行管理
+    description : >
+      为论文分配标签文件夹，方便进行分类检索，比如为一次投稿组织一些引用。
+
+  - icon  : tf-ion-ios-copy-outline
+    small: false
+    title : 导出引用
+    description : >
+      导出论文引用到 Bibtex 或者 Plain Text 格式，Word？不存在的。
+
+  - icon  : tf-laptop
+    small: true
+    title : 跨平台
+    description : >
+      支持 macOS（原生）和 Windows（electron）。
