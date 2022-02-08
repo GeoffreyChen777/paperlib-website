@@ -28,4 +28,6 @@
 {{ $styles := resources.Get "css/style_aefd.css" | minify}}
 <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 
+{{ template "_internal/google_analytics.html" . }}
+
 </head>

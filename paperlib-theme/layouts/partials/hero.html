@@ -23,7 +23,7 @@
                     {{ end }}
 
                     <div class="link-container">
-                        <a class="link" href="introduction"> {{ with .Site.Params.hero.moreLink }}{{.}}{{ end }} <i class="tf-ion-ios-arrow-right" style="margin-left: 10px;"></i> </a>
+                        <a class="link" href="{{ with .Site.Params.hero.moreLink }}{{.}}{{ end }}"> {{ with .Site.Params.hero.moreLinkText }}{{.}}{{ end }} <i class="tf-ion-ios-arrow-right" style="margin-left: 10px;"></i> </a>
                         <div class="link-mask">  </div>
                     </div>
                 </div>

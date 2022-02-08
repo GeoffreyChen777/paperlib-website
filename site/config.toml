@@ -58,7 +58,8 @@ btnURL1  = "download/"
 btnText2 = "Donate"
 btnURL2  = "#donate"
 imageURL   = "images/ui.png"
-moreLink = "Learn How to Use"
+moreLink = "blog/intro/"
+moreLinkText = "Learn How to Use"
 
 [Languages.en.params.donate]
 enable  = true
@@ -106,7 +107,8 @@ btnURL1  = "download/"
 btnText2 = "捐赠"
 btnURL2  = "#donate"
 imageURL   = "images/ui.png"
-moreLink = "学习如何使用"
+moreLink = "blog/intro/"
+moreLinkText = "学习如何使用"
 
 [Languages.cn.params.donate]
 enable  = true
