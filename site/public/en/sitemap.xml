@@ -2,80 +2,119 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://paperlib.geoch.top/en/blog/intro/</loc>
+    <loc>https://paperlib.app/en/blog/intro/</loc>
     <lastmod>2022-02-04T17:04:41+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="https://paperlib.geoch.top/cn/blog/intro/"
+                href="https://paperlib.app/cn/blog/intro/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://paperlib.geoch.top/en/blog/intro/"
+                href="https://paperlib.app/en/blog/intro/"
                 />
   </url><url>
-    <loc>https://paperlib.geoch.top/en/</loc>
+    <loc>https://paperlib.app/en/</loc>
     <lastmod>2022-02-04T17:04:41+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="https://paperlib.geoch.top/cn/"
+                href="https://paperlib.app/cn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://paperlib.geoch.top/en/"
+                href="https://paperlib.app/en/"
                 />
   </url><url>
-    <loc>https://paperlib.geoch.top/en/blog/</loc>
+    <loc>https://paperlib.app/en/blog/</loc>
     <lastmod>2018-07-07T18:23:33+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="https://paperlib.geoch.top/cn/blog/"
+                href="https://paperlib.app/cn/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://paperlib.geoch.top/en/blog/"
+                href="https://paperlib.app/en/blog/"
                 />
   </url><url>
-    <loc>https://paperlib.geoch.top/en/download/</loc>
+    <loc>https://paperlib.app/en/dashboard/</loc>
     <lastmod>2018-07-07T18:23:33+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="https://paperlib.geoch.top/cn/download/"
+                href="https://paperlib.app/cn/dashboard/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://paperlib.geoch.top/en/download/"
+                href="https://paperlib.app/en/dashboard/"
                 />
   </url><url>
-    <loc>https://paperlib.geoch.top/en/categories/</loc>
+    <loc>https://paperlib.app/en/download/</loc>
+    <lastmod>2018-07-07T18:23:33+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="https://paperlib.geoch.top/cn/categories/"
+                href="https://paperlib.app/cn/download/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://paperlib.geoch.top/en/categories/"
+                href="https://paperlib.app/en/download/"
                 />
   </url><url>
-    <loc>https://paperlib.geoch.top/en/tags/</loc>
+    <loc>https://paperlib.app/en/signin/</loc>
+    <lastmod>2018-07-07T18:23:33+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="https://paperlib.geoch.top/cn/tags/"
+                href="https://paperlib.app/cn/signin/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://paperlib.geoch.top/en/tags/"
+                href="https://paperlib.app/en/signin/"
+                />
+  </url><url>
+    <loc>https://paperlib.app/en/signup/</loc>
+    <lastmod>2018-07-07T18:23:33+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://paperlib.app/cn/signup/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://paperlib.app/en/signup/"
+                />
+  </url><url>
+    <loc>https://paperlib.app/en/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://paperlib.app/cn/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://paperlib.app/en/categories/"
+                />
+  </url><url>
+    <loc>https://paperlib.app/en/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://paperlib.app/cn/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://paperlib.app/en/tags/"
                 />
   </url>
 </urlset>

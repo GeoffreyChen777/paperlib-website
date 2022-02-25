@@ -1277,3 +1277,19 @@ a:focus, a:hover {
 code {
     background-color: #07060a;
 }
+
+
+.user-input-box {
+    background-color: #211d30;
+    border: 2px solid rgba(40,36,47,0.86);
+    border-radius: 2rem;
+    background: rgba(16,14,23,0.56);
+    height: 45px;
+    color: white;
+}
+
+.signin-box {
+    height: 360px;
+    background-color: #09080e;
+    border-radius: 2rem;
+}

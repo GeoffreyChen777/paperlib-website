@@ -1,0 +1,118 @@
+{{ define "main" }}
+
+{{ "<!-- Blog Section Start -->" | safeHTML }}
+
+<section class="section" id="dashboard-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <div class="row mb-4 justify-content-between">
+                    <div class="col-8">
+                        <h3 >Subscription for Cloud Sync </h3>
+                    </div>
+                    <div class="col-2">
+                        <span id="signout" class="nav-link" style="cursor: pointer;"> Signout </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="mt-2"><b> Expire Date </b></p>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col align-middle">
+                        <p class="mt-2" id="expire-date"> </p>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <button class="btn btn-main" id="free-trail"> apply for 1 month free trail </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}
+
+{{ define "head" }}
+
+<head>
+    <script
+        src="https://www.google.com/recaptcha/enterprise.js?render=6Lf3QJweAAAAAGh7PyVgrd105arPlhfE3NvWFUV7"></script>
+</head>
+
+{{ end }}
+
+{{ define "script" }}
+
+<script>
+    $(window).on("load", function () {
+        grecaptcha.enterprise.ready(function () {
+            grecaptcha.enterprise.execute('6Lf3QJweAAAAAGh7PyVgrd105arPlhfE3NvWFUV7', { action: 'login' }).then(function (token) {
+                $.ajax({
+                    url: '/api/auth/user',
+                    type: 'POST',
+                    dataType: 'json',
+                    data : {
+                        token: Cookies.get('paperlib'),
+                        recaptchaToken: token,
+                    },
+                    success: function(response) {
+                        if (response.code != 200) {
+                            window.location.replace("/{{ .Lang }}/signin");
+                        }
+                        else {
+                            let userInfo = response.userInfo;
+                            $("#expire-date").text(new Date(userInfo.subscriptionExpire).toLocaleDateString());
+                            if (!userInfo.freeTrail) {
+                                $("#free-trail").attr("disabled", true);
+                                $("#free-trail").text("You have already applied for free trail");
+                            }
+                        }
+                    },
+                    error: function(response) {
+                        window.location.replace("/{{ .Lang }}/signin");
+                    }
+                });
+            });
+        });
+    });
+
+    $('#free-trail')
+    .click(function() {
+        grecaptcha.enterprise.ready(function () {
+            grecaptcha.enterprise.execute('6Lf3QJweAAAAAGh7PyVgrd105arPlhfE3NvWFUV7', { action: 'login' }).then(function (token) {
+                $.ajax({
+                    url: '/api/promotion/free',
+                    type: 'POST',
+                    dataType: 'json',
+                    data : {
+                        token: Cookies.get('paperlib'),
+                        recaptchaToken: token
+                    },
+                    success: function(response) {
+                        if (response.code != 200) {
+                            alert(response.message);
+                        }
+                        else {
+                            let userInfo = response.userInfo;
+                            $("#expire-date").text(new Date(userInfo.subscriptionExpire).toLocaleDateString());
+                            if (!userInfo.freeTrail) {
+                                $("#free-trail").attr("disabled", true);
+                                $("#free-trail").text("You have already applied for free trail");
+                            }
+                        }
+                    }
+                });
+            });
+        });
+    });
+
+    $('#signout')
+    .click(function() {
+        Cookies.remove('paperlib');
+        window.location.replace("/{{ .Lang }}/signin");
+    });
+</script>
+
+{{ end }}

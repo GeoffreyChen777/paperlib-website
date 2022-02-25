@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
     {{- partial "head.html" . -}}
+    {{- block "head" . }}{{- end }}
     <body id="body">
         {{ partial "preloader.html" . }}
         {{- partial "header.html" . -}}
@@ -8,5 +9,6 @@
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
+        {{- block "script" . }}{{- end }}
     </body>
 </html>

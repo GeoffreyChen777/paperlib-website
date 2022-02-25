@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Paperlib</title>
-    <link>https://paperlib.geoch.top/cn/</link>
+    <link>https://paperlib.app/cn/</link>
     <description>Recent content on Paperlib</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 04 Feb 2022 17:04:41 +0600</lastBuildDate><atom:link href="https://paperlib.geoch.top/cn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Feb 2022 17:04:41 +0600</lastBuildDate><atom:link href="https://paperlib.app/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何使用 Paperlib</title>
-      <link>https://paperlib.geoch.top/cn/blog/intro/</link>
+      <link>https://paperlib.app/cn/blog/intro/</link>
       <pubDate>Fri, 04 Feb 2022 17:04:41 +0600</pubDate>
       
-      <guid>https://paperlib.geoch.top/cn/blog/intro/</guid>
+      <guid>https://paperlib.app/cn/blog/intro/</guid>
       <description>本文对 Paperlib 的基础使用方法进行介绍。
 0. 选择一个文件夹作为论文库 首先打开设置界面，在 General 选项卡中选择一个文件夹，用于存放所有论文 PDF 和数据库文件。建议选择一个可同步的文件夹，如 Onedrive，Dropbox 文件夹等。</description>
     </item>

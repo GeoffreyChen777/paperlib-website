@@ -1,4 +1,4 @@
-baseURL = "https://paperlib.geoch.top/"
+baseURL = "https://paperlib.app/"
 languageCode = "en-us"
 title = "Paperlib | Manage academic papers decently for CSer."
 theme = "paperlib-theme"
@@ -84,6 +84,10 @@ icon3 = "tf-ion-social-chrome"
 btnURL3  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng"
 releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Fmac%2Fchangelog_en.html"
 
+[Languages.en.params.signin]
+signinText = "Sign in"
+registerText = "Register"
+
 ############ 2 - Site cn CHINESE
 [Languages.cn]
 weight = 2
@@ -133,6 +137,11 @@ icon3 = "tf-ion-social-chrome"
 btnURL3  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng"
 releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Fmac%2Fchangelog_cn.html"
 
+[Languages.cn.params.signin]
+signinText = "登录"
+registerText = "注册"
+
+
 # Site Menus
 [menu]
 # Navbar Menus
@@ -148,6 +157,10 @@ weight  = 2
 name    = "Github"
 url     = "https://github.com/GeoffreyChen777/paperlib"
 weight  = 3
+[[menu.nav]]
+name    = "Subscription"
+url     = "dashboard"
+weight  = 4
 
 # Footer Quick links Menu
 [[menu.quicklink]]
