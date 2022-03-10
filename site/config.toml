@@ -76,12 +76,23 @@ btnURL2  = "/images/wechat_pay.png"
 btnText1 = "macOS"
 icon1 = "tf-ion-social-apple"
 btnURL1  = "https://paperlib.geoch.top/distribution/mac/latest.zip"
-btnText2 = "Windows"
-icon2 = "tf-ion-social-windows"
-btnURL2  = "https://paperlib.geoch.top/distribution/win/latest.zip"
-btnText3 = "Chrome Extension"
-icon3 = "tf-ion-social-chrome"
-btnURL3  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng"
+btnCaption1  = "* macOS Monterey or higher"
+
+btnText2 = "macOS-electron"
+icon2 = "tf-ion-social-apple"
+btnURL2  = "https://paperlib.geoch.top/distribution/electron_mac/latest.dmg"
+btnCaption2  = ""
+
+btnText3 = "Windows"
+icon3 = "tf-ion-social-windows"
+btnURL3  = "https://paperlib.geoch.top/distribution/electron_win/latest.exe"
+btnCaption3  = "* Windows 10 or higher"
+
+btnText4 = "Chrome Extension"
+icon4 = "tf-ion-social-chrome"
+btnURL4  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng"
+btnCaption4  = ""
+
 releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Fmac%2Fchangelog_en.html"
 
 [Languages.en.params.signin]
@@ -129,12 +140,23 @@ btnURL2  = "/images/wechat_pay.png"
 btnText1 = "macOS"
 icon1 = "tf-ion-social-apple"
 btnURL1  = "https://paperlib.geoch.top/distribution/mac/latest.zip"
-btnText2 = "Windows"
-icon2 = "tf-ion-social-windows"
-btnURL2  = "https://paperlib.geoch.top/distribution/win/latest.zip"
-btnText3 = "Chrome Extension"
-icon3 = "tf-ion-social-chrome"
-btnURL3  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng"
+btnCaption1  = "* macOS Monterey or higher"
+
+btnText2 = "macOS-electron"
+icon2 = "tf-ion-social-apple"
+btnURL2  = "https://paperlib.geoch.top/distribution/electron_mac/latest.dmg"
+btnCaption2  = ""
+
+btnText3 = "Windows"
+icon3 = "tf-ion-social-windows"
+btnURL3  = "https://paperlib.geoch.top/distribution/electron_win/latest.exe"
+btnCaption3  = "* Windows 10 or higher"
+
+btnText4 = "Chrome Extension"
+icon4 = "tf-ion-social-chrome"
+btnURL4  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng"
+btnCaption4  = ""
+
 releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Fmac%2Fchangelog_cn.html"
 
 [Languages.cn.params.signin]

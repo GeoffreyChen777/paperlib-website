@@ -8,6 +8,16 @@
     <language>zh-cn</language>
     <lastBuildDate>Sat, 07 Jul 2018 18:23:33 +0600</lastBuildDate><atom:link href="https://paperlib.app/cn/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>更新日志 Paperlib v1.4.0</title>
+      <link>https://paperlib.app/cn/blog/v140/</link>
+      <pubDate>Thu, 10 Mar 2022 17:04:41 +0600</pubDate>
+      
+      <guid>https://paperlib.app/cn/blog/v140/</guid>
+      <description>在 v1.4.0，我们添加了如下更新:
+ 在侧边栏显示论文数量计数。 拖动论文条目到侧边栏，可以将其添加到任何标签或文件夹中。 修复了一些 Bugs。   论文侧边栏计数 对于论文数量计数功能，你可以在设置窗口中打开或者关闭。 拖动以添加至标签或文件夹 同时，现在可以将论文条目到侧边栏，可以将其添加到任何标签或文件夹中。值得注意的是，目前由于 SwiftUI 的一些技术性限制，拖动区域相对较小，为论文条目右侧的一小片区域。</description>
+    </item>
+    
+    <item>
       <title>如何使用 Paperlib</title>
       <link>https://paperlib.app/cn/blog/intro/</link>
       <pubDate>Fri, 04 Feb 2022 17:04:41 +0600</pubDate>
