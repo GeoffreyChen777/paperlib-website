@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://paperlib.app/en/</loc>
-    <lastmod>2022-03-10T17:04:41+06:00</lastmod>
+    <lastmod>2022-03-25T17:04:41+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
@@ -14,6 +14,9 @@
                 hreflang="en"
                 href="https://paperlib.app/en/"
                 />
+  </url><url>
+    <loc>https://paperlib.app/en/blog/v150/</loc>
+    <lastmod>2022-03-25T17:04:41+06:00</lastmod>
   </url><url>
     <loc>https://paperlib.app/en/blog/v140/</loc>
     <lastmod>2022-03-10T17:04:41+06:00</lastmod>

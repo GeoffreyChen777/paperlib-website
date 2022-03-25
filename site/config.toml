@@ -75,7 +75,7 @@ btnURL2  = "/images/wechat_pay.png"
 [Languages.en.params.download]
 btnText1 = "macOS"
 icon1 = "tf-ion-social-apple"
-btnURL1  = "https://paperlib.geoch.top/distribution/electron_mac/latest.dmg"
+btnURL1  = "https://paperlib.geoch.top/distribution/electron-mac/latest.dmg"
 btnCaption1  = ""
 
 btnText2 = "macOS-native"
@@ -85,7 +85,7 @@ btnCaption2  = "May won't be updated anymore due to my research work, macOS Mont
 
 btnText3 = "Windows"
 icon3 = "tf-ion-social-windows"
-btnURL3  = "https://paperlib.geoch.top/distribution/electron_win/latest.exe"
+btnURL3  = "https://paperlib.geoch.top/distribution/electron-win/latest.exe"
 btnCaption3  = "* Windows 10 or higher"
 
 btnText4 = "Chrome Extension"
@@ -144,12 +144,12 @@ btnCaption1  = "* macOS Monterey or higher"
 
 btnText2 = "macOS-electron"
 icon2 = "tf-ion-social-apple"
-btnURL2  = "https://paperlib.geoch.top/distribution/electron_mac/latest.dmg"
+btnURL2  = "https://paperlib.geoch.top/distribution/electron-mac/latest.dmg"
 btnCaption2  = ""
 
 btnText3 = "Windows"
 icon3 = "tf-ion-social-windows"
-btnURL3  = "https://paperlib.geoch.top/distribution/electron_win/latest.exe"
+btnURL3  = "https://paperlib.geoch.top/distribution/electron-win/latest.exe"
 btnCaption3  = "* Windows 10 or higher"
 
 btnText4 = "Chrome Extension"
