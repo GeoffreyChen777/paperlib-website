@@ -75,13 +75,13 @@ btnURL2  = "/images/wechat_pay.png"
 [Languages.en.params.download]
 btnText1 = "macOS"
 icon1 = "tf-ion-social-apple"
-btnURL1  = "https://paperlib.geoch.top/distribution/mac/latest.zip"
-btnCaption1  = "* macOS Monterey or higher"
+btnURL1  = "https://paperlib.geoch.top/distribution/electron_mac/latest.dmg"
+btnCaption1  = ""
 
-btnText2 = "macOS-electron"
+btnText2 = "macOS-native"
 icon2 = "tf-ion-social-apple"
-btnURL2  = "https://paperlib.geoch.top/distribution/electron_mac/latest.dmg"
-btnCaption2  = ""
+btnURL2  = "https://paperlib.geoch.top/distribution/latest.dmg/latest.zip"
+btnCaption2  = "May won't be updated anymore due to my research work, macOS Monterey or higher."
 
 btnText3 = "Windows"
 icon3 = "tf-ion-social-windows"
@@ -180,7 +180,7 @@ name    = "Github"
 url     = "https://github.com/GeoffreyChen777/paperlib"
 weight  = 3
 [[menu.nav]]
-name    = "Subscription"
+name    = "Account"
 url     = "dashboard"
 weight  = 4
 

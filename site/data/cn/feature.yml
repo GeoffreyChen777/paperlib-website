@@ -4,7 +4,7 @@ item  :
     small: false
     title : 自动获取元数据
     description : >
-      从 arXiv，doi.org，DBLP，IEEE，以及我们的标题提取引擎尽可能为每一篇论文匹配精确的信息。
+      从 arXiv，doi.org，DBLP，IEEE，PaperwithCode，尽可能为每一篇计算机领域论文匹配精确的信息以及代码仓库。
 
   - icon  : tf-ion-ios-star-half
     small: false
@@ -22,7 +22,7 @@ item  :
     small: false
     title : 使用标签和文件夹进行管理
     description : >
-      为论文分配标签文件夹，方便进行分类检索，比如为一次投稿组织一些引用。
+      为论文分配标签、文件夹，方便进行分类检索，比如为一次投稿组织一些引用。
 
   - icon  : tf-ion-ios-copy-outline
     small: false
@@ -34,4 +34,4 @@ item  :
     small: true
     title : 跨平台
     description : >
-      支持 macOS（原生）和 Windows（electron）。
+      支持 macOS 和 Windows。

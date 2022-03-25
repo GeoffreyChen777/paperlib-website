@@ -4,13 +4,13 @@ item  :
     small: false
     title : Scrape Metadata
     description : >
-      Scrape paper’s metadata from arXiv, doi.org, DBLP, IEEE and our online engine.
+      Scrape paper’s metadata and code repository from arXiv, doi.org, DBLP, IEEE, and PaperwithCode. Customized for CSer.
 
   - icon  : tf-ion-ios-star-half
     small: false
     title : Score, Flag and Note
     description : >
-      Mark papers with multiple methods such as rating and flaging.
+      Rate, flag, or note your papers.
 
   - icon  : tf-ion-ios-cloud-outline
     small: false
@@ -34,4 +34,4 @@ item  :
     small: true
     title : Cross Platform
     description : >
-      Paperlib support macOS (native) and windows (electron).
+      Paperlib support macOS and windows.
