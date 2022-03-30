@@ -93,7 +93,7 @@ icon4 = "tf-ion-social-chrome"
 btnURL4  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng"
 btnCaption4  = ""
 
-releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Felectron_mac%2Fchangelog_en.html"
+releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Felectron-mac%2Fchangelog_en.html"
 
 [Languages.en.params.signin]
 signinText = "Sign in"
@@ -139,13 +139,13 @@ btnURL2  = "/images/wechat_pay.png"
 [Languages.cn.params.download]
 btnText1 = "macOS"
 icon1 = "tf-ion-social-apple"
-btnURL1  = "https://paperlib.geoch.top/distribution/mac/latest.zip"
-btnCaption1  = "* macOS Monterey or higher"
+btnURL1  = "https://paperlib.geoch.top/distribution/electron-mac/latest.dmg"
+btnCaption1  = ""
 
-btnText2 = "macOS-electron"
+btnText2 = "macOS-native"
 icon2 = "tf-ion-social-apple"
-btnURL2  = "https://paperlib.geoch.top/distribution/electron-mac/latest.dmg"
-btnCaption2  = ""
+btnURL2  = "https://paperlib.geoch.top/distribution/latest.dmg/latest.zip"
+btnCaption2  = "May won't be updated anymore due to my research work, macOS Monterey or higher."
 
 btnText3 = "Windows"
 icon3 = "tf-ion-social-windows"
@@ -157,7 +157,7 @@ icon4 = "tf-ion-social-chrome"
 btnURL4  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng"
 btnCaption4  = ""
 
-releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Felectron_mac%2Fchangelog_cn.html"
+releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Felectron-mac%2Fchangelog_cn.html"
 
 [Languages.cn.params.signin]
 signinText = "登录"

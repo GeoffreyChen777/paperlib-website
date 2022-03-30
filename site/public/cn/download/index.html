@@ -190,24 +190,24 @@ if (!doNotTrack) {
             <div class="col-md-2">
                 <div class="row justify-content-end">
                     <div>
-                        <a href="https://paperlib.geoch.top/distribution/mac/latest.zip" target="_blank" class="btn btn-main">
+                        <a href="https://paperlib.geoch.top/distribution/electron-mac/latest.dmg" target="_blank" class="btn btn-main">
                             <i class="tf-ion-social-apple "></i>
                             macOS 
                         </a>
                     </div>
                     <div class="mt-1 mr-1" style="text-align: end; font-size: 0.8em; color: #444;">
-                        * macOS Monterey or higher 
+                         
                     </div>
                 </div>
                 <div class="row justify-content-end">
                     <div>
-                        <a href="https://paperlib.geoch.top/distribution/electron-mac/latest.dmg" target="_blank" class="btn btn-main">
+                        <a href="https://paperlib.geoch.top/distribution/latest.dmg/latest.zip" target="_blank" class="btn btn-main">
                             <i class="tf-ion-social-apple "></i>
-                            macOS-electron 
+                            macOS-native 
                         </a>
                     </div>
                     <div class="mt-1 mr-1" style="text-align: end; font-size: 0.8em; color: #444;">
-                         
+                        May won&#39;t be updated anymore due to my research work, macOS Monterey or higher. 
                     </div>
                 </div>
                 <div class="row justify-content-end">
@@ -237,7 +237,7 @@ if (!doNotTrack) {
                 <div id="releaseNote"></div>
                 <script> 
                     var xhr= new XMLHttpRequest();
-                    xhr.open('GET', 'https:\/\/objectstorage.uk-london-1.oraclecloud.com\/n\/lrarf8ozesjn\/b\/bucket-20220130-2329\/o\/distribution%2Felectron_mac%2Fchangelog_cn.html', true);
+                    xhr.open('GET', 'https:\/\/objectstorage.uk-london-1.oraclecloud.com\/n\/lrarf8ozesjn\/b\/bucket-20220130-2329\/o\/distribution%2Felectron-mac%2Fchangelog_cn.html', true);
                     xhr.onreadystatechange= function() {
                         if (this.readyState==4 && this.status==200)                
                             document.getElementById('releaseNote').innerHTML= this.responseText;
