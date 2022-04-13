@@ -75,17 +75,17 @@
         e.preventDefault();
         grecaptcha.enterprise.ready(function () {
             grecaptcha.enterprise.execute('6Lf3QJweAAAAAGh7PyVgrd105arPlhfE3NvWFUV7', { action: 'reset' }).then(function (token) {
-                $("#signup-response-info").html("");
+                $("#signin-response-info").html("");
 
                 $.ajax({
                     url: '/api/auth/reset',
                     type: 'POST',
                     data: {
-                        email: $("#signup-form input[name='email']").val(),
+                        email: $("#signin-form input[name='email']").val(),
                         recaptchaToken: token
                     },
                     success: function (response) {
-                        $("#signup-response-info").html(response.message);
+                        $("#signin-response-info").html(response.message);
                     }
                 });
             });
