@@ -106,6 +106,19 @@
                 href="https://paperlib.app/cn/signin/"
                 />
   </url><url>
+    <loc>https://paperlib.app/cn/reset/</loc>
+    <lastmod>2018-07-07T18:23:33+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://paperlib.app/en/reset/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://paperlib.app/cn/reset/"
+                />
+  </url><url>
     <loc>https://paperlib.app/cn/categories/</loc>
     <xhtml:link
                 rel="alternate"

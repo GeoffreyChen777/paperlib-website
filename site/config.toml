@@ -93,6 +93,7 @@ releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/
 [Languages.en.params.signin]
 signinText = "Sign in"
 registerText = "Register"
+resetText = "Reset Password"
 
 ############ 2 - Site cn CHINESE
 [Languages.cn]
@@ -152,6 +153,7 @@ releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/
 [Languages.cn.params.signin]
 signinText = "登录"
 registerText = "注册"
+resetText = "重置密码"
 
 
 # Site Menus

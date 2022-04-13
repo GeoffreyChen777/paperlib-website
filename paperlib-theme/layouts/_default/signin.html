@@ -21,9 +21,11 @@
             <div class="w-100"></div>
             <a href="/{{ .Lang }}/signup/" class="btn btn-main col-3 mb-1">{{ .Site.Params.signin.registerText }}</a>
             <div class="w-100"></div>
-            <button type="submit" class="btn btn-main col-3" id="singin-btn">{{ .Site.Params.signin.signinText
-                }}</button>
+            <button type="submit" class="btn btn-main col-3" id="singin-btn">{{ .Site.Params.signin.signinText }}</button>
         </form>
+        <div class="row justify-content-center mt-2" style="font-size: small; text-decoration: underline; cursor: pointer;">
+            <a id="password-reset">{{ .Site.Params.signin.resetText }}</a>
+        </div>
     </div>
 </section>
 
@@ -68,6 +70,30 @@
             });
         });
     });
+
+    $("#password-reset").click(function (e) {
+        e.preventDefault();
+        grecaptcha.enterprise.ready(function () {
+            grecaptcha.enterprise.execute('6Lf3QJweAAAAAGh7PyVgrd105arPlhfE3NvWFUV7', { action: 'reset' }).then(function (token) {
+                $("#signup-response-info").html("");
+
+                $.ajax({
+                    url: '/api/auth/reset',
+                    type: 'POST',
+                    data: {
+                        email: $("#signup-form input[name='email']").val(),
+                        recaptchaToken: token
+                    },
+                    success: function (response) {
+                        $("#signup-response-info").html(response.message);
+                    }
+                });
+            });
+        });
+    });
+
+
+
 </script>
 
 {{ end }}

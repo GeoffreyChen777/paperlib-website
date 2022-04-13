@@ -200,6 +200,9 @@ if (!doNotTrack) {
             <div class="w-100"></div>
             <button type="submit" class="btn btn-main col-3" id="singin-btn">Sign in</button>
         </form>
+        <div class="row justify-content-center mt-2" style="font-size: small; text-decoration: underline; cursor: pointer;">
+            <a id="password-reset">Reset Password</a>
+        </div>
     </div>
 </section>
 
@@ -288,6 +291,30 @@ if (!doNotTrack) {
             });
         });
     });
+
+    $("#password-reset").click(function (e) {
+        e.preventDefault();
+        grecaptcha.enterprise.ready(function () {
+            grecaptcha.enterprise.execute('6Lf3QJweAAAAAGh7PyVgrd105arPlhfE3NvWFUV7', { action: 'reset' }).then(function (token) {
+                $("#signup-response-info").html("");
+
+                $.ajax({
+                    url: '/api/auth/reset',
+                    type: 'POST',
+                    data: {
+                        email: $("#signup-form input[name='email']").val(),
+                        recaptchaToken: token
+                    },
+                    success: function (response) {
+                        $("#signup-response-info").html(response.message);
+                    }
+                });
+            });
+        });
+    });
+
+
+
 </script>
 
 
