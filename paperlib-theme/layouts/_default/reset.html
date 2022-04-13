@@ -1,0 +1,79 @@
+{{ define "main" }}
+
+{{ "<!-- Blog Section Start -->" | safeHTML }}
+
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-md-center mb-3 mt-5">
+            <div class="col-md-12" style="text-align: center;">
+                <h2>{{ .Title }}</h2>
+                <span class="border divider" style="border: none !important;"></span>
+            </div>
+        </div>
+        <form class="row justify-content-center" id="reset-form" method="POST">
+            <input type="password" placeholder="New Password" name="password" required class="col-3 user-input-box mb-3"
+                style="text-align: center; min-width: 250px;">
+            <div class="w-100"></div>
+            <button type="submit" class="btn btn-main col-3" id="reset-btn">{{ .Site.Params.signin.resetText }}</button>
+        </form>
+    </div>
+</section>
+
+{{ end }}
+
+{{ define "head" }}
+
+<head>
+    <script
+        src="https://www.google.com/recaptcha/enterprise.js?render=6Lf3QJweAAAAAGh7PyVgrd105arPlhfE3NvWFUV7"></script>
+</head>
+
+{{ end }}
+
+{{ define "script" }}
+
+<script>
+    function getQueryString(name) {
+        let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        let r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return decodeURIComponent(r[2]);
+        };
+        return null;
+    }
+
+    $("#reset-form").submit(function (e) {
+        e.preventDefault();
+        const resetToken = getQueryString("token");
+        const resetTokenId = getQueryString("tokenId");
+
+        grecaptcha.enterprise.ready(function () {
+            grecaptcha.enterprise.execute('6Lf3QJweAAAAAGh7PyVgrd105arPlhfE3NvWFUV7', { action: 'reset' }).then(function (token) {
+                $("#reset-response-info").html("");
+
+                $.ajax({
+                    url: '/api/auth/resetconfirm',
+                    type: 'POST',
+                    data: {
+                        token: resetToken,
+                        tokenId: resetTokenId,
+                        recaptchaToken: token,
+                        newPassword: $("#reset-form input[name='password']").val()
+                    },
+                    success: function (response) {
+                        if (response.code != 200) {
+                            $("#reset-response-info").html(response.message);
+                        }
+                        else {
+                            Cookies.set('paperlib', response.token, { expires: 1, path: '/' })
+                            window.location.replace("/{{ .Lang }}/dashboard");
+                        }
+                    }
+                });
+            });
+        });
+    });
+
+</script>
+
+{{ end }}
