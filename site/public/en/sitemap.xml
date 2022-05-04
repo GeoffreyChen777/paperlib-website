@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://paperlib.app/en/blog/sync/</loc>
+    <lastmod>2022-03-25T17:04:41+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://paperlib.app/cn/blog/sync/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://paperlib.app/en/blog/sync/"
+                />
+  </url><url>
     <loc>https://paperlib.app/en/</loc>
     <lastmod>2022-03-25T17:04:41+06:00</lastmod>
     <xhtml:link

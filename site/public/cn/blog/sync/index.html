@@ -6,7 +6,7 @@
 
 <meta name="generator" content="Hugo 0.97.3" />
 
-<title>登录</title>
+<title>如何使用云同步</title>
 
 <!-- Mobile Specific Meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,13 +43,6 @@ if (!doNotTrack) {
 
 
 </head>
-
-
-<head>
-    <script
-        src="https://www.google.com/recaptcha/enterprise.js?render=6Lf3QJweAAAAAGh7PyVgrd105arPlhfE3NvWFUV7"></script>
-</head>
-
 
     <body id="body">
         <!-- Start Preloader -->
@@ -173,31 +166,26 @@ if (!doNotTrack) {
     </div>
 </section><div id="content">
 
-<!-- Blog Section Start -->
-
-<section class="section">
+<section class="blog-single section">
     <div class="container">
-        <div class="row justify-content-md-center mb-3 mt-5">
-            <div class="col-md-12" style="text-align: center;">
-                <h2>登录</h2>
-                <span class="border divider" style="border: none !important;"></span>
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h2>如何使用云同步</h2>
+                <div class="post-meta mb-5">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <span>By</span>
+                            Geo
+                        </li>
+                        <li class="list-inline-item">
+                            <span>at</span>
+                            <span>25 March 2022</span>
+                        </li>
+                    </ul>
+                </div>
+                <p>&hellip;</p>
+
             </div>
-        </div>
-        <form class="row justify-content-center" id="signin-form" method="POST">
-            <input type="text" placeholder="Email" name="email" required class="col-3 user-input-box mb-3"
-                style="text-align: center; min-width: 250px;">
-            <div class="w-100"></div>
-            <input type="password" placeholder="Password" name="password" required class="col-3 user-input-box mb-3"
-                style="text-align: center; min-width: 250px;">
-            <div class="w-100"></div>
-            <div class="col-3 mb-3" id="signin-response-info"></div>
-            <div class="w-100"></div>
-            <a href="/cn/signup/" class="btn btn-main col-3 mb-1">注册</a>
-            <div class="w-100"></div>
-            <button type="submit" class="btn btn-main col-3" id="singin-btn">登录</button>
-        </form>
-        <div class="row justify-content-center mt-2" style="font-size: small; text-decoration: underline; cursor: pointer;">
-            <a id="password-reset">重置密码</a>
         </div>
     </div>
 </section>
@@ -256,62 +244,6 @@ if (!doNotTrack) {
 <script src="https://paperlib.app/js/script.min.js"></script>
 
 
-
-
-
-<script>
-    $("#signin-form").submit(function (e) {
-        e.preventDefault();
-        grecaptcha.enterprise.ready(function () {
-            grecaptcha.enterprise.execute('6Lf3QJweAAAAAGh7PyVgrd105arPlhfE3NvWFUV7', { action: 'login' }).then(function (token) {
-                $("#signin-response-info").html("");
-
-                $.ajax({
-                    url: '/api/auth/signin',
-                    type: 'POST',
-                    data: {
-                        email: $("#signin-form input[name='email']").val(),
-                        password: $("#signin-form input[name='password']").val(),
-                        recaptchaToken: token
-                    },
-                    success: function (response) {
-                        if (response.code != 200) {
-                            $("#signin-response-info").html(response.message);
-                        }
-                        else {
-                            Cookies.set('paperlib', response.token, { expires: 1, path: '/' })
-                            window.location.replace("/cn/dashboard");
-                        }
-                    }
-                });
-            });
-        });
-    });
-
-    $("#password-reset").click(function (e) {
-        e.preventDefault();
-        grecaptcha.enterprise.ready(function () {
-            grecaptcha.enterprise.execute('6Lf3QJweAAAAAGh7PyVgrd105arPlhfE3NvWFUV7', { action: 'reset' }).then(function (token) {
-                $("#signin-response-info").html("");
-
-                $.ajax({
-                    url: '/api/auth/reset',
-                    type: 'POST',
-                    data: {
-                        email: $("#signin-form input[name='email']").val(),
-                        recaptchaToken: token
-                    },
-                    success: function (response) {
-                        $("#signin-response-info").html(response.message);
-                    }
-                });
-            });
-        });
-    });
-
-
-
-</script>
 
 
     </body>

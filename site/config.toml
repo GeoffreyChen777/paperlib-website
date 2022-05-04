@@ -171,10 +171,6 @@ weight  = 2
 name    = "Github"
 url     = "https://github.com/GeoffreyChen777/paperlib"
 weight  = 3
-[[menu.nav]]
-name    = "Account"
-url     = "dashboard"
-weight  = 4
 
 # Footer Quick links Menu
 [[menu.quicklink]]
