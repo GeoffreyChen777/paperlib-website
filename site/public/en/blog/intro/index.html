@@ -185,42 +185,34 @@ if (!doNotTrack) {
                 </div>
                 <p>This article introduces how to use Paperlib.</p>
 <h3 id="0-select-a-library-folder">0. Select a library folder</h3>
-<p>Firstly, open the setting window, choose a folder to store all your paper PDF files and the local database files.</p>
+<p>Firstly, open the preference window, choose a folder to store all your paper PDF files and the local database files.</p>
 <h3 id="1-add-new-paper-to-paperlib">1. Add new paper to Paperlib</h3>
-<p>Drag and drop PDF files onto the main view of Paperlib. The metadata will be automaticlly fetched from arXiv, doi.org, DBLP, and IEEE. Some papers may match nothing from these database, thereby resulting in a empty paper item. You can manually edit it, or type the title and manually rematch.</p>
+<p>Drag and drop PDF files onto the main view of Paperlib. The metadata will be automaticlly fetched from arXiv, doi.org, DBLP, openreview.net etc. Some papers may match nothing from these database, thereby resulting in a empty paper item. You can manually edit its metadata in the edit window and rematch later.</p>
 <p><img src="/images/blog/intro/add.png" alt=""></p>
-<h4 id="-arxiv"># arXiv</h4>
-<p>We use the arXiv ID (if avaliable) to get the title and authors information from the arXiv API.</p>
-<h4 id="-doiorg"># doi.org</h4>
-<p>If the DOI identity is avaliable, the exact metadata can be obtained from doi.org.</p>
-<h4 id="-dblp"># DBLP</h4>
-<p>DBLP is a database cotains numerous conference and journal publications of computer science. We use the title and authors of each paper to query the metadata from DBLP.</p>
-<h4 id="-ieee-xplore"># IEEE xplore</h4>
-<p>Since the query number for one API key is limited, the predefined key is only avaliable to the author&rsquo;s friends. For others, the API Key can be applied from here: <a href="https://developer.ieee.org/apps/mykeys">IEEE Developer</a></p>
-<h4 id="-our-online-engine"># Our online engine</h4>
-<p>We developed a online title extraction engine to help Paperlib extract the title when there is no identity (e.g., arXiv id or doi).</p>
 <hr>
-<h3 id="2-open-a-paper-managed-by-paperlib">2. Open a paper managed by Paperlib</h3>
-<p>Double click the item in the main view (only support windows) or the preview image in the details view.</p>
+<h3 id="2-scrapers">2. Scrapers</h3>
+<p>We provided a number of scrapers to fetch metadata from various sources. For example, you can use arXiv scraper to fetch metadata from arXiv.org. We use those scrapers to build a data pipeline for every papers to fetch the metadata for every paper as much as possible.</p>
 <hr>
-<h3 id="3-add-tags-and-folders">3. Add tags and folders</h3>
-<p>Click the tag or folder button in the menu, type the tag or folder names splited by &lsquo;;&rsquo;.</p>
-<p><img src="/images/blog/intro/tag.png" alt=""></p>
+<h3 id="3-open-a-paper-managed-by-paperlib">3. Open a paper managed by Paperlib</h3>
+<p>Just double click the item in the main view. You can also press Space to preview the paper (macOS only now).</p>
 <hr>
-<h3 id="4-add-supplementary-files">4. Add supplementary files</h3>
+<h3 id="4-edit-metadata-add-tags-and-folders">4. Edit metadata, add tags and folders</h3>
+<p>Click the edit button in the menu, modify the metadata and add or create your preferred tags and folders.</p>
+<p><img src="/images/blog/intro/edit.png" alt=""></p>
+<hr>
+<h3 id="5-add-supplementary-files">5. Add supplementary files</h3>
 <p>Drag and drop PDF files onto the detail view (right panel) of a paper.</p>
 <hr>
-<h3 id="5-cloud-sync">5. Cloud Sync</h3>
-<ul>
-<li>Open the setting window, cmd+, on mac or click the setting button on windows.</li>
-<li>In sync tab, type your sync key and tick the cloud sync checkbox.</li>
-</ul>
-<br/>
-<p><em>Currently the cloud sync is in BETA. Please ask Paperlib&rsquo;s author for the sync API key. The cloud database can only store all your data except the PDF files (I&rsquo;m poor, cannot afford such expensive online database space if put all PDFs online. :( ).</em>
-<strong>Never share your API key with others. It is the only certification for your library&rsquo;s access</strong></p>
-<p><img src="/images/blog/intro/sync.png" alt=""></p>
-<h4 id="-sync-between-different-devices"># Sync between different devices</h4>
-<p>Just ture on the cloud sync and make sure the library folder is correct. For example, You can use onedrive (or dropbox etc.) to share your PDF files between two devices. On device A, choose <code>C:/Onedrive/mypaperlib</code> as your library folder. On the other device B, choose <code>/user/xxx/Onedrive/mypaperlib</code> as the library folder.</p>
+<h3 id="6-search">6. Search</h3>
+<p>We provide three search modes: general, fulltext, and advanced mode. Click the button in the search bar to switch between them.</p>
+<p><img src="/images/blog/intro/search.png" alt=""></p>
+<hr>
+<h3 id="7-fast-copy-paste-plugin">7. Fast copy-paste plugin</h3>
+<p>When you are writing a paper, you can use the fast copy-paste plugin to quickly copy-paste the BibTex of a paper in your library. Just press <code>cmd/ctrl+shift+I</code>, select a paper and press <code>Enter</code>.</p>
+<p><img src="/images/blog/intro/plugin.png" alt=""></p>
+<hr>
+<h3 id="8-cloud-sync">8. Cloud Sync</h3>
+<p>To use the cloud sync feature, please refer to the <a href="/en/blog/sync/">How to use Cloud Sync</a></p>
 
             </div>
         </div>

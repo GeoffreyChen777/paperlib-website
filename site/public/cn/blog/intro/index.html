@@ -187,41 +187,33 @@ if (!doNotTrack) {
 <h3 id="0-选择一个文件夹作为论文库">0. 选择一个文件夹作为论文库</h3>
 <p>首先打开设置界面，在 General 选项卡中选择一个文件夹，用于存放所有论文 PDF 和数据库文件。建议选择一个可同步的文件夹，如 Onedrive，Dropbox 文件夹等。</p>
 <h3 id="1-添加新论文到-paperlib">1. 添加新论文到 Paperlib</h3>
-<p>拖动 PDF 到 Paperlib 的主视图，或者在 arXiv 网站上点击 Chorme 扩展。论文的元数据会从 arXiv, doi.org, DBLP, and IEEE 自动获取。一些论文可能在这些数据库中无法找到匹配的, 因此会导致导入一个空的论文条目。 你可以手动编辑他，或者填入标题之后，重新匹配。</p>
+<p>拖动 PDF 到 Paperlib 的主视图，或者在网站上点击 Chorme 扩展。论文的元数据会从 arXiv, doi.org, DBLP, openreview.net 等处自动获取。一些论文可能在这些数据库中无法找到匹配的, 因此会导致导入一个空的论文条目。 你可以手动编辑他之后重新匹配。</p>
 <p><img src="/images/blog/intro/add.png" alt=""></p>
-<h4 id="-arxiv"># arXiv</h4>
-<p>我们使用 arXiv ID (如果存在) 来获取论文标题和作者。</p>
-<h4 id="-doiorg"># doi.org</h4>
-<p>如果 DOI 存在，会从 doi.org 获取精确的论文发表信息。</p>
-<h4 id="-dblp"># DBLP</h4>
-<p>DBLP 是一个包含计算机领域大量会议期刊的数据库. 我们使用标题和作者匹配的方式在 DBLP 里进行元数据匹配.</p>
-<h4 id="-ieee-xplore"># IEEE xplore</h4>
-<p>IEEE 的 API key 每日请求数量有限, 因此预设的 Key 只在作者的朋友间共享， 你可以在这里自己申请: <a href="https://developer.ieee.org/apps/mykeys">IEEE Developer</a></p>
-<h4 id="-我们的在线引擎"># 我们的在线引擎</h4>
-<p>我们开发了一个在线的 PDF 标题提取引擎来帮助 Paperlib 提取论文标题，以便在没有任何识别码，比如没有任何 arXiv ID 或者 DOI 时，也可以 DBLP 中进行检索。</p>
 <hr>
-<h3 id="2-打开一个论文">2. 打开一个论文</h3>
-<p>双击表里的条目 (只支持 windows， fxxk swiftui) 或者在详情面板中双击预览图。</p>
+<h3 id="2-元数据抓取">2. 元数据抓取</h3>
+<p>我们提供很多抓取器来从不同的数据源搜索论文原数据。比如，arXiv 抓取器可以从 arXiv.org 获取数据。我们使用所有抓取器为每一个导入的论文创建了数据流以尽可能准确的为它们匹配元数据。</p>
 <hr>
-<h3 id="3-添加删除一个标签或者文件夹">3. 添加删除一个标签或者文件夹</h3>
-<p>点击菜单中的标签或者文件夹按钮, 输入名称，以 &lsquo;;&rsquo; 分割。文件夹是不同于普通标签的一种特殊标签。普通标签代表了这个论文的自有属性，比如该论文属于 classification，detection 等。文件夹代表了用户赋予的属性，比如 cvpr-ref，代表了在此文件夹里的论文是我为CVPR写作所组织的引用。</p>
-<p>删除一个标签或者文件夹只需要编辑该论文并在标签字符串里去掉相应的名字即可。将某标签或文件夹从所有论文上移除只需要右键点击左侧列表中的对应标签或文件夹选择删除。</p>
-<p><img src="/images/blog/intro/tag.png" alt=""></p>
+<h3 id="3-打开一个论文">3. 打开一个论文</h3>
+<p>双击表里的条目或者在详情面板中双击预览图。在 macOS 上可以按空格打开预览。</p>
 <hr>
-<h3 id="4-添加补充材料">4. 添加补充材料</h3>
+<h3 id="4-编辑元数据添加删除一个标签或者文件夹">4. 编辑元数据，添加删除一个标签或者文件夹</h3>
+<p>点击菜单中的编辑按钮。文件夹是不同于普通标签的一种特殊标签。普通标签代表了这个论文的自有属性，比如该论文属于 classification，detection 等。文件夹代表了用户赋予的属性，比如 cvpr-ref，代表了在此文件夹里的论文是我为CVPR写作所组织的引用。</p>
+<p>删除一个标签或者文件夹只需要编辑该论文并在标签里去掉相应的名字即可。将某标签或文件夹从所有论文上移除只需要右键点击左侧列表中的对应标签或文件夹选择删除。</p>
+<p><img src="/images/blog/intro/edit.png" alt=""></p>
+<hr>
+<h3 id="5-添加补充材料">5. 添加补充材料</h3>
 <p>将补充材料拖到右侧详情面板即可。</p>
 <hr>
-<h3 id="5-云同步">5. 云同步</h3>
-<ul>
-<li>打开设置面板</li>
-<li>在 Sync 页面中，输入你的同步 API Key，然后勾选同步。</li>
-</ul>
-<br/>
-<p><em>目前，同步功能还在 BETA 测试中，请联系 Paperlib 作者索要 API key. 云数据库只存储你的论文索引，标签，笔记等内容，不存 PDF 文件 (因为我很穷，如果存 PDF，付不起云数据库的钱 = =)。</em>
-<strong>永远不要与他人共享 API key，因为这是访问你云数据库的唯一凭证。</strong></p>
-<p><img src="/images/blog/intro/sync.png" alt=""></p>
-<h4 id="-在不同设备间同步"># 在不同设备间同步</h4>
-<p>打开云同步功能，确保你的本地库路径选择是一致的。例如，你可以使用 Onedrive 在不同设备间来同步本地库。在设备 A, 选择对应路径 <code>C:/Onedrive/mypaperlib</code> 作为库路径. 在设备 B, 选择对应的 <code>/user/xxx/Onedrive/mypaperlib</code>。</p>
+<h3 id="6-搜索">6. 搜索</h3>
+<p>我们提供了三种搜索方式：普通搜索，全文搜索，和高级搜索。点击搜索栏的按钮进行切换。</p>
+<p><img src="/images/blog/intro/search.png" alt=""></p>
+<hr>
+<h3 id="7-快速复制粘贴-bibtex-插件">7. 快速复制粘贴 BibTex 插件</h3>
+<p>当你写论文的时候，你可以使用 BibTex 插件快速复制粘贴 BibTex 字符串。只需要点击<code>cmd/ctrl+shift+I</code>, 搜索选择一个论文按 <code>Enter</code>.</p>
+<p><img src="/images/blog/intro/plugin.png" alt=""></p>
+<hr>
+<h3 id="8-云同步">8. 云同步</h3>
+<p>请参照 <a href="/cn/blog/sync/">如何使用云同步</a></p>
 
             </div>
         </div>

@@ -4,34 +4,34 @@ item  :
     small: false
     title : 自动获取元数据
     description : >
-      从 arXiv，doi.org，DBLP，IEEE，PaperwithCode，尽可能为每一篇计算机领域论文匹配精确的信息以及代码仓库。
+      从 arXiv，doi.org，DBLP，IEEE，openreview.net，PaperwithCode，为每一篇计算机领域论文匹配精确的信息以及代码仓库。
 
-  - icon  : tf-ion-ios-star-half
+  - icon  : tf-ion-ios-search
     small: false
-    title : 评分、标记、笔记
+    title : 三种搜索模式
     description : >
-      多种方式对论文进行评价标记，包括打分，旗帜标记，记录自定义笔记，来记录一些方法俗称等，如 ResNet，以方便快速检索。
+      普通搜索，高级搜索，和全文搜索，快速检索论文库。
 
   - icon  : tf-ion-ios-cloud-outline
     small: false
-    title : 云同步 (BETA)
+    title : 云同步
     description : >
-      基于 MongoDB atlas，我们提供数据库云同步功能，跨 Win Mac 平台随处访问您的论文库。
+      基于 MongoDB atlas，提供数据库云同步功能，跨 Win Mac 平台随处访问您的论文库。
 
   - icon  : tf-ion-ios-folder-outline
     small: false
-    title : 使用标签和文件夹进行管理
+    title : 使用评分标记，标签和文件夹进行管理
     description : >
-      为论文分配标签、文件夹，方便进行分类检索，比如为一次投稿组织一些引用。
+      为论文评分，分配标签、文件夹，方便进行分类检索。
 
   - icon  : tf-ion-ios-copy-outline
     small: false
     title : 导出引用
     description : >
-      导出论文引用到 Bibtex 或者 Plain Text 格式，Word？不存在的。
+      导出论文引用到 Bibtex 或者 Plain Text 格式，Word？sorry。快速导出插件让你一键复制 BibTex。
 
   - icon  : tf-laptop
     small: true
-    title : 跨平台
+    title : 开源多平台
     description : >
-      支持 macOS 和 Windows。
+      代码完全 Github 开源，支持 macOS 和 Windows。

@@ -51,7 +51,7 @@ expire_days = 2
 [Languages.en.params.hero]
 enable  = true
 heading = "Paperlib, to organise academic papers decently for CSer"
-description = "A simple academic paper management tool for CSer."
+description = "An open-source and simple academic paper management tool for CSer."
 button  = true
 btnText1 = "Download"
 btnURL1  = "download/"
@@ -111,7 +111,7 @@ footerQuicklinkTitle = "链接"
 [Languages.cn.params.hero]
 enable  = true
 heading = "Paperlib 呸啵哩哺，一个适合计算机学科的简单好用的论文管理工具"
-description = "简单！好用！"
+description = "开源！简单！好用！"
 button  = true
 btnText1 = "下载"
 btnURL1  = "download/"

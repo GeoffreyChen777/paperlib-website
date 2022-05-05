@@ -4,34 +4,34 @@ item  :
     small: false
     title : Scrape Metadata
     description : >
-      Scrape paper’s metadata and code repository from arXiv, doi.org, DBLP, IEEE, and PaperwithCode. Customized for CSer.
+      Scrape paper’s metadata and code repository from arXiv, doi.org, DBLP, IEEE, openreview.net, and PaperwithCode. Customized for CSer.
 
-  - icon  : tf-ion-ios-star-half
+  - icon  : tf-ion-ios-search
     small: false
-    title : Score, Flag and Note
+    title : Three Search Modes
     description : >
-      Rate, flag, or note your papers.
+      General search, advanced search, and full-text search.
 
   - icon  : tf-ion-ios-cloud-outline
     small: false
-    title : Cloud Sync (BETA)
+    title : Cloud Sync
     description : >
       Access your library from everywhere with a sync database supported by MongoDB atlas.
 
   - icon  : tf-ion-ios-folder-outline
     small: false
-    title : Organise by Tags & Folders
+    title : Organise by Flag, Rating, Tags & Folders
     description : >
-      Create tags and folders to let your library clean and tidy.
+      Flag, tag, and create folders to let your library clean and tidy.
 
   - icon  : tf-ion-ios-copy-outline
     small: false
     title : Export Citation
     description : >
-      Export papers to bibtex or plain text.
+      Export papers to bibtex or plain text. Fast copy-paste plugin helps you to copy citations to clipboard easily.
 
   - icon  : tf-laptop
     small: true
-    title : Cross Platform
+    title : Open Source and Cross Platform
     description : >
-      Paperlib support macOS and windows.
+      Fully open source on Github, supports macOS and windows.
