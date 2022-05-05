@@ -89,3 +89,5 @@ MongoDB Atlas 是非关系型数据库，我们只需要创建 Data Scheme。而
 
 
 至此，所有的云同步设置完毕。云数据库的 Development Mode 可以选择在第一次同步之后关掉。因为 Data Scheme 已经被自动创建了。
+
+关于 PDF 文件的同步，你可以使用 Onedrive 等工具在不同设备间来同步，Paperlib 也提供了 webDAV 功能。在设备 A, 选择对应路径 `C:/Onedrive/mypaperlib` 作为库路径. 在设备 B, 选择对应的 `/user/xxx/Onedrive/mypaperlib`。

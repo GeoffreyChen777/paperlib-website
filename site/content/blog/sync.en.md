@@ -88,3 +88,5 @@ In MongoDB Atlas, we only need to create the Data Scheme. It can be automaticall
 4.Click login.
 
 Now, everthing is ready, enjoy Paperlib with cloud sync. You can turn off the development mode after the first sync since the data scheme has been created.
+
+To sync PDF files, you can use onedrive (or dropbox etc.) or webDAV to sync your PDF files between two devices. For example, on device A, choose `C:/Onedrive/mypaperlib` as your library folder. On the other device B, choose `/user/xxx/Onedrive/mypaperlib` as the library folder.
