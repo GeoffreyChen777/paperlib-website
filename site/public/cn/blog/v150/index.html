@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en-us"><head>
+<html class="no-js" lang="zh-cn"><head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="This is meta description">
 
 <meta name="generator" content="Hugo 0.97.3" />
 
-<title>How to use Cloud Sync</title>
+<title>更新日志 Paperlib v1.5.0</title>
 
 <!-- Mobile Specific Meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -70,7 +70,7 @@ if (!doNotTrack) {
         <div class="row">
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="/en">
+                    <a class="navbar-brand" href="/cn">
                         <img src="https://paperlib.app/images/logo.png" alt="Paperlib" style="height: 35px">
                         <span class="navbar-brand-text">Paperlib</span>
                     </a>
@@ -90,7 +90,7 @@ if (!doNotTrack) {
 
 
 
-    <a href="https://paperlib.app/en" class="selected">en
+    <a href="https://paperlib.app/en">en
 
 </a>
 
@@ -102,7 +102,7 @@ if (!doNotTrack) {
 
 
 
-    <a href="https://paperlib.app/cn">cn
+    <a href="https://paperlib.app/cn" class="selected">cn
 
 </a>
 
@@ -116,11 +116,11 @@ if (!doNotTrack) {
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://paperlib.app/en/download">download</a>
+                                <a class="nav-link" href="https://paperlib.app/cn/download">download</a>
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://paperlib.app/en/blog">blog</a>
+                                <a class="nav-link" href="https://paperlib.app/cn/blog">blog</a>
                             </li>
                             
                             <li class="nav-item">
@@ -139,7 +139,7 @@ if (!doNotTrack) {
 
 
 
-    <a href="https://paperlib.app/en" class="selected">en
+    <a href="https://paperlib.app/en">en
 
 </a>
 
@@ -151,7 +151,7 @@ if (!doNotTrack) {
 
 
 
-    <a href="https://paperlib.app/cn">cn
+    <a href="https://paperlib.app/cn" class="selected">cn
 
 </a>
 
@@ -170,7 +170,7 @@ if (!doNotTrack) {
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>How to use Cloud Sync</h2>
+                <h2>更新日志 Paperlib v1.5.0</h2>
                 <div class="post-meta mb-5">
                     <ul class="list-inline">
                         <li class="list-inline-item">
@@ -179,58 +179,16 @@ if (!doNotTrack) {
                         </li>
                         <li class="list-inline-item">
                             <span>at</span>
-                            <span>May 5, 2022</span>
+                            <span>25 March 2022</span>
                         </li>
                     </ul>
                 </div>
-                <p>Paperlib use MongoDB Atlas as the cloud database backend. You can create your own cloud database and use it to sync your Paperlib data on any device. MongoDB Atlas provides a free tier for all users, which is enough for Paperlib user. You can even share your cloud database with your friends. When everything is set up, you can safely store the metadata of your papers in the cloud without any maintenance operation. For CSer, it should not be a problem to set up a MongoDB Atlas with this tutorial.</p>
-<h3 id="create-a-mongodb-atlas-db">Create a MongoDB Atlas DB</h3>
-<p>1.Open <a href="https://account.mongodb.com/account/login">https://account.mongodb.com/account/login</a>,Sign up and login to your account.</p>
-<p>2.Create an orgnization with your preferred name. Select MongoDB Atlas.</p>
-<p><img src="/images/blog/sync/1.png" alt=""></p>
-<p>3.In Project page,create a project.</p>
-<p><img src="/images/blog/sync/2.png" alt=""></p>
-<p>4.Click Realm Tab,create a Realm APP.Choose &lsquo;Build your own APP&rsquo;.</p>
-<p><img src="/images/blog/sync/3.png" alt=""></p>
-<p>5.Input your preferred name.Select a region where is near to your location.For example, if you are in UK, choose <code>eu-west-1</code>.</p>
-<p><img src="/images/blog/sync/4.png" alt=""></p>
-<p>6.Since then, the MongoDB Atlas is ready.</p>
-<hr>
-<h3 id="create-a-user">Create a User</h3>
-<p>A User is a person who can access the cloud database. You can create a user for yourself or for your friends. You can only access your own data.</p>
-<p>1.In Realm Tab, click App Users, click Authentication Providers.</p>
-<p><img src="/images/blog/sync/5.png" alt=""></p>
-<p>2.Turn on the Email Password Authentication. Choose Automatically confirm users as the User Confirmation Method. Password Reset URL is not required, just input some random URL. Click Save Draft.</p>
-<p><img src="/images/blog/sync/6.png" alt=""></p>
-<p>3.Click the upper banner <code>REVIEW DRAFT &amp; DEPLOY</code> to apply previous settings.</p>
-<p><img src="/images/blog/sync/7.png" alt=""></p>
-<p>4.Back to the User page, Click <code>Add New User</code> to create a user.</p>
-<p><img src="/images/blog/sync/8.png" alt=""></p>
-<p>5.Sinc then, you&rsquo;ve craeted a user.</p>
-<hr>
-<h3 id="create-a-data-table">Create a Data Table.</h3>
-<p>In MongoDB Atlas, we only need to create the Data Scheme. It can be automatically created according to the data sent by our Paperlib APP.</p>
-<p>1.In Sync page, click Start Sync. It enables the Realm APP to sync data with the backend cluster. In the popup dialog, click <code>No thanks, continue to Sync</code>.</p>
-<p><img src="/images/blog/sync/9.png" alt=""></p>
-<ol start="2">
-<li>Open the Development Mode to allow MongoDB Altas automatically create data scheme according to the data sent by our Paperlib APP. Other configurations are as shown below.</li>
-</ol>
-<p><img src="/images/blog/sync/10.png" alt="">
-<img src="/images/blog/sync/11.png" alt=""></p>
-<ol start="3">
-<li>Click Enable Sync.</li>
-</ol>
-<p>4.Click the upper banner <code>REVIEW DRAFT &amp; DEPLOY</code> again.</p>
-<p>5.Since then, the cloud database is ready.</p>
-<hr>
-<h3 id="connect-paperlib-to-your-mongodb-atlas-db">Connect Paperlib to your MongoDB Atlas DB</h3>
-<p>1.Open the preference view of Paperlib, click Cloud tab.</p>
-<p><img src="/images/blog/sync/12.png" alt=""></p>
-<p>2.Input your MongoDB Atlas APP ID.</p>
-<p><img src="/images/blog/sync/13.png" alt=""></p>
-<p>3.Input the email and password of the user you created.</p>
-<p>4.Click login.</p>
-<p>Now, everthing is ready, enjoy Paperlib with cloud sync. You can turn off the development mode after the first sync since the data scheme has been created.</p>
+                <p>在 v1.5.0, 我们添加了如下功能:</p>
+<ul>
+<li>增加了高级和全文搜索。</li>
+<li>支持从 Paperwithcode.com 搜索论文源代码。</li>
+<li>增加了空格预览功能。</li>
+</ul>
 
             </div>
         </div>
@@ -249,7 +207,7 @@ if (!doNotTrack) {
                 </div>
 
                 <div class="col-sm-3 col-md-3 col-lg-3">
-                    <h3>Quicklinks</h3>
+                    <h3>链接</h3>
                     <ul>
                         
                         <li>

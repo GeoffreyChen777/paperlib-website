@@ -10,10 +10,30 @@
     <item>
       <title>如何使用云同步</title>
       <link>https://paperlib.app/cn/blog/sync/</link>
-      <pubDate>Fri, 25 Mar 2022 17:04:41 +0600</pubDate>
+      <pubDate>Thu, 05 May 2022 01:04:41 +0600</pubDate>
       
       <guid>https://paperlib.app/cn/blog/sync/</guid>
-      <description>&amp;hellip;</description>
+      <description>Paperlib 使用 MongoDB Atlas 作为云数据库后端。用户可以自己创建自己的云数据库，并使用它在你的所有机器上享受秒级别的同步功能。MongoDB Atlas 给用户每月提供了一定量的免费额度，该额度对于 Paperlib 绰绰有余，甚至可以和同学分享一个数据库。设置好后，你的数据可以安全地存储在云端。而不用自己维护任何东西。建立云数据库的方式非常简单，对于各位 CSer 理论上不是问题。</description>
+    </item>
+    
+    <item>
+      <title>更新日志 Paperlib v1.6.0</title>
+      <link>https://paperlib.app/cn/blog/v160/</link>
+      <pubDate>Wed, 04 May 2022 17:04:41 +0600</pubDate>
+      
+      <guid>https://paperlib.app/cn/blog/v160/</guid>
+      <description>在 v1.6.0, 我们添加了如下功能:
+ 新增了快速复制粘贴插件，让复制 BibTex更为迅速，按 cmd/ctrl+shift+I 呼出。 可点击的作者组件，左键高级搜索，右键打开 Google Scholar。 支持从 openreview.</description>
+    </item>
+    
+    <item>
+      <title>更新日志 Paperlib v1.5.0</title>
+      <link>https://paperlib.app/cn/blog/v150/</link>
+      <pubDate>Fri, 25 Mar 2022 17:04:41 +0600</pubDate>
+      
+      <guid>https://paperlib.app/cn/blog/v150/</guid>
+      <description>在 v1.5.0, 我们添加了如下功能:
+ 增加了高级和全文搜索。 支持从 Paperwithcode.com 搜索论文源代码。 增加了空格预览功能。  </description>
     </item>
     
     <item>
