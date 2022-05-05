@@ -9,63 +9,59 @@ This article introduces how to use Paperlib.
 
 ### 0. Select a library folder
 
-Firstly, open the setting window, choose a folder to store all your paper PDF files and the local database files.
+Firstly, open the preference window, choose a folder to store all your paper PDF files and the local database files.
 
 ### 1. Add new paper to Paperlib
 
-Drag and drop PDF files onto the main view of Paperlib. The metadata will be automaticlly fetched from arXiv, doi.org, DBLP, and IEEE. Some papers may match nothing from these database, thereby resulting in a empty paper item. You can manually edit it, or type the title and manually rematch.
+Drag and drop PDF files onto the main view of Paperlib. The metadata will be automaticlly fetched from arXiv, doi.org, DBLP, openreview.net etc. Some papers may match nothing from these database, thereby resulting in a empty paper item. You can manually edit its metadata in the edit window and rematch later.
 
 ![](/images/blog/intro/add.png)
 
-#### # arXiv
-We use the arXiv ID (if avaliable) to get the title and authors information from the arXiv API.
+-----
 
-#### # doi.org
-If the DOI identity is avaliable, the exact metadata can be obtained from doi.org.
+### 2. Scrapers
 
-#### # DBLP
-DBLP is a database cotains numerous conference and journal publications of computer science. We use the title and authors of each paper to query the metadata from DBLP.
-
-#### # IEEE xplore
-Since the query number for one API key is limited, the predefined key is only avaliable to the author's friends. For others, the API Key can be applied from here: [IEEE Developer](https://developer.ieee.org/apps/mykeys)
-
-#### # Our online engine
-We developed a online title extraction engine to help Paperlib extract the title when there is no identity (e.g., arXiv id or doi).
+We provided a number of scrapers to fetch metadata from various sources. For example, you can use arXiv scraper to fetch metadata from arXiv.org. We use those scrapers to build a data pipeline for every papers to fetch the metadata for every paper as much as possible.
 
 -----
 
-### 2. Open a paper managed by Paperlib
+### 3. Open a paper managed by Paperlib
 
-Double click the item in the main view (only support windows) or the preview image in the details view.
-
------
-
-### 3. Add tags and folders
-
-Click the tag or folder button in the menu, type the tag or folder names splited by ';'.
-
-![](/images/blog/intro/tag.png)
+Just double click the item in the main view. You can also press Space to preview the paper (macOS only now).
 
 -----
 
-### 4. Add supplementary files
+### 4. Edit metadata, add tags and folders
+
+Click the edit button in the menu, modify the metadata and add or create your preferred tags and folders.
+
+![](/images/blog/intro/edit.png)
+
+-----
+
+### 5. Add supplementary files
 
 Drag and drop PDF files onto the detail view (right panel) of a paper.
 
 -----
 
-### 5. Cloud Sync
-- Open the setting window, cmd+, on mac or click the setting button on windows.   
-- In sync tab, type your sync key and tick the cloud sync checkbox.
+### 6. Search
 
-<br/>
+We provide three search modes: general, fulltext, and advanced mode. Click the button in the search bar to switch between them.
 
-*Currently the cloud sync is in BETA. Please ask Paperlib's author for the sync API key. The cloud database can only store all your data except the PDF files (I'm poor, cannot afford such expensive online database space if put all PDFs online. :( ).*
-**Never share your API key with others. It is the only certification for your library's access**
+![](/images/blog/intro/search.png)
 
-![](/images/blog/intro/sync.png)
+------
+
+### 7. Fast copy-paste plugin
+
+When you are writing a paper, you can use the fast copy-paste plugin to quickly copy-paste the BibTex of a paper in your library. Just press `cmd/ctrl+shift+I`, select a paper and press `Enter`.
+
+![](/images/blog/intro/plugin.png)
 
 
-#### # Sync between different devices
+-----
 
-Just ture on the cloud sync and make sure the library folder is correct. For example, You can use onedrive (or dropbox etc.) to share your PDF files between two devices. On device A, choose `C:/Onedrive/mypaperlib` as your library folder. On the other device B, choose `/user/xxx/Onedrive/mypaperlib` as the library folder.
+### 8. Cloud Sync
+
+To use the cloud sync feature, please refer to the [How to use Cloud Sync](/en/blog/sync/)
