@@ -13,7 +13,7 @@ Firstly, open the preference window, choose a folder to store all your paper PDF
 
 ### 1. Add new paper to Paperlib
 
-Drag and drop PDF files onto the main view of Paperlib. The metadata will be automaticlly fetched from arXiv, doi.org, DBLP, openreview.net etc. Some papers may match nothing from these database, thereby resulting in a empty paper item. You can manually edit its metadata in the edit window and rematch later.
+Drag and drop PDF files onto the main view of Paperlib. The metadata will be automaticlly fetched from arXiv, doi.org, DBLP, openreview.net etc. Some papers may match nothing from these database, thereby resulting in a empty paper item. You can manually edit its metadata in the edit window and rematch later. Right click in the sidebar list can change colors.
 
 ![](/images/blog/intro/add.png)
 
