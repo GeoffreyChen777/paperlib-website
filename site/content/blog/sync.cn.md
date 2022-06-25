@@ -10,32 +10,32 @@ Paperlib 使用 MongoDB Atlas 作为云数据库后端。用户可以自己创�
 ### 建立云数据库
 1.打开 [https://account.mongodb.com/account/login](https://account.mongodb.com/account/login)，注册并登陆到你的 MongoDB Atlas 账户。账户欢迎页面按照如下设置。
 
-![](/images/blog/sync/1.png)
+![](/images/blog/sync/n1.png)
 
 2.选择我们的数据库 Plan。我们选 Free 的。
 
-![](/images/blog/sync/2.png)
+![](/images/blog/sync/n2.png)
 
 3.数据库配置。选择离你最近的或者网络最畅通的服务器。比如大陆北方同学选日本，南方选香港，英国的选爱尔兰伦敦之类。这里以作者所在的英国为例。选择爱尔兰
 
-![](/images/blog/sync/3.png)
+![](/images/blog/sync/n3.png)
 
 接下来设置数据库管理员
 
-![](/images/blog/sync/4.png)
-![](/images/blog/sync/5.png)
+![](/images/blog/sync/n4.png)
+![](/images/blog/sync/n5.png)
 
 4.来到 App Services 页面，创建 APP。
 
-![](/images/blog/sync/6.png)
+![](/images/blog/sync/n6.png)
 
 选择 Build your own APP
 
-![](/images/blog/sync/7.png)
+![](/images/blog/sync/n7.png)
 
 链接 Atlas 云数据库，重命名，以及部署地点
 
-![](/images/blog/sync/8.png)
+![](/images/blog/sync/n8.png)
 
 至此数据库已经创建完毕。
 
@@ -69,13 +69,13 @@ MongoDB Atlas 是非关系型数据库，我们只需要创建 Data Scheme。而
 
 1.在 Device Sync 界面，点击 Start Sync。这会让我们 APP 的数据和后端数据库开始同步。弹出界面，我们点击 `No thanks, continue to Sync`。
 
-![](/images/blog/sync/9.png)
+![](/images/blog/sync/n9.png)
 
 2.之后我们打开 Development Mode。至此，MongoDB Altas 会根据我们 Paperlib 传来的数据自动创建 Data Scheme。其余设置如下图所示，**注意 partition 的 require 选项取消**。
 
-![](/images/blog/sync/10.png)
-![](/images/blog/sync/11.png)
-![](/images/blog/sync/12.png)
+![](/images/blog/sync/n10.png)
+![](/images/blog/sync/n11.png)
+![](/images/blog/sync/n12.png)
 
 
 3.点击 Enable Sync。
@@ -89,14 +89,14 @@ MongoDB Atlas 是非关系型数据库，我们只需要创建 Data Scheme。而
 
 1.打开 Paperlib 设置界面，Cloud 选项卡。输入 MongoDB Atlas 的 APP ID。
 
-![](/images/blog/sync/13.png)
+![](/images/blog/sync/n13.png)
 
 2.输入你刚才创建的用户的账号密码。
 
 3.登陆就可以了。如果成功了话，我们添加论文之后会在 Log 界面看到 write 的 log。
 
 
-![](/images/blog/sync/19.png)
+![](/images/blog/sync/n19.png)
 
 
 至此，所有的云同步设置完毕。云数据库的 Development Mode 可以选择在第一次同步之后关掉。因为 Data Scheme 已经被自动创建了。

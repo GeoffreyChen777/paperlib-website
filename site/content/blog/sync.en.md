@@ -10,32 +10,32 @@ Paperlib use MongoDB Atlas as the cloud database backend. You can create your ow
 ### Create a MongoDB Atlas DB
 1.Open [https://account.mongodb.com/account/login](https://account.mongodb.com/account/login),Sign up and login to your account.
 
-![](/images/blog/sync/1.png)
+![](/images/blog/sync/n1.png)
 
 2.Select a free dataset plan.
 
-![](/images/blog/sync/2.png)
+![](/images/blog/sync/n2.png)
 
 3.Config database, select the best server location according to your country.
 
-![](/images/blog/sync/3.png)
+![](/images/blog/sync/n3.png)
 
 config superuser of database.
 
-![](/images/blog/sync/4.png)
-![](/images/blog/sync/5.png)
+![](/images/blog/sync/n4.png)
+![](/images/blog/sync/n5.png)
 
 4. Go to the App Services page, create a APP.
 
-![](/images/blog/sync/6.png)
+![](/images/blog/sync/n6.png)
 
 Build your own APP
 
-![](/images/blog/sync/7.png)
+![](/images/blog/sync/n7.png)
 
 Connect Atlas, rename your APP, select location for deployment.
 
-![](/images/blog/sync/8.png)
+![](/images/blog/sync/n8.png)
 
 6.Since then, the MongoDB Atlas is ready.
 
@@ -69,13 +69,13 @@ In MongoDB Atlas, we only need to create the Data Scheme. It can be automaticall
 
 1.In the Device Sync page, click Start Sync. It enables the Realm APP to sync data with the backend cluster. In the popup dialog, click `No thanks, continue to Sync`.
 
-![](/images/blog/sync/9.png)
+![](/images/blog/sync/n9.png)
 
 2.Open the Development Mode to allow MongoDB Altas automatically create data scheme according to the data sent by our Paperlib APP. Other configurations are as shown below. Uncheck the require checkbox of 'partition'
 
-![](/images/blog/sync/10.png)
-![](/images/blog/sync/11.png)
-![](/images/blog/sync/12.png)
+![](/images/blog/sync/n10.png)
+![](/images/blog/sync/n11.png)
+![](/images/blog/sync/n12.png)
 
 3.Click Enable Sync.
 
@@ -88,13 +88,13 @@ In MongoDB Atlas, we only need to create the Data Scheme. It can be automaticall
 
 1.Open the preference view of Paperlib, click Cloud tab. Input your MongoDB Atlas APP ID.
 
-![](/images/blog/sync/13.png)
+![](/images/blog/sync/n13.png)
 
 2.Input the email and password of the user you created.
 
 3.Click login. If you are successful, you can see the writing log after importing a paper to Paperlib.
 
-![](/images/blog/sync/19.png)
+![](/images/blog/sync/n19.png)
 
 Now, everthing is ready, enjoy Paperlib with cloud sync. You can turn off the development mode after the first sync since the data scheme has been created.
 
