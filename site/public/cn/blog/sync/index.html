@@ -183,49 +183,55 @@ if (!doNotTrack) {
                         </li>
                     </ul>
                 </div>
-                <p>Paperlib 使用 MongoDB Atlas 作为云数据库后端。用户可以自己创建自己的云数据库，并使用它在你的所有机器上享受秒级别的同步功能。MongoDB Atlas 给用户每月提供了一定量的免费额度，该额度对于 Paperlib 绰绰有余，甚至可以和同学分享一个数据库。设置好后，你的数据可以安全地存储在云端。而不用自己维护任何东西。建立云数据库的方式非常简单，对于各位 CSer 理论上不是问题。</p>
+                <p>Paperlib 使用 MongoDB Atlas 作为云数据库后端。用户可以自己创建自己的云数据库，并使用它在你的所有机器上享受秒级别的同步功能。大陆的同学可能延迟稍微高一点。MongoDB Atlas 给用户每月提供了一定量的免费额度，该额度对于 Paperlib 绰绰有余，甚至可以和同学分享一个数据库。设置好后，你的数据可以安全地存储在云端。而不用自己维护任何东西。建立云数据库的方式非常简单，对于各位 CSer 理论上不是问题。</p>
 <h3 id="建立云数据库">建立云数据库</h3>
-<p>1.打开 <a href="https://account.mongodb.com/account/login">https://account.mongodb.com/account/login</a>，注册并登陆到你的 MongoDB Atlas 账户。</p>
-<p>2.随便创建一个 Orgnization。随便取名字，选择 MongoDB Atlas。</p>
+<p>1.打开 <a href="https://account.mongodb.com/account/login">https://account.mongodb.com/account/login</a>，注册并登陆到你的 MongoDB Atlas 账户。账户欢迎页面按照如下设置。</p>
 <p><img src="/images/blog/sync/1.png" alt=""></p>
-<p>3.来到 Project 页面，创建 Project。</p>
+<p>2.选择我们的数据库 Plan。我们选 Free 的。</p>
 <p><img src="/images/blog/sync/2.png" alt=""></p>
-<p>4.点击 Realm 选项卡，创建 Realm APP。选择 Build your own APP。</p>
+<p>3.数据库配置。选择离你最近的或者网络最畅通的服务器。比如大陆北方同学选日本，南方选香港，英国的选爱尔兰伦敦之类。这里以作者所在的英国为例。选择爱尔兰</p>
 <p><img src="/images/blog/sync/3.png" alt=""></p>
-<p>5.随便输入名字。选择距离你较近的云数据库区域。比如英国同学选择这里的<code>eu-west-1</code>。</p>
-<p><img src="/images/blog/sync/4.png" alt=""></p>
-<p>6.至此数据库已经创建完毕。</p>
+<p>接下来设置数据库管理员</p>
+<p><img src="/images/blog/sync/4.png" alt="">
+<img src="/images/blog/sync/5.png" alt=""></p>
+<p>4.来到 App Services 页面，创建 APP。</p>
+<p><img src="/images/blog/sync/6.png" alt=""></p>
+<p>选择 Build your own APP</p>
+<p><img src="/images/blog/sync/7.png" alt=""></p>
+<p>链接 Atlas 云数据库，重命名，以及部署地点</p>
+<p><img src="/images/blog/sync/8.png" alt=""></p>
+<p>至此数据库已经创建完毕。</p>
 <hr>
 <h3 id="添加用户">添加用户</h3>
 <p>用户是所有可以在该云数据库里存储数据的人，你可以和你实验室的同学共享一个数据库，你们之间的数据互不干扰。对于Paperlib存储的内容来说，免费额度足够很多人一起共享一个数据库，当然你也可以自己独享。</p>
-<p>1.在 Realm 选项卡下，点击左侧的 App Users 界面。点击 Authentication Providers。</p>
-<p><img src="/images/blog/sync/5.png" alt=""></p>
+<p>1.点击左侧的 App Users 界面。点击 Authentication Providers。</p>
+<p><img src="/images/blog/sync/user1.png" alt=""></p>
 <p>2.选择打开 Email Password 登陆。User Confirmation Method 选择 Automatically confirm users。Password Reset URL 随便写，这里不需要这个功能。 点击 Save Draft。</p>
-<p><img src="/images/blog/sync/6.png" alt=""></p>
+<p><img src="/images/blog/sync/user2.png" alt=""></p>
 <p>3.点击上方的 <code>REVIEW DRAFT &amp; DEPLOY</code> 来应用我们刚才的设置。</p>
-<p><img src="/images/blog/sync/7.png" alt=""></p>
+<p><img src="/images/blog/sync/user3.png" alt=""></p>
 <p>4.回到 User 界面，点击 <code>Add New User</code> 我们可以添加我们的用户了。</p>
-<p><img src="/images/blog/sync/8.png" alt=""></p>
+<p><img src="/images/blog/sync/user4.png" alt=""></p>
 <p>5.至此，用户创建完毕。</p>
 <hr>
 <h3 id="创建数据库表">创建数据库表</h3>
 <p>MongoDB Atlas 是非关系型数据库，我们只需要创建 Data Scheme。而且其支持自动根据客户端数据创建。所以我们并不需要手动定义数据结构。</p>
-<p>1.在 Sync 界面，点击 Start Sync。这会让我们 APP 的数据和后端数据库开始同步。弹出界面，我们点击 <code>No thanks, continue to Sync</code>。</p>
+<p>1.在 Device Sync 界面，点击 Start Sync。这会让我们 APP 的数据和后端数据库开始同步。弹出界面，我们点击 <code>No thanks, continue to Sync</code>。</p>
 <p><img src="/images/blog/sync/9.png" alt=""></p>
-<p>2.之后我们打开 Development Mode。至此，MongoDB Altas 会根据我们 Paperlib 传来的数据自动创建 Data Scheme。其余设置如下图所示。</p>
+<p>2.之后我们打开 Development Mode。至此，MongoDB Altas 会根据我们 Paperlib 传来的数据自动创建 Data Scheme。其余设置如下图所示，<strong>注意 partition 的 require 选项取消</strong>。</p>
 <p><img src="/images/blog/sync/10.png" alt="">
-<img src="/images/blog/sync/11.png" alt=""></p>
+<img src="/images/blog/sync/11.png" alt="">
+<img src="/images/blog/sync/12.png" alt=""></p>
 <p>3.点击 Enable Sync。</p>
 <p>4.再次点击上方的 <code>REVIEW DRAFT &amp; DEPLOY</code> 来应用我们刚才的设置。</p>
 <p>5.至此，所有的云数据库相关设置完毕。</p>
 <hr>
 <h3 id="设置-paperlib-连接-mongodb-atlas">设置 Paperlib 连接 MongoDB Atlas</h3>
-<p>1.打开 Paperlib 设置界面，Cloud 选项卡。</p>
-<p><img src="/images/blog/sync/12.png" alt=""></p>
-<p>2.输入 MongoDB Atlas 的 APP ID。</p>
+<p>1.打开 Paperlib 设置界面，Cloud 选项卡。输入 MongoDB Atlas 的 APP ID。</p>
 <p><img src="/images/blog/sync/13.png" alt=""></p>
-<p>3.输入你刚才创建的用户的账号密码。</p>
-<p>4.登陆就可以了。</p>
+<p>2.输入你刚才创建的用户的账号密码。</p>
+<p>3.登陆就可以了。如果成功了话，我们添加论文之后会在 Log 界面看到 write 的 log。</p>
+<p><img src="/images/blog/sync/19.png" alt=""></p>
 <p>至此，所有的云同步设置完毕。云数据库的 Development Mode 可以选择在第一次同步之后关掉。因为 Data Scheme 已经被自动创建了。</p>
 <p>关于 PDF 文件的同步，你可以使用 Onedrive 等工具在不同设备间来同步，Paperlib 也提供了 webDAV 功能。在设备 A, 选择对应路径 <code>C:/Onedrive/mypaperlib</code> 作为库路径. 在设备 B, 选择对应的 <code>/user/xxx/Onedrive/mypaperlib</code>。</p>
 

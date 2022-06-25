@@ -10,21 +10,32 @@ Paperlib use MongoDB Atlas as the cloud database backend. You can create your ow
 ### Create a MongoDB Atlas DB
 1.Open [https://account.mongodb.com/account/login](https://account.mongodb.com/account/login),Sign up and login to your account.
 
-2.Create an orgnization with your preferred name. Select MongoDB Atlas.
-
 ![](/images/blog/sync/1.png)
 
-3.In Project page,create a project.
+2.Select a free dataset plan.
 
 ![](/images/blog/sync/2.png)
 
-4.Click Realm Tab,create a Realm APP.Choose 'Build your own APP'.
+3.Config database, select the best server location according to your country.
 
 ![](/images/blog/sync/3.png)
 
-5.Input your preferred name.Select a region where is near to your location.For example, if you are in UK, choose `eu-west-1`.
+config superuser of database.
 
 ![](/images/blog/sync/4.png)
+![](/images/blog/sync/5.png)
+
+4. Go to the App Services page, create a APP.
+
+![](/images/blog/sync/6.png)
+
+Build your own APP
+
+![](/images/blog/sync/7.png)
+
+Connect Atlas, rename your APP, select location for deployment.
+
+![](/images/blog/sync/8.png)
 
 6.Since then, the MongoDB Atlas is ready.
 
@@ -35,19 +46,19 @@ A User is a person who can access the cloud database. You can create a user for 
 
 1.In Realm Tab, click App Users, click Authentication Providers.
 
-![](/images/blog/sync/5.png)
+![](/images/blog/sync/user1.png)
 
 2.Turn on the Email Password Authentication. Choose Automatically confirm users as the User Confirmation Method. Password Reset URL is not required, just input some random URL. Click Save Draft.
 
-![](/images/blog/sync/6.png)
+![](/images/blog/sync/user2.png)
 
 3.Click the upper banner `REVIEW DRAFT & DEPLOY` to apply previous settings.
 
-![](/images/blog/sync/7.png)
+![](/images/blog/sync/user3.png)
 
 4.Back to the User page, Click `Add New User` to create a user.
 
-![](/images/blog/sync/8.png)
+![](/images/blog/sync/user4.png)
 
 5.Sinc then, you've craeted a user.
 
@@ -56,17 +67,17 @@ A User is a person who can access the cloud database. You can create a user for 
 
 In MongoDB Atlas, we only need to create the Data Scheme. It can be automatically created according to the data sent by our Paperlib APP.
 
-1.In Sync page, click Start Sync. It enables the Realm APP to sync data with the backend cluster. In the popup dialog, click `No thanks, continue to Sync`.
+1.In the Device Sync page, click Start Sync. It enables the Realm APP to sync data with the backend cluster. In the popup dialog, click `No thanks, continue to Sync`.
 
 ![](/images/blog/sync/9.png)
 
-2. Open the Development Mode to allow MongoDB Altas automatically create data scheme according to the data sent by our Paperlib APP. Other configurations are as shown below.
+2.Open the Development Mode to allow MongoDB Altas automatically create data scheme according to the data sent by our Paperlib APP. Other configurations are as shown below. Uncheck the require checkbox of 'partition'
 
 ![](/images/blog/sync/10.png)
 ![](/images/blog/sync/11.png)
+![](/images/blog/sync/12.png)
 
-
-3. Click Enable Sync.
+3.Click Enable Sync.
 
 4.Click the upper banner `REVIEW DRAFT & DEPLOY` again.
 
@@ -75,17 +86,15 @@ In MongoDB Atlas, we only need to create the Data Scheme. It can be automaticall
 ---
 ### Connect Paperlib to your MongoDB Atlas DB
 
-1.Open the preference view of Paperlib, click Cloud tab.
-
-![](/images/blog/sync/12.png)
-
-2.Input your MongoDB Atlas APP ID.
+1.Open the preference view of Paperlib, click Cloud tab. Input your MongoDB Atlas APP ID.
 
 ![](/images/blog/sync/13.png)
 
-3.Input the email and password of the user you created.
+2.Input the email and password of the user you created.
 
-4.Click login.
+3.Click login. If you are successful, you can see the writing log after importing a paper to Paperlib.
+
+![](/images/blog/sync/19.png)
 
 Now, everthing is ready, enjoy Paperlib with cloud sync. You can turn off the development mode after the first sync since the data scheme has been created.
 
