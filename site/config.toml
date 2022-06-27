@@ -85,7 +85,7 @@ btnCaption2  = "* Windows 10 or higher"
 
 btnText3 = "Chrome Extension"
 icon3 = "tf-ion-social-chrome"
-btnURL3  = "https://paperlib.app/en/bug.html"
+btnURL3  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng?hl=en-GB"
 btnCaption3  = ""
 
 releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Felectron-mac%2Fchangelog_en.html"
@@ -145,7 +145,7 @@ btnCaption2  = "* Windows 10 or higher"
 
 btnText3 = "Chrome Extension"
 icon3 = "tf-ion-social-chrome"
-btnURL3  = "https://paperlib.app/en/bug.html"
+btnURL3  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng?hl=en-GB"
 btnCaption3  = ""
 
 releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Felectron-mac%2Fchangelog_cn.html"
