@@ -73,20 +73,25 @@ btnText2 = "Wechat Pay"
 btnURL2  = "/images/wechat_pay.png"
 
 [Languages.en.params.download]
-btnText1 = "macOS"
+btnText1 = "macOS Intel"
 icon1 = "tf-ion-social-apple"
-btnURL1  = "https://paperlib.geoch.top/distribution/electron-mac/latest.dmg"
+btnURL1  = "https://paperlib.app/distribution/electron-mac/latest.dmg"
 btnCaption1  = ""
 
-btnText2 = "Windows"
-icon2 = "tf-ion-social-windows"
-btnURL2  = "https://paperlib.geoch.top/distribution/electron-win/latest.exe"
-btnCaption2  = "* Windows 10 or higher"
+btnText2 = "macOS Silicon (BETA)"
+icon2 = "tf-ion-social-apple"
+btnURL2  = "https://paperlib.app/distribution/electron-mac-arm/latest.dmg"
+btnCaption2  = ""
 
-btnText3 = "Chrome Extension"
-icon3 = "tf-ion-social-chrome"
-btnURL3  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng?hl=en-GB"
-btnCaption3  = ""
+btnText3 = "Windows"
+icon3 = "tf-ion-social-windows"
+btnURL3  = "https://paperlib.app/distribution/electron-win/latest.exe"
+btnCaption3  = "* Windows 10 or higher"
+
+btnText4 = "Chrome Extension"
+icon4 = "tf-ion-social-chrome"
+btnURL4  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng?hl=en-GB"
+btnCaption4  = ""
 
 releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Felectron-mac%2Fchangelog_en.html"
 
@@ -133,20 +138,25 @@ btnText2 = "微信"
 btnURL2  = "/images/wechat_pay.png"
 
 [Languages.cn.params.download]
-btnText1 = "macOS"
+btnText1 = "macOS Intel"
 icon1 = "tf-ion-social-apple"
-btnURL1  = "https://paperlib.geoch.top/distribution/electron-mac/latest.dmg"
+btnURL1  = "https://paperlib.app/distribution/electron-mac/latest.dmg"
 btnCaption1  = ""
 
-btnText2 = "Windows"
-icon2 = "tf-ion-social-windows"
-btnURL2  = "https://paperlib.geoch.top/distribution/electron-win/latest.exe"
-btnCaption2  = "* Windows 10 or higher"
+btnText2 = "macOS Silicon (BETA)"
+icon2 = "tf-ion-social-apple"
+btnURL2  = "https://paperlib.app/distribution/electron-mac-arm/latest.dmg"
+btnCaption2  = ""
 
-btnText3 = "Chrome Extension"
-icon3 = "tf-ion-social-chrome"
-btnURL3  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng?hl=en-GB"
-btnCaption3  = ""
+btnText3 = "Windows"
+icon3 = "tf-ion-social-windows"
+btnURL3  = "https://paperlib.app/distribution/electron-win/latest.exe"
+btnCaption3  = "* Windows 10 or higher"
+
+btnText4 = "Chrome Extension"
+icon4 = "tf-ion-social-chrome"
+btnURL4  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng?hl=en-GB"
+btnCaption4  = ""
 
 releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Felectron-mac%2Fchangelog_cn.html"
 
