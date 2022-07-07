@@ -93,6 +93,12 @@ icon4 = "tf-ion-social-chrome"
 btnURL4  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng?hl=en-GB"
 btnCaption4  = ""
 
+btnText5 = "Firefox Extension"
+icon5 = "tf-ion-logo-firefox"
+btnURL5  = "https://addons.mozilla.org/en-GB/firefox/addon/paperlib"
+btnCaption5  = ""
+
+
 releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Felectron-mac%2Fchangelog_en.html"
 
 [Languages.en.params.signin]
@@ -157,6 +163,11 @@ btnText4 = "Chrome Extension"
 icon4 = "tf-ion-social-chrome"
 btnURL4  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng?hl=en-GB"
 btnCaption4  = ""
+
+btnText5 = "Firefox Extension"
+icon5 = "tf-ion-logo-firefox"
+btnURL5  = "https://addons.mozilla.org/en-GB/firefox/addon/paperlib"
+btnCaption5  = ""
 
 releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Felectron-mac%2Fchangelog_cn.html"
 
