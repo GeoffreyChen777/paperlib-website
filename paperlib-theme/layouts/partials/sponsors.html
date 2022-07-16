@@ -1,0 +1,25 @@
+{{ if .Site.Params.sponsors.enable }}
+{{ "<!-- Blog Section Start -->" | safeHTML }}
+<section class="blog section" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="title text-center">
+                    {{ with .Site.Params.sponsors.topTitle }}<h4>{{ . }}</h4>{{ end }}
+                    {{ with .Site.Params.sponsors.title }}<h2>{{ . }}</h2><span class="border" style="border: none !important;"></span>{{ end }}
+                    {{ with .Site.Params.sponsors.subtitle }}<p>{{ . }}</p>{{ end }}
+                </div>
+
+                <ul class="text-center list-inline wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".7s">
+                    <div class="img-thumbnail" style="width: 180px; margin-left: auto; margin-right: auto;">
+                        <img src="{{ with .Site.Params.sponsors.logo1 }}{{.}}{{ end }}"  style="width: 160px"/>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+        </div>
+    </div>
+</section>
+{{ "<!-- Blog Section End -->" | safeHTML }}
+{{ end }}

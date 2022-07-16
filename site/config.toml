@@ -72,6 +72,14 @@ btnURL1  = "https://www.buymeacoffee.com/geoffreychen777"
 btnText2 = "Wechat Pay"
 btnURL2  = "/images/wechat_pay.png"
 
+[Languages.en.params.sponsors]
+enable  = true
+topTitle= "WE WANT TO THANK YOU"
+title   = "Sponsors"
+subtitle= ""
+logo1 = "/images/sponsors/MacStadium.png"
+
+
 [Languages.en.params.download]
 btnText1 = "macOS Intel"
 icon1 = "tf-ion-social-apple"
@@ -142,6 +150,13 @@ btnText1 = "Buy me a coffee"
 btnURL1  = "https://www.buymeacoffee.com/geoffreychen777"
 btnText2 = "微信"
 btnURL2  = "/images/wechat_pay.png"
+
+[Languages.cn.params.sponsors]
+enable  = true
+topTitle= "我们感谢您的"
+title   = "支持"
+subtitle= ""
+logo1 = "/images/sponsors/MacStadium.png"
 
 [Languages.cn.params.download]
 btnText1 = "macOS Intel"
