@@ -22,16 +22,7 @@
 {{ template "_internal/google_analytics.html" . }}
 
 {{"<!-- Stylesheets -->" | safeHTML}}
-<script src="https://cdn.tailwindcss.com"></script>
-<style type="text/tailwindcss">
-@layer components {
-  .gradient-text-before {
-    @apply text-transparent bg-clip-text bg-neutral-200;
-  }
-  .gradient-text {
-    @apply text-transparent bg-clip-text bg-gradient-to-r from-white to-cyan-600;
-  }
-}
-</style>
+{{ $styles := resources.Get "css/tailwindcss_output.css" | minify}}
+<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 
 </head>
