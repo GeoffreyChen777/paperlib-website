@@ -56,8 +56,8 @@ if (!doNotTrack) {
         >Paperlib</span
       >
     </a>
-    <div class="flex my-auto">
-      <div class="flex space-x-5 invisible lg:visible">
+    <div class="my-auto hidden lg:flex">
+      <div class="flex space-x-5">
         <div class="text-neutral-400 hover:text-cyan-300">
           <a href="https://paperlib.app/"
             >Home</a
@@ -90,14 +90,16 @@ if (!doNotTrack) {
  
         </div>
       </div>
-
-      <div id="dropdown" class="my-auto visible lg:invisible">
-        <i class="bi-list"></i>
-      </div>
+    </div>
+    <div id="dropdown" class="my-auto visible lg:invisible mr-20">
+      <i class="bi-list"></i>
     </div>
   </div>
 
-  <div id="dropdown-menu" class="space-y-2 items-center flex invisible flex-col absolute top-20 left-0 bg-[#100e17]">
+  <div
+    id="dropdown-menu"
+    class="space-y-2 items-center flex invisible flex-col absolute top-20 left-0 bg-[#100e17] pb-10"
+  >
     <div class="text-neutral-400 hover:text-cyan-300">
       <a href="https://paperlib.app/"
         >Home</a
@@ -133,17 +135,15 @@ if (!doNotTrack) {
   </div>
 </div>
 
-
 <script>
+  const dropdownButton = document.querySelector("#dropdown");
+  const dropdownList = document.querySelector("#dropdown-menu");
 
-const dropdownButton = document.querySelector("#dropdown");
-const dropdownList = document.querySelector("#dropdown-menu");
-
-dropdownButton.addEventListener("click", () => {
+  dropdownButton.addEventListener("click", () => {
     dropdownList.classList.toggle("invisible");
-});
-
-</script><div id="content">
+  });
+</script>
+<div id="content">
 
 <div class="px-2 lg:px-20">
   <div class="mt-10 lg:mt-20 text-2xl font-semibold">如何使用云同步</div>
