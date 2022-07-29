@@ -1,30 +1,15 @@
-{{ $data := index .Site.Data .Site.Language.Lang }}
-{{ with $data.feature }}
-    {{ if .enable }}
-    {{ "<!-- Feature Section Start -->" | safeHTML }}
-    <section class="services section-xs" id="services">
-        <div class="container">
-            <div class="row">
-                {{ range .item }}
-                    {{ "<!-- Single Feature Item -->" | safeHTML }}
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="service-block color-bg text-center">
-                            <div class="service-icon text-center">
-                                {{ if .small }}
-                                    <i class="{{ .icon }}" style="font-size: 2em;"></i>
-                                {{ else }}
-                                    <i class="{{ .icon }}"></i>
-                                {{ end }}
-                            </div>
-                            <h3>{{ .title }}</h3>
-                            <p>{{ .description }}</p>
-                        </div>
-                    </div>
-                    {{ "<!-- End Single Feature Item -->" | safeHTML }}
-                {{ end }}
-            </div>
-        </div>
-    </section>
-    {{ "<!-- End Feature section -->" | safeHTML }}
-    {{ end }}
-{{ end }}
+{{ $data := index .Site.Data .Site.Language.Lang }} {{ with $data.feature }} {{
+if .enable }} {{ "<!-- Feature Section Start -->" | safeHTML }}
+<div class="flex flex-col space-y-10">
+  <div class="grid lg:grid-cols-3 gap-4">
+    {{ range .item }} {{ "<!-- Single Feature Item -->" | safeHTML }}
+    <div class="flex flex-col-reverse mb-5 justify-end">
+      <p class="text-neutral-400 hover:text-neutral-300 transition-colors ease-in-out peer">{{ .description }}</p>
+      <div
+      class="bg-gradient-to-tl from-white to-blue-500 w-20 h-[2px] rounded-md mt-1 mb-2 invisible peer-hover:visible"></div>
+      <div class="gradient-text w-fit text-lg font-semibold">{{ .title }}</div>
+    </div>
+    {{ "<!-- End Single Feature Item -->" | safeHTML }} {{ end }}
+  </div>
+</div>
+{{ "<!-- End Feature section -->" | safeHTML }} {{ end }} {{ end }}

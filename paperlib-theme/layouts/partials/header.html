@@ -1,53 +1,70 @@
 {{ "<!-- Fixed Navigation -->" | safeHTML }}
-{{ if .Site.Params.menufixed }}
-<section class="header navigation top-bar">
-{{ else }}
-<section class="header navigation">
-{{ end }}
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
-                        <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" style="height: 35px">
-                        <span class="navbar-brand-text">{{ .Site.Title }}</span>
-                    </a>
-                    <div class="d-flex align-items-center">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-                            aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="tf-ion-android-menu"></span>
-                        </button>
-                        <!-- Icones & drapeaux de choix des langues -->
-                        <div id="drapeaux" class="select-language d-block d-lg-none">
-                            <!-- Pour passer la langue actuelle (variable globale) dans la range => explicitement -->
-                            {{ range .Site.Params.listeLangues }}
-                            {{ partial "flags.html" (dict "site" $.Site "liste" .) }}
-                            {{ end }}
-                        </div>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navigation">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ .Site.BaseURL }}">{{ with .Site.Params.home }}{{ . }}{{ end }}</a>
-                            </li>
-                            {{ range site.Menus.nav }}
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-                            </li>
-                            {{ end }}
-                            <li class="nav-item d-none d-lg-block">
-                                <!-- Icones & drapeaux de choix des langues -->
-                                <div class="select-language nav-link">
-                                    <!-- Pour passer la langue actuelle (variable globale) dans la range => explicitement -->
-                                    {{ range .Site.Params.listeLangues }}
-                                    {{ partial "flags.html" (dict "site" $.Site "liste" .) }}
-                                    {{ end }}
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+<div class="flex flex-col">
+  <div class="flex py-2 lg:py-5 justify-between">
+    <a
+      class="ml-0 lg:ml-2 flex space-x-1"
+      href="{{ .Site.BaseURL | relLangURL }}"
+    >
+      <img
+        class="h-10"
+        src="{{ .Site.Params.logo | absURL }}"
+        alt="{{ .Site.Title }}"
+      />
+      <span class="my-auto uppercase text-lg gradient-text"
+        >{{ .Site.Title }}</span
+      >
+    </a>
+    <div class="flex my-auto">
+      <div class="flex space-x-5 invisible lg:visible">
+        <div class="text-neutral-400 hover:text-cyan-300">
+          <a href="{{ .Site.BaseURL }}"
+            >{{ with .Site.Params.home }}{{ . }}{{ end }}</a
+          >
         </div>
+        {{ range site.Menus.nav }}
+        <div class="text-neutral-400 hover:text-cyan-300">
+          <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+        </div>
+        {{ end }}
+        <div class="text-base my-auto">
+          {{ range .Site.Params.listeLangues }} {{ partial "flags.html" (dict
+          "site" $.Site "liste" .) }} {{ end }}
+        </div>
+      </div>
+
+      <div id="dropdown" class="my-auto visible lg:invisible">
+        <i class="bi-list"></i>
+      </div>
     </div>
-</section>
+  </div>
+
+  <div id="dropdown-menu" class="space-y-2 items-center flex invisible flex-col absolute top-20 left-0 bg-[#100e17]">
+    <div class="text-neutral-400 hover:text-cyan-300">
+      <a href="{{ .Site.BaseURL }}"
+        >{{ with .Site.Params.home }}{{ . }}{{ end }}</a
+      >
+    </div>
+    {{ range site.Menus.nav }}
+    <div class="text-neutral-400 hover:text-cyan-300">
+      <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+    </div>
+    {{ end }}
+    <div>
+      {{ range .Site.Params.listeLangues }} {{ partial "flags.html" (dict "site"
+      $.Site "liste" .) }} {{ end }}
+    </div>
+    <hr class="border-neutral-600 h-1 w-screen" />
+  </div>
+</div>
+
+
+<script>
+
+const dropdownButton = document.querySelector("#dropdown");
+const dropdownList = document.querySelector("#dropdown-menu");
+
+dropdownButton.addEventListener("click", () => {
+    dropdownList.classList.toggle("invisible");
+});
+
+</script>

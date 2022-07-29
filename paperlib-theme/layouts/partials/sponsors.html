@@ -1,25 +1,25 @@
-{{ if .Site.Params.sponsors.enable }}
-{{ "<!-- Blog Section Start -->" | safeHTML }}
-<section class="blog section" id="blog">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="title text-center">
-                    {{ with .Site.Params.sponsors.topTitle }}<h4>{{ . }}</h4>{{ end }}
-                    {{ with .Site.Params.sponsors.title }}<h2>{{ . }}</h2><span class="border" style="border: none !important;"></span>{{ end }}
-                    {{ with .Site.Params.sponsors.subtitle }}<p>{{ . }}</p>{{ end }}
-                </div>
+{{ if .Site.Params.sponsors.enable }} {{ "<!-- Sponsors Section Start -->" |
+safeHTML }}
+<div class="flex flex-col mt-20">
+  <div class="flex flex-col mx-auto mb-10 text-center">
+    {{ with .Site.Params.sponsors.topTitle }}
+    <div class="text-[0.5em] tracking-widest">{{ . }}</div>
+    {{ end }} {{ with .Site.Params.sponsors.title }}
+    <div class="mx-auto text-2xl font-semibold gradient-text">{{ . }}</div>
+    {{ end }}
+    <div
+      class="mt-2 mx-auto bg-gradient-to-tl from-white to-blue-500 w-20 h-[5px] rounded-md"
+    ></div>
+  </div>
 
-                <ul class="text-center list-inline wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".7s">
-                    <div class="img-thumbnail" style="width: 180px; margin-left: auto; margin-right: auto;">
-                        <img src="{{ with .Site.Params.sponsors.logo1 }}{{.}}{{ end }}"  style="width: 160px"/>
-                    </div>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-        </div>
+  {{ range .Site.Params.sponsors.logo }}
+    <div
+      class="mx-auto bg-neutral-200 p-2 rounded-lg shadow-md w-36"
+    >
+      <img
+        src="{{ with .url }}{{.}}{{ end }}"
+      />
     </div>
-</section>
-{{ "<!-- Blog Section End -->" | safeHTML }}
+    {{ end }}
+</div>
 {{ end }}

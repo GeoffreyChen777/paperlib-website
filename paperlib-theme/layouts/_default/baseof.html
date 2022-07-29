@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html class="no-js" lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
     {{- partial "head.html" . -}}
     {{- block "head" . }}{{- end }}
-    <body id="body">
-        {{ partial "preloader.html" . }}
+    <body id="body" class="bg-[#100e17] text-neutral-300">
+        <div class="mx-auto w-full px-5 lg:w-[900px] lg:px-0">
         {{- partial "header.html" . -}}
+
         <div id="content">
         {{- block "main" . }}{{- end }}
         </div>
+
         {{- partial "footer.html" . -}}
         {{- block "script" . }}{{- end }}
+        </div>
     </body>
 </html>

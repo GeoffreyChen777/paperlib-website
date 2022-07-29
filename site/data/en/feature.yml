@@ -1,37 +1,25 @@
 enable  : true
 item  :
-  - icon  : tf-ion-ios-download-outline
-    small: false
-    title : Scrape Metadata
+  - title : Scrape Metadata
     description : >
-      Scrape paper’s metadata and code repository from arXiv, doi.org, DBLP, IEEE, openreview.net, and PaperwithCode. Customized for CSer.
+      Scrape paper’s metadata and code repository from arXiv, doi.org, DBLP, IEEE, openreview.net, Google Scholar, and PaperwithCode. Especially tailored for computer science. Also support custom scraper.
 
-  - icon  : tf-ion-ios-search
-    small: false
-    title : Three Search Modes
+  - title : Organise your Paper
+    description : >
+      Flag, tag, and create folders to let your library clean and tidy. Also support markdown and plain text notes
+
+  - title : Export Bibtex
+    description : >
+      Export papers to Bibtex format with the fast-export plugin window when you write your paper draft.
+
+  - title : Three Search Modes
     description : >
       General search, advanced search, and full-text search.
 
-  - icon  : tf-ion-ios-cloud-outline
-    small: false
-    title : Cloud Sync
+  - title : RSS Feed
     description : >
-      Access your library from everywhere with a sync database supported by MongoDB atlas.
+      Subscribe to RSS feed to get new papers.
 
-  - icon  : tf-ion-ios-folder-outline
-    small: false
-    title : Organise by Flag, Rating, Tags & Folders
+  - title : Cross Platform and Cloud Sync
     description : >
-      Flag, tag, and create folders to let your library clean and tidy.
-
-  - icon  : tf-ion-ios-copy-outline
-    small: false
-    title : Export Citation
-    description : >
-      Export papers to bibtex or plain text. Fast copy-paste plugin helps you to copy citations to clipboard easily.
-
-  - icon  : tf-laptop
-    small: true
-    title : Open Source and Cross Platform
-    description : >
-      Fully open source on Github, supports macOS and windows.
+      Supports macOS and windows. Access your library from everywhere with a sync database supported by MongoDB atlas.

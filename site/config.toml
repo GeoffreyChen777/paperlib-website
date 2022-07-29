@@ -1,6 +1,6 @@
 baseURL = "https://paperlib.app/"
 languageCode = "en-us"
-title = "Paperlib | Manage academic papers decently for CSer."
+title = "Paperlib | Manage academic papers decently"
 theme = "paperlib-theme"
 summaryLength = 10
 
@@ -21,14 +21,15 @@ logo = "images/logo.png"
 # Gestion des langues : FR / EN / NL / DE
 [[Params.listeLangues]]
 code = "en"
+codeURL = "en"
 [[Params.listeLangues]]
-code = "cn"
+code = "中文"
+codeURL = "cn"
 
 # meta data
 author = "Geo"
-description = "Paperlib | Manage academic papers decently for CSer."
+description = "Paperlib | Manage academic papers decently"
 
-# Gestion des langues : FR / EN / NL / DE
 [Languages]
 ############# 1 - Site en ENGLISH
 [Languages.en]
@@ -49,17 +50,22 @@ expire_days = 2
 
 # Hero Area Section
 [Languages.en.params.hero]
-enable  = true
-heading = "Paperlib, to organise academic papers decently for CSer"
-description = "An open-source and simple academic paper management tool for CSer."
+heading = "Paperlib, to organise academic papers decently"
+description = "An open-source and simple academic paper management tool."
 button  = true
-btnText1 = "Download"
-btnURL1  = "download/"
-btnText2 = "Donate"
-btnURL2  = "#donate"
-imageURL   = "images/ui.png"
-moreLink = "blog/intro/"
-moreLinkText = "Learn How to Use"
+imageURL   = "../images/ui.png"
+screenshotText = 'Screenshot'
+
+[[Languages.en.params.hero.btn]]
+name    = "Download"
+url     = "download/"
+[[Languages.en.params.hero.btn]]
+name    = "Donate"
+url     = "#donate"
+[[Languages.en.params.hero.btn]]
+name    = "Quick Start"
+url     = "blog/intro/"
+
 
 [Languages.en.params.donate]
 enable  = true
@@ -67,52 +73,56 @@ topTitle= "WE WANT TO THANK YOU"
 title   = "Donate."
 subtitle= ""
 button  = true
-btnText1 = "Buy me a coffee"
-btnURL1  = "https://www.buymeacoffee.com/geoffreychen777"
-btnText2 = "Wechat Pay"
-btnURL2  = "/images/wechat_pay.png"
+
+[[Languages.en.params.donate.btn]]
+name = "Buy me a coffee"
+url  = "https://www.buymeacoffee.com/geoffreychen777"
+[[Languages.en.params.donate.btn]]
+name = "Wechat Pay"
+url  = "/images/wechat_pay.png"
 
 [Languages.en.params.sponsors]
 enable  = true
 topTitle= "WE WANT TO THANK YOU"
-title   = "Sponsors"
+title   = "Sponsors."
 subtitle= ""
-logo1 = "/images/sponsors/MacStadium.png"
+
+[[Languages.en.params.sponsors.logo]]
+url = "/images/sponsors/MacStadium.png"
 
 
 [Languages.en.params.download]
-btnText1 = "macOS Intel"
-icon1 = "tf-ion-social-apple"
-btnURL1  = "https://paperlib.app/distribution/electron-mac/latest.dmg"
-btnCaption1  = ""
-
-btnText2 = "macOS Silicon (BETA)"
-icon2 = "tf-ion-social-apple"
-btnURL2  = "https://paperlib.app/distribution/electron-mac-arm/latest.dmg"
-btnCaption2  = ""
-
-btnText3 = "Windows"
-icon3 = "tf-ion-social-windows"
-btnURL3  = "https://paperlib.app/distribution/electron-win/latest.exe"
-btnCaption3  = "* Windows 10 or higher"
-
-btnText4 = "Chrome Extension"
-icon4 = "tf-ion-social-chrome"
-btnURL4  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng?hl=en-GB"
-btnCaption4  = ""
-
-btnText5 = "Firefox Extension"
-icon5 = "tf-ion-logo-firefox"
-btnURL5  = "https://addons.mozilla.org/en-GB/firefox/addon/paperlib"
-btnCaption5  = ""
-
-
 releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Felectron-mac%2Fchangelog_en.html"
 
-[Languages.en.params.signin]
-signinText = "Sign in"
-registerText = "Register"
-resetText = "Reset Password"
+[[Languages.en.params.download.btn]]
+name = "macOS Intel"
+icon = "bi-apple"
+url  = "https://paperlib.app/distribution/electron-mac/latest.dmg"
+caption  = ""
+
+[[Languages.en.params.download.btn]]
+name = "macOS Silicon"
+icon = "bi-apple"
+url  = "https://paperlib.app/distribution/electron-mac-arm/latest.dmg"
+caption  = ""
+
+[[Languages.en.params.download.btn]]
+name = "Windows"
+icon = "bi-windows"
+url  = "https://paperlib.app/distribution/electron-win/latest.exe"
+caption  = "* Windows 10 or higher"
+
+[[Languages.en.params.download.btn]]
+name = "Chrome Extension"
+icon = "bi-browser-chrome"
+url  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng?hl=en-GB"
+caption  = ""
+
+[[Languages.en.params.download.btn]]
+name = "Firefox Extension"
+icon = "bi-browser-firefox"
+url  = "https://addons.mozilla.org/en-GB/firefox/addon/paperlib"
+caption  = ""
 
 ############ 2 - Site cn CHINESE
 [Languages.cn]
@@ -128,17 +138,24 @@ footerQuicklinkTitle = "链接"
 
 # Hero Area Section
 [Languages.cn.params.hero]
-enable  = true
-heading = "Paperlib 呸啵哩哺，一个适合计算机学科的简单好用的论文管理工具"
+heading = "Paperlib 呸啵哩哺，一个理工科简单好用的论文管理工具"
 description = "开源！简单！好用！"
 button  = true
-btnText1 = "下载"
-btnURL1  = "download/"
-btnText2 = "捐赠"
-btnURL2  = "#donate"
-imageURL   = "images/ui.png"
-moreLink = "blog/intro/"
-moreLinkText = "学习如何使用"
+imageURL   = "../images/ui.png"
+screenshotText = '预览'
+
+[[Languages.cn.params.hero.btn]]
+name    = "下载"
+url     = "download/"
+[[Languages.cn.params.hero.btn]]
+name    = "捐赠"
+url     = "#donate"
+[[Languages.cn.params.hero.btn]]
+name    = "使用指南"
+url     = "blog/intro/"
+
+
+
 
 [Languages.cn.params.donate]
 enable  = true
@@ -146,61 +163,57 @@ topTitle= "我们感谢您的"
 title   = "捐赠."
 subtitle= ""
 button  = true
-btnText1 = "Buy me a coffee"
-btnURL1  = "https://www.buymeacoffee.com/geoffreychen777"
-btnText2 = "微信"
-btnURL2  = "/images/wechat_pay.png"
+[[Languages.cn.params.donate.btn]]
+name = "Buy me a coffee"
+url  = "https://www.buymeacoffee.com/geoffreychen777"
+[[Languages.cn.params.donate.btn]]
+name = "微信"
+url  = "/images/wechat_pay.png"
 
 [Languages.cn.params.sponsors]
 enable  = true
 topTitle= "我们感谢您的"
-title   = "支持"
+title   = "赞助."
 subtitle= ""
-logo1 = "/images/sponsors/MacStadium.png"
+[[Languages.cn.params.sponsors.logo]]
+url = "/images/sponsors/MacStadium.png"
 
 [Languages.cn.params.download]
-btnText1 = "macOS Intel"
-icon1 = "tf-ion-social-apple"
-btnURL1  = "https://paperlib.app/distribution/electron-mac/latest.dmg"
-btnCaption1  = ""
-
-btnText2 = "macOS Silicon (BETA)"
-icon2 = "tf-ion-social-apple"
-btnURL2  = "https://paperlib.app/distribution/electron-mac-arm/latest.dmg"
-btnCaption2  = ""
-
-btnText3 = "Windows"
-icon3 = "tf-ion-social-windows"
-btnURL3  = "https://paperlib.app/distribution/electron-win/latest.exe"
-btnCaption3  = "* Windows 10 or higher"
-
-btnText4 = "Chrome Extension"
-icon4 = "tf-ion-social-chrome"
-btnURL4  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng?hl=en-GB"
-btnCaption4  = ""
-
-btnText5 = "Firefox Extension"
-icon5 = "tf-ion-logo-firefox"
-btnURL5  = "https://addons.mozilla.org/en-GB/firefox/addon/paperlib"
-btnCaption5  = ""
-
 releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Felectron-mac%2Fchangelog_cn.html"
 
-[Languages.cn.params.signin]
-signinText = "登录"
-registerText = "注册"
-resetText = "重置密码"
+[[Languages.cn.params.download.btn]]
+name = "macOS Silicon"
+icon = "bi-apple"
+url  = "https://paperlib.app/distribution/electron-mac-arm/latest.dmg"
+caption  = ""
 
+[[Languages.cn.params.download.btn]]
+name = "Windows"
+icon = "bi-windows"
+url  = "https://paperlib.app/distribution/electron-win/latest.exe"
+caption  = "* Windows 10 or higher"
+
+[[Languages.cn.params.download.btn]]
+name = "Chrome Extension"
+icon = "bi-browser-chrome"
+url  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng?hl=en-GB"
+caption  = ""
+
+[[Languages.cn.params.download.btn]]
+name = "Firefox Extension"
+icon = "bi-browser-firefox"
+url  = "https://addons.mozilla.org/en-GB/firefox/addon/paperlib"
+caption  = ""
 
 # Site Menus
 [menu]
 # Navbar Menus
 [[menu.nav]]
-name    = "download"
+name    = "Download"
 url     = "download"
 weight  = 1
 [[menu.nav]]
-name    = "blog"
+name    = "Blog"
 url     = "blog"
 weight  = 2
 [[menu.nav]]
@@ -210,8 +223,8 @@ weight  = 3
 
 # Footer Quick links Menu
 [[menu.quicklink]]
-name    = "about me"
-url     = "https://geoch.top/about/"
+name    = "About me"
+url     = "https://geoch.top/"
 weight  = 1
 [[menu.quicklink]]
 name    = "Github"
