@@ -611,10 +611,6 @@ video {
   color: transparent;
 }
 
-.visible {
-  visibility: visible;
-}
-
 .invisible {
   visibility: hidden;
 }
@@ -973,6 +969,10 @@ video {
   padding-bottom: 5rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1152,14 +1152,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:visible {
-    visibility: visible;
-  }
-
-  .lg\:invisible {
-    visibility: hidden;
-  }
-
   .lg\:-mt-5 {
     margin-top: -1.25rem;
   }
@@ -1174,6 +1166,14 @@ video {
 
   .lg\:mt-56 {
     margin-top: 14rem;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:w-\[900px\] {
