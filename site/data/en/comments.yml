@@ -1,0 +1,15 @@
+enable  : true
+title: "Comments"
+item  :
+  - username : '@jis**qing'
+    institution : 'California Institute of Technology'
+    avatar: 'https://avatars.githubusercontent.com/u/15147123?v=4'
+    comment : >
+      PaperLib is absolutely a great tool for paper management in many academic areas.
+
+  - username : '@Pe**Foo'
+    institution : 'Opera Inc.'
+    avatar: 'https://avatars.githubusercontent.com/u/6159411?v=4'
+    comment : >
+      Thanks for your great work! I have been using this app the manage all my papers now and it is working really well!
+
