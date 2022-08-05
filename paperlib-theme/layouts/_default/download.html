@@ -22,7 +22,7 @@
             </div>
             
             <div class="mt-12 lg:-mt-5">
-                <div id="release-note" class="px-5" ></div>
+                <div id="release-note" class="px-5 text-sm" ></div>
                 <script> 
                     var xhr= new XMLHttpRequest();
                     xhr.open('GET', '{{ with .Site.Params.download.releaseNote }}{{.}}{{ end }}', true);

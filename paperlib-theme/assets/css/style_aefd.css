@@ -34,3 +34,8 @@ ol {
 #blog-content hr {
     border-color: #454545;
 }
+
+#blog-content a {
+    color: #aaaaaa;
+    text-decoration: underline;
+}
