@@ -19,6 +19,8 @@ Drag and drop PDF files onto the main view of Paperlib. The metadata will be aut
 
 ![](/images/blog/intro/add.png)
 
+You can also add a paper with a tag/folder by drag-droping it onto one tag/folder in the sidebar.
+
 -----
 
 ### 2. Open / Preview a paper managed by Paperlib
@@ -36,7 +38,7 @@ Paperlib provides some scrapers to fetch metadata from various sources. For exam
 
 If you have manually edited some key identifiers of a paper, such as `arxiv_id`, `doi`, then you can use the scrape button to re-fetch its metadata.
 
-Click the edit button in the menubar or press `CTRL/CMD + E`, modify the metadata and add or create your preferred tags and folders. Right click tags or folders in the sidebar list can change their colors. The 'tag' is the inherent attributes of a paper such as classification, detection. The 'folder' indicates the attributes given by the user. For example, a paper may be placed in a folder group called 'good writing'.
+Click the edit button in the menubar or press `CTRL/CMD + E`, modify the metadata and add or create your preferred tags and folders. Right click tags or folders in the sidebar list can change their colors. The 'tag' is the inherent attributes of a paper such as classification, detection. The 'folder' indicates the attributes given by the user. For example, a paper may be placed in a folder group called 'good writing'. You can also drag-drop an item to a tag/folder in the sidebar to add it to the tag/folder.
 
 ![](/images/blog/intro/edit.png)
 
