@@ -32,7 +32,7 @@ To open a paper, just double click an item in the main view. You can also press 
 
 ### 3. Metadata, tags and folders
 
-Paperlib provides some scrapers to fetch metadata from various sources. For example, you can use arXiv scraper to fetch metadata from arXiv.org. Those scrapers are used to build a data pipeline for each paper to fetch the metadata as accurate as possible when you import it.
+Paperlib provides some scrapers to fetch metadata from various sources. For example, you can use arXiv scraper to fetch metadata from arXiv.org. Those scrapers are used to build a data pipeline for each paper to fetch the metadata as accurate as possible when you import it. You can also develop your own scraper to fetch metadata from other sources. Please refer to the [custrom scraper](https://github.com/GeoffreyChen777/paperlib/wiki) for more details.
 
 If you have manually edited some key identifiers of a paper, such as `arxiv_id`, `doi`, then you can use the scrape button to re-fetch its metadata.
 

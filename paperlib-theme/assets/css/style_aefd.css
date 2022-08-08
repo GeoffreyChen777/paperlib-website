@@ -41,3 +41,10 @@ ol {
     color: #aaaaaa;
     text-decoration: underline;
 }
+
+#blog-content code {
+    background-color: #454545;
+    font-size: 0.75em;
+    padding: 3px;
+    border-radius: 4px;
+}

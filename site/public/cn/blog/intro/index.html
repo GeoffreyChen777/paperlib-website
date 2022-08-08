@@ -161,6 +161,7 @@ if (!doNotTrack) {
 <h3 id="0-选择一个文件夹作为论文库">0. 选择一个文件夹作为论文库</h3>
 <p>首先打开设置界面，在 General 选项卡中选择一个文件夹，用于存放所有论文 PDF 和数据库文件。建议如果之后有多端同步需求，选择一个可同步的文件夹，如 Onedrive，Dropbox 文件夹等。</p>
 <p>所有的论文 PDF 在存入这个文件夹之前会根据一定的规则进行重命名，Paperlib 提供了三种重命名规则。可以在 Renaming Format 选型进行选择。</p>
+<hr>
 <h3 id="1-添加新论文到-paperlib">1. 添加新论文到 Paperlib</h3>
 <p>拖动 PDF 到 Paperlib 的主视图，或者在网站上点击 Chorme 扩展。论文的元数据会首先从 arXiv, doi.org, DBLP, openreview.net，IEEE，Google Scholar 等处自动获取。一些论文可能在这些数据库中无法找到匹配的, 因此会导致导入一个空的论文条目。 你可以点击<code>CTRL/CMD + E</code>或者菜单栏的编辑按钮手动编辑之后重新匹配。</p>
 <p><img src="/images/blog/intro/add.png" alt=""></p>
@@ -170,7 +171,7 @@ if (!doNotTrack) {
 <p><img src="/images/blog/intro/preview.png" alt=""></p>
 <hr>
 <h3 id="3-元数据抓取添加删除一个标签或者文件夹">3. 元数据抓取，添加删除一个标签或者文件夹</h3>
-<p>我们提供很多抓取器来从不同的数据源搜索论文原数据。比如，arXiv 抓取器可以从 arXiv.org 获取数据。我们使用所有抓取器为每一个导入的论文创建了数据流以尽可能准确的为它们匹配元数据。</p>
+<p>我们提供很多抓取器来从不同的数据源搜索论文原数据。比如，arXiv 抓取器可以从 arXiv.org 获取数据。我们使用所有抓取器为每一个导入的论文创建了数据流以尽可能准确的为它们匹配元数据。当然你也可以编写你自己的 scraper，详情请参考 <a href="https://github.com/GeoffreyChen777/paperlib/wiki">这里</a>。</p>
 <p>对于一个自动匹配失败的论文，如果你手动修改了它的如 <code>arxiv_id</code> 或者 <code>doi</code> 这样的识别码，你可以手动点击重新匹配按钮匹配精准的元数据信息。</p>
 <p>点击<code>CTRL/CMD + E</code>或者菜单栏的编辑按钮打开编辑界面。文件夹是不同于普通标签的一种特殊标签。普通标签代表了这个论文的自有属性，比如该论文属于 classification，detection 等。文件夹代表了用户赋予的属性，比如 cvpr-ref，代表了在此文件夹里的论文是我为CVPR写作所组织的引用。在主界面左侧的列表右键可以更改颜色或者删除整个标签/文件夹。删除一个论文的标签或者文件夹只需要编辑该论文并在标签里去掉相应的即可。</p>
 <p><img src="/images/blog/intro/edit.png" alt=""></p>

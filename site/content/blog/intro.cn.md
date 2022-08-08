@@ -13,6 +13,8 @@ description: "This is meta description"
 
 所有的论文 PDF 在存入这个文件夹之前会根据一定的规则进行重命名，Paperlib 提供了三种重命名规则。可以在 Renaming Format 选型进行选择。
 
+-----
+
 ### 1. 添加新论文到 Paperlib
 
 拖动 PDF 到 Paperlib 的主视图，或者在网站上点击 Chorme 扩展。论文的元数据会首先从 arXiv, doi.org, DBLP, openreview.net，IEEE，Google Scholar 等处自动获取。一些论文可能在这些数据库中无法找到匹配的, 因此会导致导入一个空的论文条目。 你可以点击`CTRL/CMD + E`或者菜单栏的编辑按钮手动编辑之后重新匹配。
@@ -32,7 +34,7 @@ description: "This is meta description"
 
 ### 3. 元数据抓取，添加删除一个标签或者文件夹
 
-我们提供很多抓取器来从不同的数据源搜索论文原数据。比如，arXiv 抓取器可以从 arXiv.org 获取数据。我们使用所有抓取器为每一个导入的论文创建了数据流以尽可能准确的为它们匹配元数据。
+我们提供很多抓取器来从不同的数据源搜索论文原数据。比如，arXiv 抓取器可以从 arXiv.org 获取数据。我们使用所有抓取器为每一个导入的论文创建了数据流以尽可能准确的为它们匹配元数据。当然你也可以编写你自己的 scraper，详情请参考 [这里](https://github.com/GeoffreyChen777/paperlib/wiki)。
 
 对于一个自动匹配失败的论文，如果你手动修改了它的如 `arxiv_id` 或者 `doi` 这样的识别码，你可以手动点击重新匹配按钮匹配精准的元数据信息。
 
