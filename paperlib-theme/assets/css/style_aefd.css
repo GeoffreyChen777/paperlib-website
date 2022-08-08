@@ -33,6 +33,8 @@ ol {
 
 #blog-content hr {
     border-color: #454545;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #blog-content a {

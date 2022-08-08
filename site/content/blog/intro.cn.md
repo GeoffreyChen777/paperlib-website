@@ -15,52 +15,65 @@ description: "This is meta description"
 
 ### 1. 添加新论文到 Paperlib
 
-拖动 PDF 到 Paperlib 的主视图，或者在网站上点击 Chorme 扩展。论文的元数据会首先从 arXiv, doi.org, DBLP, openreview.net，IEEE，Google Scholar 等处自动获取。一些论文可能在这些数据库中无法找到匹配的, 因此会导致导入一个空的论文条目。 你可以手动编辑他之后重新匹配。
+拖动 PDF 到 Paperlib 的主视图，或者在网站上点击 Chorme 扩展。论文的元数据会首先从 arXiv, doi.org, DBLP, openreview.net，IEEE，Google Scholar 等处自动获取。一些论文可能在这些数据库中无法找到匹配的, 因此会导致导入一个空的论文条目。 你可以点击`CTRL/CMD + E`或者菜单栏的编辑按钮手动编辑之后重新匹配。
 
 ![](/images/blog/intro/add.png)
 
 -----
 
-### 2. 元数据抓取
-
-我们提供很多抓取器来从不同的数据源搜索论文原数据。比如，arXiv 抓取器可以从 arXiv.org 获取数据。我们使用所有抓取器为每一个导入的论文创建了数据流以尽可能准确的为它们匹配元数据。
-
------
-
-### 3. 打开一个论文 
+### 2. 打开/预览一个论文 
 
 双击表里的条目或者在详情面板中双击预览图。可以按空格打开预览。
 
+![](/images/blog/intro/preview.png)
+
+
 -----
 
-### 4. 编辑元数据，添加删除一个标签或者文件夹
+### 3. 元数据抓取，添加删除一个标签或者文件夹
 
-点击菜单中的编辑按钮。文件夹是不同于普通标签的一种特殊标签。普通标签代表了这个论文的自有属性，比如该论文属于 classification，detection 等。文件夹代表了用户赋予的属性，比如 cvpr-ref，代表了在此文件夹里的论文是我为CVPR写作所组织的引用。在主界面左侧的列表右键可以更改颜色或者删除整个标签。删除一个论文的标签或者文件夹只需要编辑该论文并在标签里去掉相应的名字即可。
+我们提供很多抓取器来从不同的数据源搜索论文原数据。比如，arXiv 抓取器可以从 arXiv.org 获取数据。我们使用所有抓取器为每一个导入的论文创建了数据流以尽可能准确的为它们匹配元数据。
+
+对于一个自动匹配失败的论文，如果你手动修改了它的如 `arxiv_id` 或者 `doi` 这样的识别码，你可以手动点击重新匹配按钮匹配精准的元数据信息。
+
+点击`CTRL/CMD + E`或者菜单栏的编辑按钮打开编辑界面。文件夹是不同于普通标签的一种特殊标签。普通标签代表了这个论文的自有属性，比如该论文属于 classification，detection 等。文件夹代表了用户赋予的属性，比如 cvpr-ref，代表了在此文件夹里的论文是我为CVPR写作所组织的引用。在主界面左侧的列表右键可以更改颜色或者删除整个标签/文件夹。删除一个论文的标签或者文件夹只需要编辑该论文并在标签里去掉相应的即可。
 
 ![](/images/blog/intro/edit.png)
 
 -----
 
-### 5. 添加补充材料
+### 4. 添加补充材料
 
 将补充材料拖到右侧详情面板即可。它可以是论文的 Supplementary，可以是你自己的 markdown 笔记，可以是任何文件。
 
+![](/images/blog/intro/addsup.png)
+
 -----
 
-### 6. 搜索
+### 5. 搜索
 
 我们提供了三种搜索方式：普通搜索，全文搜索，和高级搜索。点击搜索栏的按钮进行切换。
 
-![](/images/blog/intro/search.png)
-
 -----
 
-### 7. 快速复制粘贴 BibTex 插件
+### 6. 快速复制粘贴 BibTex 插件
 
-当你写论文的时候，你可以使用 BibTex 插件快速复制粘贴 BibTex 字符串。只需要点击`cmd/ctrl+shift+I`, 搜索选择一个论文按 `Enter`.
+当你写论文的时候，你可以使用 BibTex 复制插件快速复制粘贴 BibTex 字符串。只需要点击`CMD/CTRL+SHIFT+I`, 搜索选择一个论文按 `Enter`.
 
 ![](/images/blog/intro/plugin.png)
 
+
+-----
+
+### 7. 订阅 RSS 流
+
+订阅一个 RSS 流来获取你的领域内的最新论文。切换到 'Feeds' 界面，侧边栏点击 `+` 按钮。具体订阅方式详见：
+
+https://arxiv.org/help/rss
+
+https://arxiv.org/help/api/user-manual#search_query_and_id_list
+
+![](/images/blog/intro/feedadd.png)
 
 -----
 
