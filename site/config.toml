@@ -109,7 +109,7 @@ caption  = ""
 [[Languages.en.params.download.btn]]
 name = "Windows"
 icon = "bi-windows"
-url  = "https://paperlib.app/distribution/electron-win/latest.exe"
+url  = "https://paperlib.app/distribution/electron-win/latest.zip"
 caption  = "* Windows 10 or higher"
 
 [[Languages.en.params.download.btn]]
@@ -196,7 +196,7 @@ caption  = ""
 [[Languages.cn.params.download.btn]]
 name = "Windows"
 icon = "bi-windows"
-url  = "https://paperlib.app/distribution/electron-win/latest.exe"
+url  = "https://paperlib.app/distribution/electron-win/latest.zip"
 caption  = "* Windows 10 or higher"
 
 [[Languages.cn.params.download.btn]]
