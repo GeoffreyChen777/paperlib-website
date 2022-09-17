@@ -194,6 +194,12 @@ url  = "https://paperlib.app/distribution/electron-mac-arm/latest.dmg"
 caption  = ""
 
 [[Languages.cn.params.download.btn]]
+name = "macOS Intel"
+icon = "bi-apple"
+url  = "https://paperlib.app/distribution/electron-mac/latest.dmg"
+caption  = ""
+
+[[Languages.cn.params.download.btn]]
 name = "Windows"
 icon = "bi-windows"
 url  = "https://paperlib.app/distribution/electron-win/latest.zip"
@@ -209,6 +215,12 @@ caption  = ""
 name = "Firefox Extension"
 icon = "bi-browser-firefox"
 url  = "https://addons.mozilla.org/en-GB/firefox/addon/paperlib"
+caption  = ""
+
+[[Languages.cn.params.download.btn]]
+name = "Safari Extension (BETA)"
+icon = "bi-browser-safari"
+url  = "/en/blog/safari/"
 caption  = ""
 
 # Site Menus
