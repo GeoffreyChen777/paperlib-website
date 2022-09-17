@@ -188,15 +188,15 @@ url = "/images/sponsors/MacStadium.png"
 releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Felectron-mac%2Fchangelog_cn.html"
 
 [[Languages.cn.params.download.btn]]
-name = "macOS Silicon"
-icon = "bi-apple"
-url  = "https://paperlib.app/distribution/electron-mac-arm/latest.dmg"
-caption  = ""
-
-[[Languages.cn.params.download.btn]]
 name = "macOS Intel"
 icon = "bi-apple"
 url  = "https://paperlib.app/distribution/electron-mac/latest.dmg"
+caption  = ""
+
+[[Languages.cn.params.download.btn]]
+name = "macOS Silicon"
+icon = "bi-apple"
+url  = "https://paperlib.app/distribution/electron-mac-arm/latest.dmg"
 caption  = ""
 
 [[Languages.cn.params.download.btn]]
@@ -220,7 +220,7 @@ caption  = ""
 [[Languages.cn.params.download.btn]]
 name = "Safari Extension (BETA)"
 icon = "bi-browser-safari"
-url  = "/en/blog/safari/"
+url  = "/cn/blog/safari/"
 caption  = ""
 
 # Site Menus
