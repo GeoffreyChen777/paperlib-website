@@ -125,7 +125,7 @@ url  = "https://addons.mozilla.org/en-GB/firefox/addon/paperlib"
 caption  = ""
 
 [[Languages.en.params.download.btn]]
-name = "Safari Extension (BETA)"
+name = "Safari Extension"
 icon = "bi-browser-safari"
 url  = "/en/blog/safari/"
 caption  = ""
@@ -218,7 +218,7 @@ url  = "https://addons.mozilla.org/en-GB/firefox/addon/paperlib"
 caption  = ""
 
 [[Languages.cn.params.download.btn]]
-name = "Safari Extension (BETA)"
+name = "Safari Extension"
 icon = "bi-browser-safari"
 url  = "/cn/blog/safari/"
 caption  = ""
