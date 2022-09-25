@@ -58,13 +58,13 @@ screenshotText = 'Screenshot'
 
 [[Languages.en.params.hero.btn]]
 name    = "Download"
-url     = "download/"
+url     = "/download/"
 [[Languages.en.params.hero.btn]]
 name    = "Donate"
 url     = "#donate"
 [[Languages.en.params.hero.btn]]
 name    = "Quick Start"
-url     = "blog/intro/"
+url     = "/blog/intro/"
 
 
 [Languages.en.params.donate]
