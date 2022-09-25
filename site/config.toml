@@ -58,13 +58,13 @@ screenshotText = 'Screenshot'
 
 [[Languages.en.params.hero.btn]]
 name    = "Download"
-url     = "/download/"
+url     = "/en/download/"
 [[Languages.en.params.hero.btn]]
 name    = "Donate"
 url     = "#donate"
 [[Languages.en.params.hero.btn]]
 name    = "Quick Start"
-url     = "/blog/intro/"
+url     = "/en/blog/intro/"
 
 
 [Languages.en.params.donate]
@@ -152,13 +152,13 @@ screenshotText = '预览'
 
 [[Languages.cn.params.hero.btn]]
 name    = "下载"
-url     = "download/"
+url     = "/cn/download/"
 [[Languages.cn.params.hero.btn]]
 name    = "捐赠"
 url     = "#donate"
 [[Languages.cn.params.hero.btn]]
 name    = "使用指南"
-url     = "blog/intro/"
+url     = "/cn/blog/intro/"
 
 
 
