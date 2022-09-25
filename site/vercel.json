@@ -1,8 +1,8 @@
 {
     "rewrites": [
         {
-            "source": "/distribution/:*",
-            "destination": "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/:*"
+            "source": "/distribution/:path*",
+            "destination": "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/:path*"
         }
     ]
 }
