@@ -1,25 +1,25 @@
-enable  : true
-item  :
-  - title : Scrape Metadata
-    description : >
-      Scrape paper’s metadata and code repository from arXiv, doi.org, DBLP, IEEE, openreview.net, Google Scholar, and PaperwithCode. Especially tailored for computer science. Also support custom scraper.
+enable: true
+item:
+  - title: Scrape Metadata
+    description: >
+      Scrape paper’s metadata in many metadata databases. Tailored for many disciplines (e.g., computer science, phisics etc.). Especially, the precise metadata scraping for conference papers.
 
-  - title : Organise your Paper
-    description : >
+  - title: Organise your Paper
+    description: >
       Flag, tag, and create folders to let your library clean and tidy. Also support markdown and plain text notes
 
-  - title : Export Bibtex
-    description : >
-      Export papers by using the fast-export plugin when you write your paper draft.
+  - title: Export References
+    description: >
+      Export references by using the Quick Copy-paste plugin when you write your draft paper.
 
-  - title : Three Search Modes
-    description : >
+  - title: Three Search Modes
+    description: >
       General search, advanced search, and full-text search.
 
-  - title : RSS Feed
-    description : >
+  - title: RSS Feed
+    description: >
       Subscribe to RSS feed to get new papers.
 
-  - title : Cross Platform and Cloud Sync
-    description : >
-      Supports macOS and windows. Access your library from everywhere with a sync database supported by MongoDB atlas.
+  - title: Modern UI, Cross Platform and Cloud Sync
+    description: >
+      Supports macOS and windows. Modern and clean UI (supports darkmode). Access your library from everywhere with a sync database.

@@ -1,25 +1,25 @@
-enable  : true
-item  :
-  - title : 自动获取元数据
-    description : >
-      从 arXiv，doi.org，DBLP，IEEE，openreview.net，Google Scholar, PaperwithCode，为每一篇论文匹配精确的信息以及代码仓库。支持自定义搜刮器。
+enable: true
+item:
+  - title: 自动检索元数据
+    description: >
+      接入各学科数据库用于匹配论文元数据，逐步为每一个学科定制化数据库组合提高检索精度。尤其是精准的会议论文元数据检索能力。
 
-  - title : 管理你的论文
-    description : >
-      为论文评分，分配标签、文件夹，方便进行分类检索。支持 markdown 和纯文本笔记。
+  - title: 管理你的论文
+    description: >
+      为论文评分，分配标签、组，方便进行分类检索。支持 markdown 和纯文本笔记。
 
-  - title : 导出引用
-    description : >
+  - title: 导出引用
+    description: >
       导出论文引用到 BibTex 或者 Plain Text 格式，快速导出插件让你一键复制 BibTex。
 
-  - title : 三种搜索模式
-    description : >
+  - title: 三种搜索模式
+    description: >
       普通搜索，高级搜索，和全文搜索，快速检索论文库。
 
-  - title : RSS 订阅
-    description : >
+  - title: RSS 订阅
+    description: >
       订阅 RSS 信息流来获取最新论文。
 
-  - title : 多平台、云同步
-    description : >
-      支持 macOS 和 Windows。基于 MongoDB atlas，提供数据库云同步功能，跨 Win Mac 平台随处访问您的论文库。
+  - title: 现代UI，多平台、云同步
+    description: >
+      支持 macOS 和 Windows。现代化简介美观的 UI。数据库云同步功能，跨 Win Mac 平台随处访问您的论文库。

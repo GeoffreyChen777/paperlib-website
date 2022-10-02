@@ -130,6 +130,12 @@ icon = "bi-browser-safari"
 url  = "/en/blog/safari/"
 caption  = ""
 
+[[Languages.en.params.download.btn]]
+name = "MS Word Ext."
+icon = "bi-file-earmark-word-fill"
+url  = ""
+caption  = "comming soon..."
+
 ############ 2 - Site cn CHINESE
 [Languages.cn]
 weight = 2
@@ -222,6 +228,12 @@ name = "Safari Extension"
 icon = "bi-browser-safari"
 url  = "/cn/blog/safari/"
 caption  = ""
+
+[[Languages.cn.params.download.btn]]
+name = "MS Word Ext."
+icon = "bi-file-earmark-word-fill"
+url  = ""
+caption  = "comming soon..."
 
 # Site Menus
 [menu]
