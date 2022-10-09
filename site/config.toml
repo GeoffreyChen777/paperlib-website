@@ -113,6 +113,12 @@ url  = "https://paperlib.app/distribution/electron-win/latest.zip"
 caption  = "* Windows 10 or higher"
 
 [[Languages.en.params.download.btn]]
+name = "Linux"
+icon = "bi-ubuntu"
+url  = "/en/blog/linux-install/"
+caption  = ""
+
+[[Languages.en.params.download.btn]]
 name = "Chrome Extension"
 icon = "bi-browser-chrome"
 url  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng?hl=en-GB"
@@ -210,6 +216,12 @@ name = "Windows"
 icon = "bi-windows"
 url  = "https://paperlib.app/distribution/electron-win/latest.zip"
 caption  = "* Windows 10 or higher"
+
+[[Languages.cn.params.download.btn]]
+name = "Linux"
+icon = "bi-ubuntu"
+url  = "/cn/blog/linux-install/"
+caption  = ""
 
 [[Languages.cn.params.download.btn]]
 name = "Chrome Extension"
