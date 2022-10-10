@@ -21,6 +21,8 @@ To check if your system meets the requirements, run the following command:
 strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX
 ```
 
+---
+
 ## Download and Run
 
 Download the latest AppImage file.

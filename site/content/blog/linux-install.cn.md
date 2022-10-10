@@ -21,6 +21,8 @@ description: "This is meta description"
 strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX
 ```
 
+---
+
 ## 下载使用
 
 下载最新的 AppImage 文件。
