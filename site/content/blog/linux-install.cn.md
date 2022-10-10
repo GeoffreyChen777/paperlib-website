@@ -9,6 +9,18 @@ description: "This is meta description"
 
 ---
 
+## glibc 版本要求
+
+`GLIBCXX >= 3.4.26`
+
+例如发行版：Ubuntu 18.04 or later, Debian 11 or later, Deepin 23 or later.
+
+使用如下命令查看是否满足要求：
+
+```
+strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX
+```
+
 ## 下载使用
 
 下载最新的 AppImage 文件。

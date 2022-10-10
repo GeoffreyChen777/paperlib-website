@@ -9,6 +9,18 @@ We use AppImage to distribute Paperlib on Linux rather than .deb. The reason is 
 
 ---
 
+## Requirements
+
+`GLIBCXX >= 3.4.26`
+
+For example: Ubuntu 18.04 or later, Debian 11 or later, Deepin 23 or later.
+
+To check if your system meets the requirements, run the following command:
+
+```
+strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX
+```
+
 ## Download and Run
 
 Download the latest AppImage file.
