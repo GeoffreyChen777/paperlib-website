@@ -139,7 +139,7 @@ caption  = ""
 [[Languages.en.params.download.btn]]
 name = "MS Word Ext."
 icon = "bi-file-earmark-word-fill"
-url  = ""
+url  = "/en/blog/word-addin/"
 caption  = "comming soon..."
 
 ############ 2 - Site cn CHINESE
@@ -224,27 +224,27 @@ url  = "/cn/blog/linux-install/"
 caption  = ""
 
 [[Languages.cn.params.download.btn]]
-name = "Chrome Extension"
+name = "Chrome 插件"
 icon = "bi-browser-chrome"
 url  = "https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng?hl=en-GB"
 caption  = ""
 
 [[Languages.cn.params.download.btn]]
-name = "Firefox Extension"
+name = "Firefox 插件"
 icon = "bi-browser-firefox"
 url  = "https://addons.mozilla.org/en-GB/firefox/addon/paperlib"
 caption  = ""
 
 [[Languages.cn.params.download.btn]]
-name = "Safari Extension"
+name = "Safari 插件"
 icon = "bi-browser-safari"
 url  = "/cn/blog/safari/"
 caption  = ""
 
 [[Languages.cn.params.download.btn]]
-name = "MS Word Ext."
+name = "MS Word 插件"
 icon = "bi-file-earmark-word-fill"
-url  = ""
+url  = "/cn/blog/word-addin/"
 caption  = "comming soon..."
 
 # Site Menus
