@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 <!-- Main Stylesheet -->
 
-<link rel="stylesheet" href="https://paperlib.app/css/style_aefd.min.css" media="screen">
+<link rel="stylesheet" href="https://paperlib.app/css/style_aefc.min.css" media="screen">
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MK8FN2RB1C"></script>
@@ -159,42 +159,50 @@ if (!doNotTrack) {
   <div class="text-justify" id="blog-content">
   <p>This article introduces how to use Paperlib.</p>
 <h3 id="0-select-a-library-folder">0. Select a library folder</h3>
-<p>Firstly, open the preference window, choose a folder to store all your paper PDF files and the local database files.</p>
+<p>Firstly, open the preference window, choose a folder to store all your paper PDF files and the local database files. If you may use the cloud sync feature, we recommend you to choose a shared folder such as Onedrive, Dropbox etc.</p>
+<p>All PDF files will be renamed when they are moved to your library folder. We provide some predifined renaming formats. You can also create your own custom format.</p>
 <hr>
-<h3 id="1-add-new-paper-to-paperlib">1. Add new paper to Paperlib</h3>
-<p>Drag and drop PDF files onto the main view of Paperlib. The metadata will be automaticlly fetched from arXiv, doi.org, DBLP, openreview.net, IEEE, Google Scholar etc. Some papers may match nothing in these databases, thereby resulting in an empty paper item. You can manually edit its metadata by pressing <code>CTRL/CMD + E</code> or by clicking the edit button.</p>
+<h3 id="1-add-new-papers-to-paperlib">1. Add new papers to Paperlib</h3>
+<p>Drag and drop PDF files onto the main view of Paperlib. You can also insert a paper from a website by our browser extension. Please contact us if our extension doesn&rsquo;t support your website.</p>
 <p><img src="/images/blog/intro/add.png" alt=""></p>
+<h3 id="2-metadata-retrieval">2. Metadata Retrieval</h3>
+<p>The metadata will be automaticlly scraped from many metadata databases. This is a key feature of Paperlib. For a conference paper without DOI, none of other software can retrieve the metadata. But that is very important for some disciplines such as computer science. We build a data pipeline to scrape the metadata from many databases that can yield a high retrieval rate. We provide many metadata scrapers. Please choose the best combination for your research topic.</p>
+<p>Some papers may match nothing in these databases, thereby resulting in an empty paper item. You can manually edit its metadata by pressing <code>CTRL/CMD + E</code> or by clicking the edit button. Providing one of the title / DOI / arxivID is enough for most cases.</p>
+<p>You can also develop your own scraper to fetch metadata from other sources. Please refer to the <a href="https://github.com/GeoffreyChen777/paperlib/wiki">custrom scraper</a> for more details.</p>
+<hr>
+<h3 id="3-open--preview-a-paper-managed-by-paperlib">3. Open / Preview a Paper Managed by Paperlib</h3>
+<p>To open a paper, just double click an item in the main view. You can choose your prefered PDF viewer in the preference view. You can also press <code>Space</code> or switch to the Table and Reader view to preview a paper.</p>
+<p><img src="/images/blog/intro/preview.png" alt=""></p>
 <p>You can also add a paper with a tag/folder by drag-droping it onto one tag/folder in the sidebar.</p>
 <hr>
-<h3 id="2-open--preview-a-paper-managed-by-paperlib">2. Open / Preview a paper managed by Paperlib</h3>
-<p>To open a paper, just double click an item in the main view. You can also press <code>Space</code> to preview a paper.</p>
-<p><img src="/images/blog/intro/preview.png" alt=""></p>
-<hr>
-<h3 id="3-metadata-tags-and-folders">3. Metadata, tags and folders</h3>
-<p>Paperlib provides some scrapers to fetch metadata from various sources. For example, you can use arXiv scraper to fetch metadata from arXiv.org. Those scrapers are used to build a data pipeline for each paper to fetch the metadata as accurate as possible when you import it. You can also develop your own scraper to fetch metadata from other sources. Please refer to the <a href="https://github.com/GeoffreyChen777/paperlib/wiki">custrom scraper</a> for more details.</p>
-<p>If you have manually edited some key identifiers of a paper, such as <code>arxiv_id</code>, <code>doi</code>, then you can use the scrape button to re-fetch its metadata.</p>
+<h3 id="4-organise-your-library">4. Organise Your Library</h3>
 <p>Click the edit button in the menubar or press <code>CTRL/CMD + E</code>, modify the metadata and add or create your preferred tags and folders. Right click tags or folders in the sidebar list can change their colors. The &rsquo;tag&rsquo; is the inherent attributes of a paper such as classification, detection. The &lsquo;folder&rsquo; indicates the attributes given by the user. For example, a paper may be placed in a folder group called &lsquo;good writing&rsquo;. You can also drag-drop an item to a tag/folder in the sidebar to add it to the tag/folder.</p>
 <p><img src="/images/blog/intro/edit.png" alt=""></p>
 <hr>
-<h3 id="4-attach-supplementary-files">4. Attach supplementary files</h3>
-<p>Drag and drop some files onto the detail view (right panel) of a paper. It can be any files such as the supplementary of a paper, or your markdown note file.</p>
+<h3 id="5-attach-supplementary-files">5. Attach Supplementary Files</h3>
+<p>Drag and drop some files onto the detail view (right panel) of a paper to add supplementaries. Supplementaries can be any files such as the supplementary of a paper, or your markdown note file.</p>
 <p><img src="/images/blog/intro/addsup.png" alt=""></p>
 <hr>
-<h3 id="5-search">5. Search</h3>
+<h3 id="6-locate-available-pdf">6. Locate Available PDF</h3>
+<p>If you have a paper in your library without a PDF file, you can see a button called &lsquo;Locate&rsquo; in the details panel. Click it and Paperlib will try to download the PDF file from internet. We provide some PDF downloaders such as arXiv, Unpaywall. For xxx-hub (that very famous website), we cannot directly provide it because of the legal issue. You can manually input the URL of it in the preference view to use it.</p>
+<hr>
+<h3 id="7-search">7. Search</h3>
 <p>Paperlib provides three search modes: general, fulltext, and advanced mode. Click the button in the search bar to switch between them.</p>
 <hr>
-<h3 id="6-bibtex-copy-paste-plugin">6. BibTex copy-paste plugin</h3>
-<p>When you are writing a paper, you can use the BibTex copy-paste plugin to copy-paste the BibTex of a paper in your library. Just press <code>CTRL/CMD+SHIFT+I</code>, search a paper, and press <code>Enter</code>. Now, the BibTex is copied to your clipboard.</p>
+<h3 id="8-quick-copy-paste-plugin">8. Quick Copy-paste Plugin</h3>
+<p>When you are writing a paper, you can use the Quick Copy-paste Plugin to copy-paste the BibTex of a paper in your library. Just press <code>CTRL/CMD+SHIFT+I</code>, search a paper, and press <code>Enter</code>. Now, the BibTex is copied to your clipboard. You can also link this plugin with a folder. All papers copied by this plugin will be added to the folder. Thus, you can export all the BibTex once you finish writing your draft paper.</p>
+<p>The Microsoft Word plugin is comming soon.</p>
 <p><img src="/images/blog/intro/plugin.png" alt=""></p>
 <hr>
-<h3 id="7-subscribe-to-rss-feeds">7. Subscribe to RSS feeds</h3>
+<h3 id="9-subscribe-to-rss-feeds">9. Subscribe to RSS Feeds</h3>
 <p>You can subscribe to RSS feeds to get the latest papers in your research topic. To add a new RSS feed, switch to the &lsquo;Feeds&rsquo; view and click the <code>+</code> button in the sidebar.</p>
 <p>How to use the arXiv RSS?</p>
 <p><a href="https://arxiv.org/help/rss">https://arxiv.org/help/rss</a></p>
 <p><a href="https://arxiv.org/help/api/user-manual#search_query_and_id_list">https://arxiv.org/help/api/user-manual#search_query_and_id_list</a></p>
+<p>Many journals provide RSS feeds. Please refer to their official website to learn how to use RSS.</p>
 <p><img src="/images/blog/intro/feedadd.png" alt=""></p>
 <hr>
-<h3 id="8-cloud-sync">8. Cloud Sync</h3>
+<h3 id="10-cloud-sync">10. Cloud Sync</h3>
 <p>To use the cloud sync feature, please refer to <a href="/en/blog/sync/">How to use Cloud Sync</a></p>
 
   </div>
@@ -203,7 +211,8 @@ if (!doNotTrack) {
 
         </div><!-- Footer Start -->
 <div id="footer" class="flex justify-between p-5 text-neutral-500 mt-36 py-20 border-t-[1px] border-cyan-900">
-  <div class="flex flex-col text-neutral-400">
+  <div class="flex flex-col text-neutral-400 space-y-2">
+    <div class="space-x-2 text-xxs text-neutral-500"><span>Contact</span> <a href="mailto:hi@paperlib.app">hi@paperlib.app</a></div>
     <h3>Copyright 2022. All rights reserved.</h3>
   </div>
 

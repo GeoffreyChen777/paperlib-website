@@ -8,6 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Jul 2018 18:23:33 +0600</lastBuildDate><atom:link href="https://paperlib.app/en/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>How to use Microsoft Word Add-in</title>
+      <link>https://paperlib.app/en/blog/word-addin/</link>
+      <pubDate>Mon, 17 Oct 2022 01:04:41 +0600</pubDate>
+      
+      <guid>https://paperlib.app/en/blog/word-addin/</guid>
+      <description>This article introduces how to use the Paperlib Microsoft Word Add-in.</description>
+    </item>
+    
+    <item>
+      <title>Use Paperlib on Linux</title>
+      <link>https://paperlib.app/en/blog/linux-install/</link>
+      <pubDate>Sun, 09 Oct 2022 17:04:41 +0600</pubDate>
+      
+      <guid>https://paperlib.app/en/blog/linux-install/</guid>
+      <description>We use AppImage to distribute Paperlib on Linux rather than .</description>
+    </item>
+    
+    <item>
       <title>Safari Extension</title>
       <link>https://paperlib.app/en/blog/safari/</link>
       <pubDate>Fri, 05 Aug 2022 17:04:41 +0600</pubDate>
@@ -23,35 +41,6 @@
       
       <guid>https://paperlib.app/en/blog/sync/</guid>
       <description>Paperlib use MongoDB Atlas as the cloud database backend. You can create your own cloud database and use it to sync your Paperlib data on any device.</description>
-    </item>
-    
-    <item>
-      <title>What&#39;s New in Paperlib v1.6.0</title>
-      <link>https://paperlib.app/en/blog/v160/</link>
-      <pubDate>Wed, 04 May 2022 17:04:41 +0600</pubDate>
-      
-      <guid>https://paperlib.app/en/blog/v160/</guid>
-      <description>In v1.6.0, we added the following features and fixed some bugs:</description>
-    </item>
-    
-    <item>
-      <title>What&#39;s new in Paperlib v1.5.0</title>
-      <link>https://paperlib.app/en/blog/v150/</link>
-      <pubDate>Fri, 25 Mar 2022 17:04:41 +0600</pubDate>
-      
-      <guid>https://paperlib.app/en/blog/v150/</guid>
-      <description>In v1.5.0, we added the following features:
-Added advanced and fulltext search.</description>
-    </item>
-    
-    <item>
-      <title>What&#39;s new in Paperlib v1.4.0</title>
-      <link>https://paperlib.app/en/blog/v140/</link>
-      <pubDate>Thu, 10 Mar 2022 17:04:41 +0600</pubDate>
-      
-      <guid>https://paperlib.app/en/blog/v140/</guid>
-      <description>In v1.4.0, we added the following features:
-Added count of papers in the sidebar.</description>
     </item>
     
     <item>

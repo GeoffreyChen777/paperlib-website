@@ -6,7 +6,7 @@
 
 <meta name="generator" content="Hugo 0.103.0" />
 
-<title>Safari Extension</title>
+<title>Use Paperlib on Linux</title>
 
 <!-- Mobile Specific Meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -147,23 +147,34 @@ if (!doNotTrack) {
 <div id="content">
 
 <div class="px-2 lg:px-20">
-  <div class="mt-10 lg:mt-20 text-2xl font-semibold">Safari Extension</div>
+  <div class="mt-10 lg:mt-20 text-2xl font-semibold">Use Paperlib on Linux</div>
   <div class="mb-5">
       <div class="flex space-x-2 text-sm text-neutral-400">
         <span>By
         Geo
         </span>
-        <span>at August 5, 2022</span>
+        <span>at October 9, 2022</span>
       </div>
   </div>
   <div class="text-justify" id="blog-content">
-  <h2 id="safari-beta-extension">Safari Beta Extension</h2>
-<ol>
-<li>Download <a href="https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Fsafari_ext%2FPaperlib%20Safari%20Extension.zip">Paperlib Safari Extension</a></li>
-<li>Drag it to Applications folder.</li>
-<li>Open it, and then close it.</li>
-<li>Open Safari - Preference - Extensions - Enable it.</li>
-</ol>
+  <p>We use AppImage to distribute Paperlib on Linux rather than .deb. The reason is that AppImage can run on almost any Linux distribution without installing any dependencies and can perform automatic update detection.</p>
+<hr>
+<h2 id="requirements">Requirements</h2>
+<p><code>GLIBCXX &gt;= 3.4.26</code></p>
+<p>For example: Ubuntu 18.04 or later, Debian 11 or later, Deepin 23 or later.</p>
+<p>To check if your system meets the requirements, run the following command:</p>
+<pre tabindex="0"><code>strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX
+</code></pre><hr>
+<h2 id="download-and-run">Download and Run</h2>
+<p>Download the latest AppImage file.</p>
+<pre tabindex="0"><code>curl -L https://paperlib.app/distribution/electron-linux/Paperlib_latest.AppImage -o Paperlib.AppImage
+</code></pre><p>Then give it execute permission.</p>
+<pre tabindex="0"><code>chmod +x Paperlib.AppImage
+</code></pre><p>Finally, run it.</p>
+<pre tabindex="0"><code>./Paperlib.AppImage
+</code></pre><hr>
+<h2 id="automatic-update">Automatic Update</h2>
+<p>AppImage will automatically detect updates and if there is a new version, it will automatically download and install it. Please make sure that you don&rsquo;t put it in a directory that your current user doesn&rsquo;t have permission to, such as <code>/usr/bin/</code>. You can put it in <code>~/.local/bin/</code> to ensure that it can run in any directory.</p>
 
   </div>
 </div>

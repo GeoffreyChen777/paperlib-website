@@ -8,6 +8,24 @@
     <language>zh-cn</language>
     <lastBuildDate>Sat, 07 Jul 2018 18:23:33 +0600</lastBuildDate><atom:link href="https://paperlib.app/cn/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>如何使用 Microsoft Word 插件</title>
+      <link>https://paperlib.app/cn/blog/word-addin/</link>
+      <pubDate>Mon, 17 Oct 2022 01:04:41 +0600</pubDate>
+      
+      <guid>https://paperlib.app/cn/blog/word-addin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>在 Linux 上安装</title>
+      <link>https://paperlib.app/cn/blog/linux-install/</link>
+      <pubDate>Sun, 09 Oct 2022 17:04:41 +0600</pubDate>
+      
+      <guid>https://paperlib.app/cn/blog/linux-install/</guid>
+      <description>我们使用 AppImage 来分发 Paperlib 的 Linux 版本， 而不是 .deb 等包。 这是因为 AppImage 可以在几乎任何 Linux 发行版上运行，而不需要安装任何依赖项，且可以完成自动检测更新。</description>
+    </item>
+    
+    <item>
       <title>Safari 扩展</title>
       <link>https://paperlib.app/cn/blog/safari/</link>
       <pubDate>Fri, 05 Aug 2022 17:04:41 +0600</pubDate>
@@ -26,43 +44,13 @@
     </item>
     
     <item>
-      <title>更新日志 Paperlib v1.6.0</title>
-      <link>https://paperlib.app/cn/blog/v160/</link>
-      <pubDate>Wed, 04 May 2022 17:04:41 +0600</pubDate>
-      
-      <guid>https://paperlib.app/cn/blog/v160/</guid>
-      <description>在 v1.6.0, 我们添加了如下功能:
-新增了快速复制粘贴插件，让复制 BibTex更为迅速，按 cmd/ctrl+shift+I 呼出。 可点击的作者组件，左键高级搜索，右键打开 Google Scholar。 支持从 openreview.</description>
-    </item>
-    
-    <item>
-      <title>更新日志 Paperlib v1.5.0</title>
-      <link>https://paperlib.app/cn/blog/v150/</link>
-      <pubDate>Fri, 25 Mar 2022 17:04:41 +0600</pubDate>
-      
-      <guid>https://paperlib.app/cn/blog/v150/</guid>
-      <description>在 v1.5.0, 我们添加了如下功能:
-增加了高级和全文搜索。 支持从 Paperwithcode.com 搜索论文源代码。 增加了空格预览功能。 </description>
-    </item>
-    
-    <item>
-      <title>更新日志 Paperlib v1.4.0</title>
-      <link>https://paperlib.app/cn/blog/v140/</link>
-      <pubDate>Thu, 10 Mar 2022 17:04:41 +0600</pubDate>
-      
-      <guid>https://paperlib.app/cn/blog/v140/</guid>
-      <description>在 v1.4.0，我们添加了如下更新:
-在侧边栏显示论文数量计数。 拖动论文条目到侧边栏，可以将其添加到任何标签或文件夹中。 修复了一些 Bugs。 论文侧边栏计数 对于论文数量计数功能，你可以在设置窗口中打开或者关闭。 拖动以添加至标签或文件夹 同时，现在可以将论文条目到侧边栏，可以将其添加到任何标签或文件夹中。值得注意的是，目前由于 SwiftUI 的一些技术性限制，拖动区域相对较小，为论文条目右侧的一小片区域。</description>
-    </item>
-    
-    <item>
       <title>如何使用 Paperlib</title>
       <link>https://paperlib.app/cn/blog/intro/</link>
       <pubDate>Fri, 04 Feb 2022 17:04:41 +0600</pubDate>
       
       <guid>https://paperlib.app/cn/blog/intro/</guid>
       <description>本文对 Paperlib 的基础使用方法进行介绍。
-0. 选择一个文件夹作为论文库 首先打开设置界面，在 General 选项卡中选择一个文件夹，用于存放所有论文 PDF 和数据库文件。建议如果之后有多端同步需求，选择一个可同步的文件夹，如 Onedrive，Dropbox 文件夹等。</description>
+0. 选择一个文件夹作为论文库 首先打开设置界面，在通用选项卡中选择一个文件夹，用于存放所有论文 PDF 和数据库文件。建议如果之后有多端同步需求，选择一个可同步的文件夹，如 Onedrive，Dropbox 文件夹等。</description>
     </item>
     
   </channel>

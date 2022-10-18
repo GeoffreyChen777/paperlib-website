@@ -137,10 +137,10 @@ url  = "/en/blog/safari/"
 caption  = ""
 
 [[Languages.en.params.download.btn]]
-name = "MS Word Ext."
+name = "MS Word Ext. (BETA)"
 icon = "bi-file-earmark-word-fill"
 url  = "/en/blog/word-addin/"
-caption  = "comming soon..."
+caption  = ""
 
 ############ 2 - Site cn CHINESE
 [Languages.cn]
@@ -242,10 +242,10 @@ url  = "/cn/blog/safari/"
 caption  = ""
 
 [[Languages.cn.params.download.btn]]
-name = "MS Word 插件"
+name = "MS Word 插件 (BETA)"
 icon = "bi-file-earmark-word-fill"
 url  = "/cn/blog/word-addin/"
-caption  = "comming soon..."
+caption  = ""
 
 # Site Menus
 [menu]

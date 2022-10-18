@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://paperlib.app/cn/</loc>
-    <lastmod>2022-08-05T17:04:41+06:00</lastmod>
+    <lastmod>2022-10-17T01:04:41+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -13,6 +13,32 @@
                 rel="alternate"
                 hreflang="cn"
                 href="https://paperlib.app/cn/"
+                />
+  </url><url>
+    <loc>https://paperlib.app/cn/blog/word-addin/</loc>
+    <lastmod>2022-10-17T01:04:41+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://paperlib.app/en/blog/word-addin/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://paperlib.app/cn/blog/word-addin/"
+                />
+  </url><url>
+    <loc>https://paperlib.app/cn/blog/linux-install/</loc>
+    <lastmod>2022-10-09T17:04:41+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://paperlib.app/en/blog/linux-install/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://paperlib.app/cn/blog/linux-install/"
                 />
   </url><url>
     <loc>https://paperlib.app/cn/blog/safari/</loc>
@@ -39,45 +65,6 @@
                 rel="alternate"
                 hreflang="cn"
                 href="https://paperlib.app/cn/blog/sync/"
-                />
-  </url><url>
-    <loc>https://paperlib.app/cn/blog/v160/</loc>
-    <lastmod>2022-05-04T17:04:41+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://paperlib.app/en/blog/v160/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://paperlib.app/cn/blog/v160/"
-                />
-  </url><url>
-    <loc>https://paperlib.app/cn/blog/v150/</loc>
-    <lastmod>2022-03-25T17:04:41+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://paperlib.app/en/blog/v150/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://paperlib.app/cn/blog/v150/"
-                />
-  </url><url>
-    <loc>https://paperlib.app/cn/blog/v140/</loc>
-    <lastmod>2022-03-10T17:04:41+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://paperlib.app/en/blog/v140/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://paperlib.app/cn/blog/v140/"
                 />
   </url><url>
     <loc>https://paperlib.app/cn/blog/intro/</loc>
