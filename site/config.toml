@@ -97,19 +97,19 @@ releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/
 [[Languages.en.params.download.btn]]
 name = "macOS Intel"
 icon = "bi-apple"
-url  = "https://paperlib.app/distribution/electron-mac/Paperlib_2.0.6.dmg"
+url  = "https://paperlib.app/distribution/electron-mac/latest.dmg"
 caption  = ""
 
 [[Languages.en.params.download.btn]]
 name = "macOS Silicon"
 icon = "bi-apple"
-url  = "https://paperlib.app/distribution/electron-mac-arm/Paperlib_2.0.6.dmg"
+url  = "https://paperlib.app/distribution/electron-mac-arm/latest.dmg"
 caption  = ""
 
 [[Languages.en.params.download.btn]]
 name = "Windows"
 icon = "bi-windows"
-url  = "https://paperlib.app/distribution/electron-win/Paperlib_2.0.6.exe"
+url  = "https://paperlib.app/distribution/electron-win/latest.zip"
 caption  = "* Windows 10 or higher"
 
 [[Languages.en.params.download.btn]]
@@ -202,19 +202,19 @@ releaseNote = "https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/
 [[Languages.cn.params.download.btn]]
 name = "macOS Intel"
 icon = "bi-apple"
-url  = "https://paperlib.app/distribution/electron-mac/Paperlib_2.0.6.dmg"
+url  = "https://paperlib.app/distribution/electron-mac/latest.dmg"
 caption  = ""
 
 [[Languages.cn.params.download.btn]]
 name = "macOS Silicon"
 icon = "bi-apple"
-url  = "https://paperlib.app/distribution/electron-mac-arm/Paperlib_2.0.6.dmg"
+url  = "https://paperlib.app/distribution/electron-mac-arm/latest.dmg"
 caption  = ""
 
 [[Languages.cn.params.download.btn]]
 name = "Windows"
 icon = "bi-windows"
-url  = "https://paperlib.app/distribution/electron-win/Paperlib_2.0.6.exe"
+url  = "https://paperlib.app/distribution/electron-win/latest.zip"
 caption  = "* Windows 10 or higher"
 
 [[Languages.cn.params.download.btn]]
