@@ -1,15 +1,20 @@
-enable  : true
+enable: true
 title: "评价"
-item  :
-  - username : '@jiso**ing'
-    institution : 'California Institute of Technology'
-    avatar: 'https://avatars.githubusercontent.com/u/15147123?v=4'
-    comment : >
-      PaperLib 确实是一个对许多研究领域的科研人员都适合的好用的论文管理工具。
+item:
+  - username: "@seon**inp"
+    institution: "actionpower.kr"
+    avatar: "https://avatars.githubusercontent.com/u/9260067?v=4"
+    comment: >
+      感谢你开发这么棒的软件，让我的生活变得更加轻松。我对 iTunes 有很好的回忆，PaperLib 也给我带来了类似的感觉。谢谢你，希望这个项目能够长期维护下去。
 
-  - username : '@Pe**Foo'
-    institution : 'Opera Inc.'
-    avatar: 'https://avatars.githubusercontent.com/u/6159411?v=4'
-    comment : >
+  - username: "@Pe**Foo"
+    institution: "Opera Inc."
+    avatar: "https://avatars.githubusercontent.com/u/6159411?v=4"
+    comment: >
       感谢你的作品，我已经使用 Paperlib 来管理我所有的论文了，她非常好用！
 
+  - username: "@jiso**ing"
+    institution: "California Institute of Technology"
+    avatar: "https://avatars.githubusercontent.com/u/15147123?v=4"
+    comment: >
+      PaperLib 确实是一个对许多研究领域的科研人员都适合的好用的论文管理工具。
