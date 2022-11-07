@@ -2,7 +2,7 @@ enable: true
 item:
   - title: 自动检索元数据
     description: >
-      接入各学科数据库用于匹配论文元数据，逐步为每一个学科定制化数据库组合提高检索精度。尤其是精准的会议论文元数据检索能力。
+      接入各学科数据库用于匹配论文元数据，逐步为每一个学科（例如计算机科学，物理学等）定制化数据库组合提高检索精度。尤其是精准的会议论文元数据检索能力。
 
   - title: 管理你的论文
     description: >
@@ -10,7 +10,7 @@ item:
 
   - title: 导出引用
     description: >
-      导出论文引用到 BibTex 或者 Plain Text 格式，快速导出插件让你一键复制 BibTex。
+      导出论文引用到 BibTex 或者 Plain Text 格式，快速导出插件让你一键复制 BibTex。同时支持 Word 插件。
 
   - title: 三种搜索模式
     description: >
@@ -22,4 +22,4 @@ item:
 
   - title: 现代UI，多平台、云同步
     description: >
-      支持 macOS 和 Windows。现代化简介美观的 UI。数据库云同步功能，跨 Win Mac 平台随处访问您的论文库。
+      支持 macOS, Linux 和 Windows。现代化简介美观的 UI。数据库云同步功能，跨平台随处访问您的论文库。

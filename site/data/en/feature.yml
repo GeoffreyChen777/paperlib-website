@@ -10,7 +10,7 @@ item:
 
   - title: Export References
     description: >
-      Export references by using the Quick Copy-paste plugin when you write your draft paper.
+      Export references by using the Quick Copy-paste plugin when you write your draft paper. Also supports Word plugin.
 
   - title: Three Search Modes
     description: >
@@ -22,4 +22,4 @@ item:
 
   - title: Modern UI, Cross Platform and Cloud Sync
     description: >
-      Supports macOS and windows. Modern and clean UI (supports darkmode). Access your library from everywhere with a sync database.
+      Supports macOS, Linux and windows. Modern and clean UI (supports darkmode). Access your library from everywhere with a sync database.
