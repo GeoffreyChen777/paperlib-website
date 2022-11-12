@@ -32,7 +32,7 @@ Drag and drop PDF files onto the main view of Paperlib. You can also import a pa
 
 The metadata of each imported paper will be automaticlly scraped. Some papers may match nothing in the databases, thereby resulting in an empty/wrong paper item. You can manually edit its metadata by pressing `CTRL/CMD + E` or by clicking the edit button. Providing one of the title / DOI / arxivID and click the `Scrape` button to complete the rest is enough for most cases.
 
-See [Metadata Scrapers](/doc/metadata-scrapers) for more details (custom scraper etc.).
+See [Metadata Scrapers](/doc/metadata-scraper/) for more details (custom scraper etc.).
 
 ## Open / Preview a Paper
 
