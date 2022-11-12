@@ -14,6 +14,7 @@ export default {
             { text: 'Home', link: '/' },
             { text: 'Download', link: '/download' },
             { text: 'Doc', link: '/doc/introduction' },
+            { text: 'Service Status', link: 'https://service-status.paperlib.app/status/paperlib' },
         ],
         socialLinks: [
             { icon: 'github', link: 'https://github.com/GeoffreyChen777/paperlib' },

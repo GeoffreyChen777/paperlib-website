@@ -14,6 +14,7 @@ export default {
             { text: '主页', link: '/' },
             { text: '下载', link: '/download' },
             { text: '文档', link: '/doc/introduction' },
+            { text: '服务状态', link: 'https://service-status.paperlib.app/status/paperlib' },
         ],
         socialLinks: [
             { icon: 'github', link: 'https://github.com/GeoffreyChen777/paperlib' },
