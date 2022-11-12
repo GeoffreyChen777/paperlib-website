@@ -4,8 +4,8 @@ export default {
     base: '/cn/',
     head: [
       ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css', crossorigin: ''}],
-      ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png', crossorigin: ''}],
-      ['link', { rel: 'icon', href: '/favicon.ico', crossorigin: ''}]
+      ['link', { rel: 'apple-touch-icon', href: '/cn/apple-touch-icon.png', crossorigin: ''}],
+      ['link', { rel: 'icon', href: '/cn/favicon.ico', crossorigin: ''}]
     ],
     themeConfig: {
         logo: {'light': '/assets/logo-light.svg', 'dark': '/assets/logo-dark.svg'},
