@@ -1,7 +1,0 @@
-<!-- TODO : Faire un style adapté aux drapeaux/langue + highligh l'actuel -->
-{{ if eq (string .liste.codeURL) (string .site.Language) }}
-    <a href="{{ .liste.codeURL | absURL }}" class="text-neutral-200 hover:text-cyan-300 uppercase hidden">{{ .liste.code }}
-{{ else }}
-    <a href="{{ .liste.codeURL | absURL }}" class="text-neutral-400 hover:text-cyan-300 uppercase">{{ .liste.code }}
-{{ end }}
-</a>
