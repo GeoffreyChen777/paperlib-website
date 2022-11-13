@@ -50,6 +50,14 @@ export default {
                 { text: '浏览器扩展', link: '/doc/extensions/browser-extension' },
                 { text: 'MS Word 扩展', link: '/doc/extensions/msword-extension' },
               ]
+            },
+            {
+              text: '元数据搜寻器',
+              collapsible: true,
+              items: [
+                { text: '设计', link: '/doc/metadata-scraper/' },
+                { text: '自定义搜寻器', link: '/doc/metadata-scraper/custom-scraper' },
+              ]
             }
         ],
         footer: {

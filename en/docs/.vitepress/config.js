@@ -50,6 +50,14 @@ export default {
                 { text: 'Browser Extension', link: '/doc/extensions/browser-extension' },
                 { text: 'MS Word Extension', link: '/doc/extensions/msword-extension' },
               ]
+            },
+            {
+              text: 'Metadata Scrapers',
+              collapsible: true,
+              items: [
+                { text: 'Design', link: '/doc/metadata-scraper/' },
+                { text: 'Custom Scraper', link: '/doc/metadata-scraper/custom-scraper' },
+              ]
             }
         ],
         footer: {
