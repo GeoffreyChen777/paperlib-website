@@ -5,7 +5,8 @@ export default {
     head: [
       ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css', crossorigin: ''}],
       ['link', { rel: 'apple-touch-icon', href: '/cn/apple-touch-icon.png', crossorigin: ''}],
-      ['link', { rel: 'icon', href: '/cn/favicon.ico', crossorigin: ''}]
+      ['link', { rel: 'icon', href: '/cn/favicon.ico', crossorigin: ''}],
+      ['script', {async: '', defer: '', 'data-website-id':"4c83ecaa-090c-40ca-bec3-bf5f0e256301", src: 'https://umami-production-e9ca.up.railway.app/paperlib.js'}],
     ],
     themeConfig: {
         logo: {'light': '/assets/logo-light.svg', 'dark': '/assets/logo-dark.svg'},
