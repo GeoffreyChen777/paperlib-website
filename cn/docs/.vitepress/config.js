@@ -62,7 +62,7 @@ export default {
             }
         ],
         footer: {
-            message: 'Released under the GPL-3.0 license. <a href="mailto: hi@paperlib.app">hi@paperlib.app</a>',
+            message: 'Created by Future Scholars. <a href="mailto: hi@paperlib.app">hi@paperlib.app</a>',
             copyright: 'Copyright © 2019-present Paperlib'
         },
         lastUpdated: true
