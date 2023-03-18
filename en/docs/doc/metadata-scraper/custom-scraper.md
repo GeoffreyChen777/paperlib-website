@@ -24,11 +24,7 @@ You can define your own rules as: `{"keywords":"tag name"}`
 
 ### preProcess
 
-If the `paperEntityDraft` has no tag, we enable this scraper:
-
-```javascript
-enable = paperEntityDraft.tags.length === 0 && this.getEnable("auto-tagger");
-```
+Since we donnot request the internet for metadata, leave blank here.
 
 ### Parsing Process
 
@@ -54,13 +50,11 @@ paperEntityDraft.setValue("tags", autoTags);
 
 ### ScrapeImpl
 
+If the `paperEntityDraft` has no tag, we enable this scraper:
+
 ```javascript
 
-const { scrapeURL, headers, enable } = this.preProcess(
-  paperEntityDraft
-);
-
-if (enable) {
+if (paperEntityDraft.tags.length === 0) {
   return this.parsingProcess('', paperEntityDraft);
 } else {
   return paperEntityDraft;
