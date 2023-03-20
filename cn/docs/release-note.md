@@ -53,7 +53,7 @@ const donwloadUrls = [{
 
 </style>
 
-<div class='flex'>
+<div class='flex flex-col'>
 <div><a href="https://paperlib.app/release-notes/rss" target="_blank" rel="noopener"><p>Release Note RSS Feed</p></a></div>
 <div id="release-note"></div>
 </div> 
