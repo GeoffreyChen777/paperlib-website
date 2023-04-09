@@ -3,9 +3,9 @@
 ## Desktop App
 
 
-- [<i class="bi bi-apple"></i> macOS (Intel)](https://paperlib.app/distribution/electron-mac/latest.dmg)
-- [<i class="bi bi-apple"></i> macOS (silicon)](https://paperlib.app/distribution/electron-mac-arm/latest.dmg)
-- [<i class="bi bi-microsoft"></i> Windows](https://paperlib.app/distribution/electron-win/latest.zip)
+- [<i class="bi bi-apple"></i> macOS (Intel)](https://distribution.paperlib.app/electron-mac/latest.dmg)
+- [<i class="bi bi-apple"></i> macOS (silicon)](https://distribution.paperlib.app/electron-mac-arm/latest.dmg)
+- [<i class="bi bi-microsoft"></i> Windows](https://distribution.paperlib.app/electron-win/latest.zip)
 - [<i class="bi bi-ubuntu"></i> Linux](/download-linux)
 
 ## Browser Extensions
