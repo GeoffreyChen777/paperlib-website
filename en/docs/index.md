@@ -59,12 +59,58 @@ const members = [
   },
 
 ]
+
+const users = [
+  'AS201773 University of Warwick',
+  'AS201773 Zhejiang University',
+  'AS201773 Xiamen University',
+  'AS201773 Ocean University of China',
+  'AS46 Rutgers, The State University',
+  'AS15496 Aalto University',
+  'AS13371 Duke University',
+  'AS3794 Texas A&M University',
+  'AS23162 University of Kentucky',
+  'AS15318 McGill University',
+  'AS16643 Virginia Commonwealth University',
+  'AS3999 The Pennsylvania State University',
+  'AS24436 University of Queensland',
+  'AS9419 Nanyang Technological University',
+  'AS7582 University of Macau',
+  'AS47 University of Southern California',
+  'AS26934 University of Missouri-Columbia',
+  'AS20162 University of Texas at Dallas',
+  'AS1851 The University of Adelaide',
+  'AS23859 University of New South Wales',
+  'AS46543 University of Maryland at Baltimore',
+  'AS56132 Monash University,',
+  'AS42289 ITMO University',
+  'AS2501 The University of Tokyo',
+  'AS4158 City University of Hong Kong',
+  'AS3363 Hong Kong University of Science and Technology',
+  'AS17 Purdue University',
+  'AS24371 Jilin University',
+  'AS1706 University of Arizona',
+  'AS2504 Kyoto University',
+  'AS53403 Mount Royal University'
+].map((user) => {
+  return user.split(' ').slice(1).join(' ');
+}).sort()
 </script>
 
 <div class="flex flex-col mt-20 px-6">
   <div class="m-auto text-2xl font-bold"> Comments </div>
   <hr class='max-w-[250px] w-[250px] mx-auto mt-4 mb-8' />
   <VPTeamMembers size="small" :members="members" />
+</div>
+
+<div class="flex flex-col mt-20">
+  <div class="m-auto text-2xl font-bold"> Users </div>
+  <hr class='max-w-[250px] w-[250px] mx-auto mt-4 mb-8' />
+  <div class="m-auto grid lg:grid-cols-2 grid-cols-1 gap-2">
+    <li v-for="(user, index) in users" :key="index">
+      {{ user }}
+    </li>
+  </div>
 </div>
 
 <div class="flex flex-col mt-20">
