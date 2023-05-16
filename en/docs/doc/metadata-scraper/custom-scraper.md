@@ -33,7 +33,7 @@ Since we donnot request the internet for metadata, leave blank here.
 if the `title` contains the `key`, we add an instance of tagClass of name `tag` to the `paperEntityDraft`.
 
 ```javascript
-const tagMap = JSON.parse(this.preference.get("scrapers")["auto-tagger"].args);
+const tagMap = JSON.parse(window.preference.get("scrapers")["auto-tagger"].args);
 
 const title = paperEntityDraft.title.toLowerCase();
     
