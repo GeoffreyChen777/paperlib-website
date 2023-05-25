@@ -25,6 +25,10 @@ You can create a new rule by clicking the `+` button at the bottom of the smart 
 
 For advanced users, you can create a smart filter from an advanced search query string. The query language is from our database library [Realm Query Language](https://www.mongodb.com/docs/realm-sdks/js/latest/tutorial-query-language.html). All available query fields are listed in the `Fields` selection box.
 
+## Case sensitive
+
+All string operations, such as `CONTAINS`, are case insensitive. If you want to ignore case, you can use `CONTAINS[c]` by editing the query string manually.
+
 ## Examples
 
 ### Recently added papers

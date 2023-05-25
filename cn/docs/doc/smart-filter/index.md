@@ -22,6 +22,10 @@
 ### 通过高级搜索查询字符串创建智能筛选器
 对于高级用户，您可以通过高级搜索查询字符串创建智能筛选器。查询语言来自我们的数据库库 [Realm Query Language](https://www.mongodb.com/docs/realm-sdks/js/latest/tutorial-query-language.html)。所有可用的查询字段都列在“字段”选择框中。
 
+## 大小写敏感
+
+所有字符串操作符号，例如 `CONTAINS`，都是大小写敏感的。如果你不想关心大小写，手动编辑查询字符串例如： `CONTAINS[c]` 。
+
 ## 示例
 
 ### Recently added papers
