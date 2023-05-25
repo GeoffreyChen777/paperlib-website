@@ -60,6 +60,13 @@ export default {
                 { text: '设计', link: '/doc/metadata-scraper/' },
                 { text: '自定义搜寻器', link: '/doc/metadata-scraper/custom-scraper' },
               ]
+            },
+            {
+              text: '智能过滤器',
+              collapsible: true,
+              items: [
+                { text: '智能过滤器', link: '/doc/smart-filter/' },
+              ]
             }
         ],
         footer: {

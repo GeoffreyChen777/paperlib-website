@@ -60,6 +60,13 @@ export default {
                 { text: 'Design', link: '/doc/metadata-scraper/' },
                 { text: 'Custom Scraper', link: '/doc/metadata-scraper/custom-scraper' },
               ]
+            },
+            {
+              text: 'Smart Filter',
+              collapsible: true,
+              items: [
+                { text: 'Smart Filter', link: '/doc/smart-filter/' },
+              ]
             }
         ],
         footer: {
