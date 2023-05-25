@@ -10,7 +10,7 @@ Simply click the `+` button near the smart filter section in the left sidebar, a
 
 We provide two ways to create a smart filter:
 1. Create a smart filter via the UI.
-2. Create a smart filter from a advanced search query string.
+2. Create a smart filter from an advanced search query string.
 
 ### Create a smart filter via the UI
 
@@ -21,9 +21,9 @@ You can create a new rule by clicking the `+` button at the bottom of the smart 
 - `Value`: the value for the rule.
 
 
-### Create a smart filter from a advanced search query string
+### Create a smart filter from an advanced search query string
 
-For advanced users, you can create a smart filter from a advanced search query string. The query language is from our database library [Realm Query Language](https://www.mongodb.com/docs/realm-sdks/js/latest/tutorial-query-language.html). All available query fields are listed in the `Fields` selection box.
+For advanced users, you can create a smart filter from an advanced search query string. The query language is from our database library [Realm Query Language](https://www.mongodb.com/docs/realm-sdks/js/latest/tutorial-query-language.html). All available query fields are listed in the `Fields` selection box.
 
 ## Examples
 
