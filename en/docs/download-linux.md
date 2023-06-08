@@ -14,6 +14,15 @@ To check if your system meets the requirements, run the following command:
 strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX
 ```
 
+You may also need to install:
+
+```
+Debian/Ubuntu: sudo apt-get install libsecret-1-dev
+Red Hat-based: sudo yum install libsecret-devel
+Arch Linux: sudo pacman -S libsecret
+```
+
+
 ## Download and Run
 
 Download the latest AppImage file.
