@@ -22,7 +22,7 @@ hero:
 
 features:
 - title: Scrape Metadata
-  details: Scrape paper’s metadata in many metadata databases. Tailored for many disciplines (e.g., computer science, phisics etc.). Especially, the precise metadata scraping for conference papers
+  details: Scrape paper’s metadata in many metadata databases. Tailored for many disciplines (e.g., computer science, physics etc.). Especially, the precise metadata scraping for conference papers
 - title: Organise your Paper
   details: Flag, tag, and create folders to let your library clean and tidy. Also support markdown and plain text notes
 - title: Export References
