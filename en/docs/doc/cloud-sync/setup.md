@@ -1,5 +1,9 @@
 # Cloud Sync
 
+## Currently, the MongoDB Atlas deprecated a key feature used in Paperlib. As a result, we cannot setup the cloud sync for new users now. Please wait for the update.
+
+---
+
 Paperlib use MongoDB Atlas as the cloud database backend. You can create your own cloud database and use it to sync your Paperlib data across your devices. The free tier of MongoDB Atlas is enough for Paperlib. When everything is set up, you can safely store the metadata of your papers in the cloud without any maintenance operation.
 
 ## Create a MongoDB Atlas DB
