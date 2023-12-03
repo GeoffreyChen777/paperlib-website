@@ -1,7 +1,5 @@
 # Cloud Sync
 
-## Currently, the MongoDB Atlas deprecated a key feature used in Paperlib. As a result, we cannot setup the cloud sync for new users now. Please wait for the update.
-
 ---
 
 Paperlib use MongoDB Atlas as the cloud database backend. You can create your own cloud database and use it to sync your Paperlib data across your devices. The free tier of MongoDB Atlas is enough for Paperlib. When everything is set up, you can safely store the metadata of your papers in the cloud without any maintenance operation.
@@ -66,13 +64,10 @@ The data scheme can be automatically created based on the data sent by the Paper
 
 ![](/assets/images/guide/cloud-sync/n9.png)
 
-2. Open the `Development Mode` to allow MongoDB Altas automatically create data scheme based on the data sent by the Paperlib APP. Other configurations are as shown below. 
+2. Open the `Development Mode` to allow MongoDB Altas automatically create data scheme based on the data sent by the Paperlib APP. Other configurations are as shown below. Leave the Queryable Fields setting as default.
 
-> ⚠️ Please uncheck the require checkbox of `partition`.
 
 ![](/assets/images/guide/cloud-sync/n10.png)
-![](/assets/images/guide/cloud-sync/n11.png)
-![](/assets/images/guide/cloud-sync/n12.png)
 
 3. Click `Enable Sync`.
 
@@ -86,7 +81,11 @@ The data scheme can be automatically created based on the data sent by the Paper
 
 ![](/assets/images/guide/cloud-sync/n13.png)
 
-2. Click `Login`. If the sync is successful, you can see some writing logs after importing a paper to Paperlib.
+2. Turn on the `Flexible Sync`.
+
+![](/assets/images/guide/cloud-sync/n11.png)
+
+3. Click `Login`. If the sync is successful, you can see some writing logs after importing a paper to Paperlib.
 
 ![](/assets/images/guide/cloud-sync/n19.png)
 
