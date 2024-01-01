@@ -6,7 +6,7 @@ title: "Release Note"
 
 import { onMounted, onUnmounted } from 'vue';
 
-onMounted(() => {
+onMounted(async () => {
   // var xhr= new XMLHttpRequest();
   // xhr.open('GET', 'https://objectstorage.uk-london-1.oraclecloud.com/n/lrarf8ozesjn/b/bucket-20220130-2329/o/distribution%2Felectron-mac%2Fchangelog_en.html', true);
   // xhr.onreadystatechange= function() {
@@ -14,6 +14,7 @@ onMounted(() => {
   //         document.getElementById('release-note').innerHTML= this.responseText;
   // };
   // xhr.send();
+
   const response = await fetch('https://api.paperlib.app/release-notes/html?lang=EN');
   const html = await response.text();
   document.getElementById('release-note').innerHTML = html;
