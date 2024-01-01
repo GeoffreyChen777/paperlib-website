@@ -15,7 +15,9 @@ onMounted(async () => {
   // };
   // xhr.send();
 
-  const response = await fetch('https://api.paperlib.app/release-notes/html?lang=CN');
+  const response = await fetch('https://api.paperlib.app/release-notes/html?lang=CN', {
+    mode: 'no-cors'
+  });
   const html = await response.text();
   document.getElementById('release-note').innerHTML = html;
 })
