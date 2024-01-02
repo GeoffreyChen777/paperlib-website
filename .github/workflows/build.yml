@@ -1,0 +1,60 @@
+name: Build Website Test
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  build_en:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-versions: ["18.12.0"]
+
+    steps:
+      - name: "Checkout Project"
+        uses: actions/checkout@v2
+
+      - name: Setup NodeJS Environment ${{ matrix.node-versions }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: "Go to Directory"
+        run: cd ./en
+
+      - name: "Install Node Module"
+        run: npm install --force
+
+      - name: "Build"
+        run: npm run build
+
+  build_cn:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-versions: ["18.12.0"]
+
+    steps:
+      - name: "Checkout Project"
+        uses: actions/checkout@v2
+
+      - name: Setup NodeJS Environment ${{ matrix.node-versions }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: "Go to Directory"
+        run: cd ./cn
+
+      - name: "Install Node Module"
+        run: npm install --force
+
+      - name: "Build"
+        run: npm run build
