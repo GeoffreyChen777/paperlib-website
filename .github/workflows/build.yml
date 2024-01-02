@@ -25,13 +25,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: "Go to Directory"
-        run: cd ./en
-
       - name: "Install Node Module"
+        working-directory: ./en
         run: npm install --force
 
       - name: "Build"
+        working-directory: ./en
         run: npm run build
 
   build_cn:
@@ -50,11 +49,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: "Go to Directory"
-        run: cd ./cn
-
       - name: "Install Node Module"
+        working-directory: ./cn
         run: npm install --force
 
       - name: "Build"
+        working-directory: ./cn
         run: npm run build
