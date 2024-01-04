@@ -31,6 +31,12 @@ jobs:
       - name: "Build"
         run: npm run build
 
+      - name: Commit files
+        run: |
+          git config --local user.email "hi@paperlib.app"
+          git config --local user.name "future-scholars"
+          git commit -a -m "Add changes"
+
       - name: "Deploy"
         uses: ad-m/github-push-action@master
         with:
