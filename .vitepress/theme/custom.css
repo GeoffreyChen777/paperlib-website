@@ -1,0 +1,60 @@
+.VPContent img {
+    border-radius: 15px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.VPHero img {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-shadow: none;
+}
+
+.VPHero .text {
+    font-size: 2.2em;
+    line-height: 1.2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.VPHomeHero {
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #213547, #080d11);
+}
+
+.dark .VPHomeHero {
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #e5e5e5, #30c0b2);
+}
+
+.DownloadContainer,
+.VPHomeHero {
+    --vp-button-brand-bg: #080d11;
+    --vp-button-brand-border: #080d11;
+    --vp-button-brand-hover-bg: #213547;
+    --vp-button-brand-hover-border: #213547;
+
+    --vp-button-alt-border: #f2f2f2;
+    --vp-button-alt-hover-border: #e5e5e5;
+}
+
+.dark .DownloadContainer,
+.dark .VPHomeHero {
+    --vp-button-brand-text: #080d11;
+    --vp-button-brand-hover-text: #080d11;
+
+    --vp-button-brand-bg: #3cecda;
+    --vp-button-brand-border: #3cecda;
+    --vp-button-brand-hover-bg: #f0f0f0;
+    --vp-button-brand-hover-border: #f0f0f0;
+
+    --vp-button-alt-border: #3a3a3a;
+    --vp-button-alt-hover-border: #3a3a3a;
+}
+
+.dark hr {
+    border-color: #3a3a3a;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
