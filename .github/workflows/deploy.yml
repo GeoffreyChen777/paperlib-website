@@ -1,8 +1,7 @@
-name: Build Website Test
+name: Deploy Website
 
 on:
-  pull_request_target:
-    types: [opened, reopened, synchronize]
+  push:
     branches:
       - master
 
@@ -33,3 +32,14 @@ jobs:
       - name: "Build"
         working-directory: ./en
         run: npm run build
+
+      - name: "Deploy"
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: '.'
+          destination-github-username: 'GeoffreyChen777'
+          destination-repository-name: 'paperlib-website'
+          user-email: hi@paperlib.app
+          target-branch: master
