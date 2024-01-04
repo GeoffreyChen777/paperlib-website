@@ -4,13 +4,13 @@ This type of extension is the most complex. It creates a new window, within whic
 
 Inside the new window, you can use `React`, `Vue`, or any other framework you like to develop the UI. You just need to use an appropriate packaging tool to build and package your code into `.js` and `.html` files.
 
-To demonstrate the development of this type of extension, we provide a sample extension, which you can find on [GitHub](). The function of this extension is that in Windows and Linux systems, pressing the space will pop up a new window displaying the preview of the first page of the currently selected PDF.
+To demonstrate the development of this type of extension, we provide a sample extension, which you can find on [GitHub](https://github.com/Future-Scholars/paperlib-preview-extension). The function of this extension is that in Windows and Linux systems, pressing the space will pop up a new window displaying the preview of the first page of the currently selected PDF.
 
 In the following sections, we will use this extension as an example.
 
 ## Development Environment
 
-Similarly, we provide a basic development environment. You can find it on the `new-window` branch on [GitHub](). This environment uses `Vue` for UI development and `vite` for packaging. Of course, you can create the environment you like.
+Similarly, we provide a basic development environment. You can find it on the `new-window` branch on [GitHub](https://github.com/Future-Scholars/paperlib-extension-dev-env). This environment uses `Vue` for UI development and `vite` for packaging. Of course, you can create the environment you like.
 
 The project structure is as follows:
 

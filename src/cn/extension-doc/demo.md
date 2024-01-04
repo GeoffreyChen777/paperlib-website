@@ -1,12 +1,12 @@
 # 示例插件开发
 
-本文提供一个示例插件的开发过程。代码可以在 [Github]() 上找到。
+本文提供一个示例插件的开发过程。代码可以在 [Github](https://github.com/Future-Scholars/paperlib-demo-helloworld-extension) 上找到。
 
-对于其他类型的插件，我们也提供了相应的示例插件，可以在 [Github]() 上找到。
+对于其他类型的插件，我们也提供了相应的示例插件，可以在 [Github](https://github.com/orgs/Future-Scholars/repositories) 上找到。
 
 ## 开发环境
 
-接下来的所有示例，以 [示例]() 上的示例插件为例。请先将其克隆到本地。按照 [开发环境](./env) 的说明进行配置。
+接下来的所有示例，以 [示例](https://github.com/Future-Scholars/paperlib-demo-helloworld-extension) 上的示例插件为例。请先将其克隆到本地。按照 [开发环境](./env) 的说明进行配置。
 
 ## 插件入口
 
@@ -238,9 +238,9 @@ PLExtAPI.extensionPreferenceService.get(this.id, "lang")
 
 ### Hook 插件
 
-该类插件的主要针对那些需要对 Paperlib 的生命周期进行干预的插件。例如，我们想开发一个新的元数据搜刮器，在用户导入一个论文的时候，自动从网络上搜刮元数据。事实上，在 Paperlib 3.0 中，默认的所有搜刮器都已经是以插件的形式存在了。这些插件的代码可以在 [Github]() 上找到。这些插件的代码，可以作为 `Hook 插件` 的参考。
+该类插件的主要针对那些需要对 Paperlib 的生命周期进行干预的插件。例如，我们想开发一个新的元数据搜刮器，在用户导入一个论文的时候，自动从网络上搜刮元数据。事实上，在 Paperlib 3.0 中，默认的所有搜刮器都已经是以插件的形式存在了。这些插件的代码可以在 [Github (Entry)](https://github.com/Future-Scholars/paperlib-entry-scrape-extension) [Github (Metadata)](https://github.com/Future-Scholars/paperlib-metadata-scrape-extension) 上找到。这些插件的代码，可以作为 `Hook 插件` 的参考。
 
-详细的 `Hook 插件` 的开发，可以参考 [Hook 插件]()。在这里，我们使用一个简单的例子来说明 `Hook 插件` 的开发。
+详细的 `Hook 插件` 的开发，可以参考 [Hook 插件](./ext-types/hook-ext)。在这里，我们使用一个简单的例子来说明 `Hook 插件` 的开发。
 
 该部分的主要功能为，当用户在导入一个新文件时，我们打印一些信息。在这里你可以对这些信息进行修改并返回给 Paperlib，以修改 Paperlib 接下来流程中的数据。
 
@@ -271,7 +271,7 @@ modifyPayloads(payloads: any[]) {
 
 ```
 
-在这个例子中，我们首先通过 `PLAPI.hookService.hookModify` 注册了一个 `modify` 类型的钩子。这个钩子点是 `scrapeEntryBefore`，这个钩子会在 Paperlib 进行元数据检索前触发。关于钩子类型和钩子点，请见 [Hook 插件]()。 在这个钩子中，我们注册了 `modifyPayloads` 函数的名字，这个函数会在这个钩子触发时被调用。
+在这个例子中，我们首先通过 `PLAPI.hookService.hookModify` 注册了一个 `modify` 类型的钩子。这个钩子点是 `scrapeEntryBefore`，这个钩子会在 Paperlib 进行元数据检索前触发。关于钩子类型和钩子点，请见 [Hook 插件](./ext-types/hook-ext)。 在这个钩子中，我们注册了 `modifyPayloads` 函数的名字，这个函数会在这个钩子触发时被调用。
 
 在这个 `modifyPayloads` 函数中，我们首先打印了一些信息，然后你可以对 `payloads` 进行修改，并返回了修改后的 `payloads`。
 
@@ -281,7 +281,7 @@ modifyPayloads(payloads: any[]) {
 
 该类插件的主要针对那些需要修改 Paperlib 的 UI 界面的插件。例如，我们想在 Paperlib 的论文详情界面中，添加它的引用次数，添加其他与论文相关的信息等。
 
-详细的 `UI 插件` 的开发，可以参考 [Hook 插件]()。在这里，我们使用一个简单的例子来说明 `UI 插件` 的开发。
+详细的 `UI 插件` 的开发，可以参考 [Hook 插件](./ext-types/hook-ext)。在这里，我们使用一个简单的例子来说明 `UI 插件` 的开发。
 
 
 ```typescript
@@ -316,12 +316,12 @@ modifyPaperDetailsPanel() {
 
 在这个例子里，我们首先监听用户的选择论文是否变化了。因为只有当用户选择了一篇论文时，我们才会展示详情面板。
 
-此时，我们通过 `PLAPI.uiSlotService.updateSlot` 更新了 `paperDetailsPanelSlot1` 这个 UI 插槽。这个插槽是 Paperlib 的论文详情面板的第一个插槽。我们在这个插槽中添加了一个 `demo_section_id` 为 ID 的插槽项，其中的 `title` 是插槽项的标题，`content` 是插槽项的内容。这样，我们就在论文详情面板中添加了一个有标题和内容的小节。Paperlib 提供的插槽请见 [UI 插件]()。
+此时，我们通过 `PLAPI.uiSlotService.updateSlot` 更新了 `paperDetailsPanelSlot1` 这个 UI 插槽。这个插槽是 Paperlib 的论文详情面板的第一个插槽。我们在这个插槽中添加了一个 `demo_section_id` 为 ID 的插槽项，其中的 `title` 是插槽项的标题，`content` 是插槽项的内容。这样，我们就在论文详情面板中添加了一个有标题和内容的小节。Paperlib 提供的插槽请见 [UI 插件](./ext-types/ui-ext)。
 
 ### New Window 插件
 
 这一类插件会创建一个全新的窗口，来实现一些复杂的功能。例如，我们想开发一个新的论文阅读界面，来实现一些复杂的功能，例如，论文的阅读，笔记的编辑，论文的标注等。
 
-我们开发了一个论文预览插件来给 Windows 和 Linux 用户提供像 Mac 用户一样的论文预览功能。这个插件的代码可以在 [Github]() 上找到。这个插件的代码，可以作为 `New Window 插件` 的参考。
+我们开发了一个论文预览插件来给 Windows 和 Linux 用户提供像 Mac 用户一样的论文预览功能。这个插件的代码可以在 [Github](https://github.com/Future-Scholars/paperlib-preview-extension) 上找到。这个插件的代码，可以作为 `New Window 插件` 的参考。
 
-关于 `New Window 插件` 的开发，可以参考 [New Window 插件]()。
+关于 `New Window 插件` 的开发，可以参考 [New Window 插件](./ext-types/new-window-ext)。

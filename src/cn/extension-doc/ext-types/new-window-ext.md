@@ -4,14 +4,14 @@
 
 在新窗口内，你可以使用 `React`、`Vue` 等任何喜欢的框架进行开发 UI。只需要使用合适的打包工具，将你的代码构建打包为 `.js` 和 `.html` 文件即可。
 
-为了示范这类插件的开发，我们提供一个示例插件，你可以在 [GitHub]() 上找到它。该插件的功能是在 Windows，Linux 系统中，按下空格后，会弹出一个新窗口，显示当前选中 PDF 的首页预览。
+为了示范这类插件的开发，我们提供一个示例插件，你可以在 [GitHub](https://github.com/Future-Scholars/paperlib-preview-extension) 上找到它。该插件的功能是在 Windows，Linux 系统中，按下空格后，会弹出一个新窗口，显示当前选中 PDF 的首页预览。
 
 在接下来的章节中，我们使用这个插件作为例子。
 
 
 ## 开发环境
 
-类似的，我们提供一个基础的开发环境。你可以在 [GitHub]() 上的 `new-window` 分支找到它。该环境使用 `Vue` 进行 UI 开发，使用 `vite` 进行打包。当然你可以创建你喜欢的环境。
+类似的，我们提供一个基础的开发环境。你可以在 [GitHub](https://github.com/Future-Scholars/paperlib-extension-dev-env) 上的 `new-window` 分支找到它。该环境使用 `Vue` 进行 UI 开发，使用 `vite` 进行打包。当然你可以创建你喜欢的环境。
 
 项目结构如下：
 

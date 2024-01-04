@@ -113,4 +113,4 @@ PLAPI.hookService.hookTransform(
 
 ## 额外钩子点
 
-尽管我们的钩子机制支持我们几乎在任何地方放置钩子，但是因为钩子类插件的侵入性，我们非常谨慎的开放钩子点。如果目前的钩子点无法满足您插件的开发需求，请前往 [GitHub Discussions]() 提出您的需求，我们会考虑在未来的版本中添加新的钩子点。
+尽管我们的钩子机制支持我们几乎在任何地方放置钩子，但是因为钩子类插件的侵入性，我们非常谨慎的开放钩子点。如果目前的钩子点无法满足您插件的开发需求，请前往 [GitHub Discussions](https://github.com/Future-Scholars/paperlib/discussions) 提出您的需求，我们会考虑在未来的版本中添加新的钩子点。
