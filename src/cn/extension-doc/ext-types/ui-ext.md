@@ -34,4 +34,4 @@ class UIExtension extends PLExtension {
 
 ## 额外 UI 插槽
 
-如果目前的插槽无法满足您插件的开发需求，请前往 [GitHub Discussions]() 提出您的需求，我们会考虑在未来的版本中添加新的插槽。
+如果目前的插槽无法满足您插件的开发需求，请前往 [GitHub Discussions](https://github.com/Future-Scholars/paperlib/discussions) 提出您的需求，我们会考虑在未来的版本中添加新的插槽。

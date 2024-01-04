@@ -101,4 +101,4 @@ Because hook extensions will intervene in the running process of Paperlib, we ne
 
 ## Others
 
-Although our hook mechanism supports us to place hooks almost anywhere, because of the intrusiveness of hook extensions, we are very cautious about placing hook points. If the current hook point cannot meet the development needs of your extension, please go to [GitHub Discussions]() to submit your requirements, we will consider adding new hook points in future versions.
+Although our hook mechanism supports us to place hooks almost anywhere, because of the intrusiveness of hook extensions, we are very cautious about placing hook points. If the current hook point cannot meet the development needs of your extension, please go to [GitHub Discussions](https://github.com/Future-Scholars/paperlib/discussions) to submit your requirements, we will consider adding new hook points in future versions.

@@ -34,4 +34,4 @@ class UIExtension extends PLExtension {
 
 ## Others
 
-If the current slot cannot meet the development needs of your extension, please go to [GitHub Discussions]() to submit your needs, we will consider adding new slots in future versions.
+If the current slot cannot meet the development needs of your extension, please go to [GitHub Discussions](https://github.com/Future-Scholars/paperlib/discussions) to submit your needs, we will consider adding new slots in future versions.

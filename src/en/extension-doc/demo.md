@@ -1,12 +1,12 @@
 # Example Extension Development
 
-This article provides a guide for developing an example extension. The source code can be found on [Github]().
+This article provides a guide for developing an example extension. The source code can be found on [Github](https://github.com/Future-Scholars/paperlib-demo-helloworld-extension).
 
-For other types of extensions, we also provide corresponding example extensions, which can be found on [Github]().
+For other types of extensions, we also provide corresponding example extensions, which can be found on [Github](https://github.com/orgs/Future-Scholars/repositories).
 
 ## Development Environment
 
-All the following examples are based on the example extension on [Github](). Please clone it to your local first. Setup according to the instructions in [Development Environment](./env).
+All the following examples are based on the example extension on [Github](https://github.com/Future-Scholars/paperlib-demo-helloworld-extension). Please clone it to your local first. Setup according to the instructions in [Development Environment](./env).
 
 ## Extension Entry
 
@@ -237,9 +237,9 @@ So far, we have completed the development of a `Command Extension`. Next, we wil
 
 ### Hook Extension
 
-This type of extension mainly targets those that need to intervene in the lifecycle of Paperlib. For example, we want to develop a new metadata scraper that automatically scrapes metadata from the internet when a user imports a paper. In fact, in Paperlib 3.0, all default scrapers already exist in the form of extensions. The code for these extensions can be found on [Github](). They can serve as demos for `Hook Extensions`.
+This type of extension mainly targets those that need to intervene in the lifecycle of Paperlib. For example, we want to develop a new metadata scraper that automatically scrapes metadata from the internet when a user imports a paper. In fact, in Paperlib 3.0, all default scrapers already exist in the form of extensions. The code for these extensions can be found on [Github (Entry)](https://github.com/Future-Scholars/paperlib-entry-scrape-extension) [Github (Metadata)](https://github.com/Future-Scholars/paperlib-metadata-scrape-extension). They can serve as demos for `Hook Extensions`.
 
-For detailed development of `Hook Extensions`, you can refer to [Hook Extensions](). Here, we use a simple example to illustrate the development of `Hook Extensions`.
+For detailed development of `Hook Extensions`, you can refer to [Hook Extensions](./ext-types/hook-ext). Here, we use a simple example to illustrate the development of `Hook Extensions`.
 
 The main function of this part is that when a user imports a new file, we print some information. Here you can modify this information and return it to Paperlib to modify the data in the subsequent process of Paperlib.
 
@@ -271,7 +271,7 @@ modifyPayloads(payloads: any[]) {
 
 ```
 
-In this example, we first registered a `modify` type hook through `PLAPI.hookService.hookModify`. This hook point is `scrapeEntryBefore`, which will be triggered before Paperlib performs metadata retrieval. For information about hook types and hook points, please see [Hook Extensions](). In this hook, we registered the name of the `modifyPayloads` function, which will be called when this hook is triggered.
+In this example, we first registered a `modify` type hook through `PLAPI.hookService.hookModify`. This hook point is `scrapeEntryBefore`, which will be triggered before Paperlib performs metadata retrieval. For information about hook types and hook points, please see [Hook Extensions](./ext-types/hook-ext). In this hook, we registered the name of the `modifyPayloads` function, which will be called when this hook is triggered.
 
 In this `modifyPayloads` function, we first printed some information, then you can modify `payloads` and return the modified `payloads`.
 
@@ -281,7 +281,7 @@ Now, we have completed the development of a `Hook Extension`.
 
 This type of extension mainly targets those that need to modify the UI interface of Paperlib. For example, we want to add its citation count in the paper details panel of Paperlib, add other information related to the paper, etc.
 
-For detailed development of `UI Extensions`, you can refer to [UI Extensions](). Here, we use a simple example to illustrate the development of `UI Extensions`.
+For detailed development of `UI Extensions`, you can refer to [UI Extensions](./ext-types/ui-ext). Here, we use a simple example to illustrate the development of `UI Extensions`.
 
 
 ```typescript
@@ -316,14 +316,14 @@ modifyPaperDetailsPanel() {
 
 In this example, we first listen to whether the user's selected paper has changed. Because only when the user selects one paper, we will display the detail panel.
 
-At this time, we updated the `paperDetailsPanelSlot1` UI slot through `PLAPI.uiSlotService.updateSlot`. This slot is the first slot of Paperlib's paper details panel. We added a slot item with `demo_section_id` as the ID in this slot, where `title` is the title of the slot item, and `content` is the content of the slot item. In this way, we added a section with a title and content in the paper details panel. For slots provided by Paperlib, please see [UI Extensions]().
+At this time, we updated the `paperDetailsPanelSlot1` UI slot through `PLAPI.uiSlotService.updateSlot`. This slot is the first slot of Paperlib's paper details panel. We added a slot item with `demo_section_id` as the ID in this slot, where `title` is the title of the slot item, and `content` is the content of the slot item. In this way, we added a section with a title and content in the paper details panel. For slots provided by Paperlib, please see [UI Extensions](./ext-types/ui-ext).
 
 ### New Window Extension
 
 This type of extension will create a brand new window to implement some complex functions. For example, we want to develop a new paper reading interface to implement some complex functions, such as reading papers, editing notes, annotating papers, etc.
 
-We developed a paper preview extension to provide Windows and Linux users with the same paper preview as Mac users. The code for this extension can be found on [Github](). This code can serve as a reference for `New Window Extensions`.
+We developed a paper preview extension to provide Windows and Linux users with the same paper preview as Mac users. The code for this extension can be found on [Github](https://github.com/Future-Scholars/paperlib-preview-extension). This code can serve as a reference for `New Window Extensions`.
 
-For the development of `New Window Extensions`, you can refer to [New Window Extensions]().
+For the development of `New Window Extensions`, you can refer to [New Window Extensions](./ext-types/new-window-ext).
 
 
