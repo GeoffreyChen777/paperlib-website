@@ -35,6 +35,7 @@ jobs:
         run: |
           git config --local user.email "hi@paperlib.app"
           git config --local user.name "future-scholars"
+          git add -A
           git commit -a -m "Add changes"
 
       - name: "Deploy"
