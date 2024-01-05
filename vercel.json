@@ -8,12 +8,5 @@
             "source": "/release-notes/rss",
             "destination": "https://api.paperlib.app/release-notes/rss"
         },
-    ],
-    "redirects": [
-        {
-            "source": "/",
-            "destination": "/en/",
-            "permanent": true,
-        }
     ]
 }
