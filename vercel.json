@@ -8,9 +8,5 @@
             "source": "/release-notes/rss",
             "destination": "https://api.paperlib.app/release-notes/rss"
         },
-        {
-            "source": "/:path*",
-            "destination": "/en/:path*"
-        }
     ]
 }
