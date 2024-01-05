@@ -7,6 +7,10 @@
         {
             "source": "/release-notes/rss",
             "destination": "https://api.paperlib.app/release-notes/rss"
+        },
+        {
+            "source": "/",
+            "destination": "/en/"
         }
     ]
 }
