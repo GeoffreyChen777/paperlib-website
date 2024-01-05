@@ -7,8 +7,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   build:
@@ -21,6 +19,9 @@ jobs:
     steps:
       - name: "Checkout Project"
         uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
 
       - name: Setup NodeJS Environment ${{ matrix.node-versions }}
         uses: actions/setup-node@v2
