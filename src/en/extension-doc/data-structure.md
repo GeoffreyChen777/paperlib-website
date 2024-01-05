@@ -1,6 +1,6 @@
 # Important Data Structures
 
-In Paperlib, we have some important data structures, which are widely used in Paperlib, so we provide them to developers. You can import them from `paperlib-api` package.
+In Paperlib, we have some important data structures, which are widely used in Paperlib, so we provide them to developers. You can import them from `paperlib-api/model` package.
 
 Here we will briefly introduce these data structures.
 
@@ -45,7 +45,7 @@ This is the most important data structure in Paperlib. Each paper is a `PaperEnt
 ```typescript
 
 ```typescript
-import { PaperEntity } from 'paperlib-api';
+import { PaperEntity } from 'paperlib-api/model';
 
 const draft = new PaperEntity({ title: '123' })
 draft.authors = "xxx, yyy"
@@ -159,7 +159,7 @@ interface IPaperFilterOptions {
 This is the `PaperEntity` filter options in Paperlib. You can filter out different papers by passing in different options. For example:
     
 ```typescript
-import { PaperFilterOptions, PLAPI } from 'paperlib-api';
+import { PaperFilterOptions, PLAPI } from 'paperlib-api/api';
 
 const options: PaperFilterOptions = {
     search: 'LLM',

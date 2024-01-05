@@ -3,7 +3,7 @@
 ## Call
 
 ```typescript
-import { PLMainAPI } from "paperlib-api";
+import { PLMainAPI } from "paperlib-api/api";
 
 PLMainAPI.windowProcessManagementService.methodname(...);
 ```
@@ -159,7 +159,7 @@ getScreenSize(): Promise<{
 The main renderer window's ID is `rendererProcess`. If you want to listen to the `blur` event of the main renderer window, you can do this:
 
 ```typescript
-import {PLMainAPI} from "paperlib-api";
+import { PLMainAPI } from "paperlib-api/api";
 
 PLMainAPI.windowProcessManagementService.on("rendererProcess", (event) => {
     if (event.value === "blur") {

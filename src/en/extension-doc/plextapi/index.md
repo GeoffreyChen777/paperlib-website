@@ -7,7 +7,7 @@ As the services in PLExtAPI are running in the same process as the extension, so
 In your extension, you can call them by:
 
 ```typescript
-import { PLExtAPI } from "paperlib-api";
+import { PLExtAPI } from "paperlib-api/api";
 
 const syncResults = PLExtAPI.serviceName.methodName(...)
 const asyncResults = await PLExtAPI.serviceName.methodName(...)

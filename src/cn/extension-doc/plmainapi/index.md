@@ -5,7 +5,7 @@
 在插件中，可以直接使用：
 
 ```typescript
-import { PLMainAPI } from "paperlib-api";
+import { PLMainAPI } from "paperlib-api/api";
 
 const results = await PLMainAPI.serviceName.methodName(...)
 ```

@@ -3,7 +3,7 @@
 ## Call
 
 ```typescript
-import { PLAPI } from "paperlib-api";
+import { PLAPI } from "paperlib-api/api";
 
 PLAPI.referenceService.methodname(...);
 ```

@@ -1,6 +1,6 @@
 # 重要数据结构
 
-在 Paperlib 中，我们定义了一些重要的数据结构，这些数据结构在 Paperlib 中被广泛使用，因此我们将其提供给开发者使用。你可以在 `paperlib-api` 包引入。
+在 Paperlib 中，我们定义了一些重要的数据结构，这些数据结构在 Paperlib 中被广泛使用，因此我们将其提供给开发者使用。你可以在 `paperlib-api/model` 包引入。
 
 在这里我们将会简单介绍这些数据结构。
 
@@ -43,7 +43,7 @@ interface PaperEntity {
 这是 Paperlib 中最重要的数据结构。每一个论文条目，实际上就是一个 `PaperEntity` 对象。你可以在插件中这样使用：
 
 ```typescript
-import { PaperEntity } from 'paperlib-api';
+import { PaperEntity } from 'paperlib-api/model';
 
 const draft = new PaperEntity({ title: '123' })
 draft.authors = "xxx, yyy"
@@ -158,7 +158,7 @@ interface IPaperFilterOptions {
 这是 Paperlib 中的 `PaperEntity` 过滤器选项。传入不同的选项，可以过滤出不同的论文条目。比如：
     
 ```typescript
-import { PaperFilterOptions, PLAPI } from 'paperlib-api';
+import { PaperFilterOptions, PLAPI } from 'paperlib-api/api';
 
 const options: PaperFilterOptions = {
     search: 'LLM',

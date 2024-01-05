@@ -42,7 +42,7 @@ async function initialize() {
 ```typescript
 // src/main.ts
 
-import { PLExtension } from "paperlib-api";
+import { PLExtension } from "paperlib-api/api";
 
 class PaperlibHelloworldExtension extends PLExtension {
   disposeCallbacks: (() => void)[] = [];
@@ -236,7 +236,7 @@ PLExtAPI.extensionPreferenceService.get(this.id, "lang")
 
 ## 数据结构
 
-在 Paperlib 中，我们定义了一些重要的数据结构，这些数据结构在 Paperlib 中被广泛使用，因此我们将其提供给开发者使用。你可以在 `paperlib-api` 包引入：
+在 Paperlib 中，我们定义了一些重要的数据结构，这些数据结构在 Paperlib 中被广泛使用，因此我们将其提供给开发者使用。你可以在 `paperlib-api/model` 包引入：
 
 ```typescript
 import { 
@@ -245,10 +245,8 @@ import {
     PaperFolder,
     Feed,
     FeedEntity,
-    OID,
-    PaperFilterOptions,
-    FeedEntityFilterOptions 
-} from 'paperlib-api';
+    OID
+} from 'paperlib-api/model';
 
 ```
 

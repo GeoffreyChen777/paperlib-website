@@ -29,6 +29,16 @@ npm install
 npm install paperlib-api@latest -D
 ```
 
+## `paperlib-api` 包
+
+这个包，我们提供了 API 类型提示，常用的数据结构，以及一些常用的工具函数，以及插件的基类。他们被分别在 `paperlib-api` 包的不同子包中：
+
+- `paperlib-api/api`：API 类型定义，以及插件基类 `PLExtension`。
+- `paperlib-api/model`: 常用数据结构。
+- `paperlib-api/utils`：常用的工具函数。
+- `paperlib-api/rpc`: RPC 服务，用于 New Window 类型插件的通信。
+
+
 ## 文件结构
 
 ```

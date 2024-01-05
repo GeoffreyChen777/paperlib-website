@@ -206,7 +206,7 @@ In the above initialization function, the most important part is to create the `
 import { createApp } from "vue";
 
 import AppView from "./app.vue";
-import { RPCService } from "./services/rpc-service";
+import { RendererRPCService } from "paperlib-api/rpc";
 import { PreviewService } from "./services/preview-service";
 
 async function initialize() {
@@ -214,7 +214,7 @@ async function initialize() {
 
   // ============================================================
   // 1. Initilize the RPC service for current process
-  const rpcService = new RPCService();
+  const rpcService = new RendererRPCService("paperlib-preview-extension-window");
   // ============================================================
   // 2. Start the port exchange process.
   await rpcService.initCommunication();
@@ -252,7 +252,9 @@ async function initialize() {
 initialize();
 ```
 
-In the above code, we first created an instance of `RPCService`. This will create an `RPC` service in the current process. Then, we called the `rpcService.initCommunication()` method, which will notify other processes and establish the corresponding `MessagePort` communication channel to expose the corresponding `API`. Please refer to `services/rpc-service.ts` for more.
+In the above code, we first created an instance of `RendererRPCService`. This will create an `RPC` service in the current process. Then, we called the `rpcService.initCommunication()` method, which will notify other processes and establish the corresponding `MessagePort` communication channel to expose the corresponding `API`. Please refer to `services/rpc-service.ts` for more.
+
+The first argument must be consistant with the ID passed in when creating the new window.
 
 When the `rpcService.initCommunication()` method is executed, we can use the `rpcService.waitForAPI` method to wait for other processes to expose their corresponding `API`. Here, we wait for the main process and the rendering process to expose `PLMainAPI` and `PLAPI`. If you also need to access the corresponding service of the extension process, such as `PLExtAPI.extensionPreferenceService`, you can also wait for the extension process to expose `PLExtAPI` here:
   

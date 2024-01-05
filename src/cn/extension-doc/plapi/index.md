@@ -5,7 +5,7 @@
 在插件中，可以直接使用：
 
 ```typescript
-import { PLAPI } from "paperlib-api";
+import { PLAPI } from "paperlib-api/api";
 
 const results = await PLAPI.serviceName.methodName(...)
 ```

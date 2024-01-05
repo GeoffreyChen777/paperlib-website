@@ -5,7 +5,7 @@ In this group of APIs, most of the services and their methods in the main proces
 In your extension, you can call them by:
 
 ```typescript
-import { PLMainAPI } from "paperlib-api";
+import { PLMainAPI } from "paperlib-api/api";
 
 const results = await PLMainAPI.serviceName.methodName(...)
 ```

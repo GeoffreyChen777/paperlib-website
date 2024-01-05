@@ -39,7 +39,7 @@ The extension class is the core of the extension. It is responsible for the init
 ```typescript
 // src/main.ts
 
-import { PLExtension } from "paperlib-api";
+import { PLExtension } from "paperlib-api/api";
 
 class PaperlibHelloworldExtension extends PLExtension {
   disposeCallbacks: (() => void)[] = [];
@@ -235,7 +235,7 @@ So far, we have completed the development of a `Command Extension`. Next, we wil
 
 ## Data Structure
 
-In Paperlib, we have some important data structures, which are widely used in Paperlib, so we provide them to developers. You can import them from `paperlib-api` package:
+In Paperlib, we have some important data structures, which are widely used in Paperlib, so we provide them to developers. You can import them from `paperlib-api/model` package:
 
 ```typescript
 import { 
@@ -245,9 +245,7 @@ import {
     Feed,
     FeedEntity,
     OID,
-    PaperFilterOptions,
-    FeedEntityFilterOptions 
-} from 'paperlib-api';
+} from 'paperlib-api/model';
 
 ```
 

@@ -3,7 +3,7 @@
 ## Call
 
 ```typescript
-import { PLExtAPI } from "paperlib-api";
+import { PLExtAPI } from "paperlib-api/api";
 
 PLExtAPI.extensionPreferenceService.methodname(...);
 ```
@@ -124,7 +124,7 @@ setPassword(extensionID: string, key: string, pwd: string): Promise<void>;
 ## Example
 
 ```typescript
-import { PLExtAPI } from "paperlib-api";
+import { PLExtAPI } from "paperlib-api/api";
 
 PLExtAPI.extensionPreferenceService.onChanged(
     'extensionID:prefKey',

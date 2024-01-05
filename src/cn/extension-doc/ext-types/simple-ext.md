@@ -4,7 +4,7 @@
 
 ```typescript
 
-import { PLAPI, PLExtAPI, PLExtension, PLMainAPI } from "paperlib-api";
+import { PLAPI, PLExtAPI, PLExtension, PLMainAPI } from "paperlib-api/api";
 
 class PaperlibHelloworldExtension extends PLExtension {
   disposeCallbacks: (() => void)[];

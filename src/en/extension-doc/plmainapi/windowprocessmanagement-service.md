@@ -3,7 +3,7 @@
 ## Call
 
 ```typescript
-import { PLMainAPI } from "paperlib-api";
+import { PLMainAPI } from "paperlib-api/api";
 
 PLMainAPI.windowProcessManagementService.methodname(...);
 ```

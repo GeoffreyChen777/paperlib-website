@@ -3,7 +3,7 @@
 ## Call
 
 ```typescript
-import { PLExtAPI } from "paperlib-api";
+import { PLExtAPI } from "paperlib-api/api";
 
 PLExtAPI.extensionManagementService.methodname(...);
 ```

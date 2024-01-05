@@ -29,6 +29,15 @@ We have a `paperlib-api` package to provide API interface type definitions for a
 npm install paperlib-api@latest -D
 ```
 
+## `paperlib-api` Package
+
+In this package, we provide API type hints, commonly used data structures, some utility functions, and the base class for extensions. They are in different sub-modules of the `paperlib-api` package:
+
+- `paperlib-api/api`: API type definitions, and the base class `PLExtension` for extensions.
+- `paperlib-api/model`: Commonly used data structures.
+- `paperlib-api/utils`：Commonly used utility functions.
+- `paperlib-api/rpc`: RPC service for communication between New Window extensions.
+
 ## File Structure
 
 ```

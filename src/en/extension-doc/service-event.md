@@ -8,7 +8,7 @@ The method to listen to events is `on`. It accepts two arguments, the first is t
 
 
 ```typescript
-import { PLAPI } from 'paperlib-api';
+import { PLAPI } from 'paperlib-api/api';
 
 
 PLAPI.serviceName.on('event-id', (newValue: {key: string, value: any}) => {

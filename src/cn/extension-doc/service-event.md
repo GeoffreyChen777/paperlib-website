@@ -7,7 +7,7 @@ API 里的几乎所有的服务都是 `Eventable`` 的。这意味着每个服�
 监听事件的方法是 `on`，它接受两个参数，第一个是事件名，第二个是回调函数。回调函数的参数是事件触发时传递的参数。
 
 ```typescript
-import { PLAPI } from 'paperlib-api';
+import { PLAPI } from 'paperlib-api/api';
 
 
 PLAPI.serviceName.on('event-id', (newValue: {key: string, value: any}) => {

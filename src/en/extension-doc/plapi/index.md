@@ -5,7 +5,7 @@ In this group of APIs, there are many services and their provided methods in the
 In your extension, you can call them by: 
 
 ```typescript
-import { PLAPI } from "paperlib-api";
+import { PLAPI } from "paperlib-api/api";
 
 const results = await PLAPI.serviceName.methodName(...)
 ```

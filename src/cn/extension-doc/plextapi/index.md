@@ -7,7 +7,7 @@
 在插件中，可以直接使用：
 
 ```typescript
-import { PLExtAPI } from "paperlib-api";
+import { PLExtAPI } from "paperlib-api/api";
 
 const syncResults = PLExtAPI.serviceName.methodName(...)
 const asyncResults = await PLExtAPI.serviceName.methodName(...)

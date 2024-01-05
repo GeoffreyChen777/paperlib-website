@@ -4,7 +4,7 @@ This type of extension is the simplest. You only needs to create an extension cl
 
 ```typescript
 
-import { PLAPI, PLExtAPI, PLExtension, PLMainAPI } from "paperlib-api";
+import { PLAPI, PLExtAPI, PLExtension, PLMainAPI } from "paperlib-api/api";
 
 class PaperlibHelloworldExtension extends PLExtension {
   disposeCallbacks: (() => void)[];

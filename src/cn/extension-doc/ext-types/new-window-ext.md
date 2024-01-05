@@ -207,7 +207,7 @@ initialize();
 import { createApp } from "vue";
 
 import AppView from "./app.vue";
-import { RPCService } from "./services/rpc-service";
+import { RendererRPCService } from "paperlib-api/rpc";
 import { PreviewService } from "./services/preview-service";
 
 async function initialize() {
@@ -215,7 +215,7 @@ async function initialize() {
 
   // ============================================================
   // 1. Initilize the RPC service for current process
-  const rpcService = new RPCService();
+  const rpcService = new RendererRPCService("paperlib-preview-extension-window");
   // ============================================================
   // 2. Start the port exchange process.
   await rpcService.initCommunication();
@@ -253,7 +253,9 @@ async function initialize() {
 initialize();
 ```
 
-在上述代码中，我们首先创建了一个 `RPCService` 的实例。这会在当前进程中创建一个 `RPC` 服务。之后，我们调用了 `rpcService.initCommunication()` 方法，该方法会通知其他进程，建立相应的 `MessagePort` 通信通道，暴露相应的 `API`。具体实现方法请参考 `services/rpc-service.ts`。
+在上述代码中，我们首先创建了一个 `RendererRPCService` 的实例。这会在当前进程中创建一个 `RPC` 服务。之后，我们调用了 `rpcService.initCommunication()` 方法，该方法会通知其他进程，建立相应的 `MessagePort` 通信通道，暴露相应的 `API`。具体实现方法请参考 Paperlib 中的 RPC 服务。
+
+第一个参数，必须与创建新窗口时传入的 ID 相同。
 
 在 `rpcService.initCommunication()` 方法执行完毕后，我们就可以通过 `rpcService.waitForAPI` 方法来等待其他进程暴露相应的 `API`。在这里，我们等待了主进程和渲染进程暴露了 `PLMainAPI` 和 `PLAPI`。如果你也需要访问插件进程的相应服务，比如 `PLExtAPI.extensionPreferenceService`，你也可以在这里等待插件进程暴露 `PLExtAPI`：
   
