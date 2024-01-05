@@ -2,12 +2,15 @@
 
 In this group of APIs, most of the services and their methods in the extension process are included.
 
+As the services in PLExtAPI are running in the same process as the extension, some methods are synchronous, and some are asynchronous.
+
 In your extension, you can call them by:
 
 ```typescript
 import { PLExtAPI } from "paperlib-api";
 
-const results = await PLExtAPI.serviceName.methodName(...)
+const syncResults = PLExtAPI.serviceName.methodName(...)
+const asyncResults = await PLExtAPI.serviceName.methodName(...)
 ```
 
 ## 可用的服务

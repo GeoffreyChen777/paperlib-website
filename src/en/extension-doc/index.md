@@ -48,8 +48,7 @@ When you call a method of a service in a specific process, you only need to writ
 // const result = await APIGroup.serviceName.methodName(...)
 const papers = await PLAPI.paperService.load(...)
 ```
-
-Because it is a cross-process call, we need to use `await` to wait for the return of asynchronous results.
+Because it is a cross-process call, we need to use `await` to wait for the return of asynchronous results. If you are calling `PLExtAPI`, because it is the same process as your extenstion's, whether it is synchronous or asynchronous depends on the situation, please refer to the type autocompletion when developing.
 
 ## Extension Types
 
