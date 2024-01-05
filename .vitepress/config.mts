@@ -49,6 +49,10 @@ export default defineConfig({
               items: [
                 { text: "简介", link: "/cn/extension-doc/" },
                 { text: "开发环境准备", link: "/cn/extension-doc/env" },
+                {
+                  text: "开发规范与约定",
+                  link: "/cn/extension-doc/convention",
+                },
                 { text: "示例插件", link: "/cn/extension-doc/demo" },
               ],
             },
@@ -311,6 +315,7 @@ export default defineConfig({
           items: [
             { text: "Introduction", link: "/en/extension-doc/" },
             { text: "Development Prepare", link: "/en/extension-doc/env" },
+            { text: "Conventions", link: "/en/extension-doc/convention" },
             { text: "Demo Extension", link: "/en/extension-doc/demo" },
           ],
         },

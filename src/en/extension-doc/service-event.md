@@ -4,7 +4,7 @@ Almost all services in the API are `Eventable`. This means that each service wil
 
 ## Listening to Events
 
-The method to listen to events is `on`. It accepts two arguments, the first is the event name, and the second is the callback function. The parameters of the callback function are the parameters passed when the event is emitted.
+The method to listen to events is `on`. It accepts two arguments, the first is the event name, and the second is the callback function. The arguments of the callback function are the arguments passed when the event is emitted.
 
 
 ```typescript

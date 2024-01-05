@@ -50,11 +50,27 @@ draft.authors = "xxx, yyy"
 ```
 
 
-## `Categorizer`
+## `Categorizer`: `PaperTag` 和 `PaperFolder`
 
 ```typescript
 
 interface Categorizer {
+    _id: OID;
+    _partition: string;
+    name: string;
+    count: number;
+    color?: string;
+}
+
+interface PaperTag {
+    _id: OID;
+    _partition: string;
+    name: string;
+    count: number;
+    color?: string;
+}
+
+interface PaperFolder {
     _id: OID;
     _partition: string;
     name: string;

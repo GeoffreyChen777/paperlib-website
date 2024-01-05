@@ -232,7 +232,27 @@ PLExtAPI.extensionPreferenceService.get(this.id, "lang")
 
 ---
 
-至此，我们已经完成了一个 `Command Extension` 的开发。接下来，我们将介绍 `Hook Extension` 和 `UI Extension` 的开发。
+至此，我们已经完成了一个 `Demo Command Extension` 的开发。接下来，我们将介绍 `Hook Extension` 和 `UI Extension` 的开发。
+
+## 数据结构
+
+在 Paperlib 中，我们定义了一些重要的数据结构，这些数据结构在 Paperlib 中被广泛使用，因此我们将其提供给开发者使用。你可以在 `paperlib-api` 包引入：
+
+```typescript
+import { 
+    PaperEntity,
+    PaperTag,
+    PaperFolder,
+    Feed,
+    FeedEntity,
+    OID,
+    PaperFilterOptions,
+    FeedEntityFilterOptions 
+} from 'paperlib-api';
+
+```
+
+如果你的插件涉及到数据结构的处理，请使用这些数据结构。这些数据结构的详细说明，请见 [数据结构](./data-structure)。
 
 ## 其他例子
 

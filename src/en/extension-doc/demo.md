@@ -233,6 +233,26 @@ As a result, we can get the value of the `lang` preference.
 
 So far, we have completed the development of a `Command Extension`. Next, we will introduce the development of `Hook Extension` and `UI Extension`.
 
+## Data Structure
+
+In Paperlib, we have some important data structures, which are widely used in Paperlib, so we provide them to developers. You can import them from `paperlib-api` package:
+
+```typescript
+import { 
+    PaperEntity,
+    PaperTag,
+    PaperFolder,
+    Feed,
+    FeedEntity,
+    OID,
+    PaperFilterOptions,
+    FeedEntityFilterOptions 
+} from 'paperlib-api';
+
+```
+
+If your extension trying to deal with such data structures, please use we provided above. For more, please refer to [Data Structure](./data-structure)。
+
 ## Other Examples
 
 ### Hook Extension
