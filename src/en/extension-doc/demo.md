@@ -16,7 +16,7 @@ The extension entry file is `src/main.ts`, which exports a function `initialize`
 export { initialize }
 ```
 
-The main task of this function is to create a extension class instance, initialize the extension, and return it.
+The main task of this function is to create an extension class instance, initialize the extension, and return it.
 
 ```typescript
 // src/main.ts

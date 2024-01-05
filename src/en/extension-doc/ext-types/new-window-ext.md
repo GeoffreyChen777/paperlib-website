@@ -36,7 +36,7 @@ When building, the code in the `ext` and `view` directories will be packaged int
 
 ## Extension Entry
 
-New Window extensions still need to create a extension entry file, which contains the extension class. These codes are the same as other types of extensions, and they all run in the extension process. The creation of the new window is also done there.
+New Window extensions still need to create an extension entry file, which contains the extension class. These codes are the same as other types of extensions, and they all run in the extension process. The creation of the new window is also done there.
 
 ### Extension Class Structure
 

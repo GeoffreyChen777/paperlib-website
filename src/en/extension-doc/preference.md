@@ -79,7 +79,7 @@ PLExtAPI.extensionPreferenceService.onChanged(
 )
 ```
 
-> ⚠️ Please note that listening to a setting of a extension must be in the form of `extID:preferenceKey` to form the ID of the event to be listened to. Because `extensionPreferenceService` need to distinguish the preferences of different extensions.
+> ⚠️ Please note that listening to a setting of an extension must be in the form of `extID:preferenceKey` to form the ID of the event to be listened to. Because `extensionPreferenceService` need to distinguish the preferences of different extensions.
 
 By doing so, we can listen to the modification of the `lang` preference. When the user modifies the value of the `lang` in the preferences interface, we will run the callback function passed in. The function receives an Object as a parameter, where the `key` field is the ID of the preference, and the `value` field is the new value of the preference.
 
