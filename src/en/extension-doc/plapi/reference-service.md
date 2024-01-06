@@ -65,6 +65,16 @@ exportBibTexBody(cite: Cite): string;
 exportPlainText(cite: Cite): Promise<string>;
 ```
 
+### `exportCSV`
+```typescript
+/**
+ * Export papers as csv string.
+ * @param papers - The PaperEntity array.
+ * @returns The CSV string.
+ */
+exportCSV(papers: PaperEntity[]): Promise<string>;
+```
+
 ### `export`
 
 ```typescript

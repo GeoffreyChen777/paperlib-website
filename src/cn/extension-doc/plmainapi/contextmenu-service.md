@@ -43,6 +43,7 @@ unregisterScraperExtension(extID: string): Promise<void>;
 | `dataContextMenuExportBibTexClicked` | `{key: 'dataContextMenuExportBibTexClicked'}` | When `Export BibTex` is clicked in the context menu of a paper in the library |
 | `dataContextMenuExportBibTexKeyClicked` | `{key: 'dataContextMenuExportBibTexKeyClicked'}` | When `Export BibTex Key` is clicked in the context menu of a paper in the library |
 | `dataContextMenuExportPlainTextClicked` | `{key: 'dataContextMenuExportPlainTextClicked'}` | When `Export Plain Text` is clicked in the context menu of a paper in the library |
+| `dataContextMenuExportCSVClicked` | `{key: 'dataContextMenuExportCSVClicked'}` | When `Export CSV` is clicked in the context menu of a paper in the library |
 | `feedContextMenuAddToLibraryClicked` | `{key: 'feedContextMenuAddToLibraryClicked'}` | When `Add to Library` is clicked in the context menu of a feed in the library |
 | `feedContextMenuToggleReadClicked` | `{key: 'feedContextMenuToggleReadClicked'}` | When `Toggle Read` is clicked in the context menu of a feed in the library |
 | `sidebarContextMenuFeedRefreshClicked` | `{key: 'sidebarContextMenuFeedRefreshClicked', value: {data: feedID}}` | When `Refresh` is clicked in the context menu of a feed in the sidebar |

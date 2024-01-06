@@ -50,3 +50,14 @@ showFolderPicker(): Promise<OpenDialogReturnValue>;
  */
 preview(fileURL: string): Promise<void>;
 ```
+
+### `writeToFile`
+```typescript
+/**
+ * Write some text to a file.
+ * @param {string} filePath The path of the file to write to.
+ * @param {string} text The text to write to the file.
+ * @returns {void} Nothing.
+ */
+writeToFile(filePath: string, text: string): void;
+```
