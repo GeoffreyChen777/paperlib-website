@@ -2,7 +2,6 @@
 
 ## Desktop App
 
-
 - [<i class="bi bi-apple"></i> macOS (Intel)](https://distribution.paperlib.app/electron-mac/latest.dmg)
 - [<i class="bi bi-apple"></i> macOS (silicon)](https://distribution.paperlib.app/electron-mac-arm/latest.dmg)
 - [<i class="bi bi-microsoft"></i> Windows](https://distribution.paperlib.app/electron-win/latest.zip)

@@ -220,6 +220,7 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: "下载", link: "/cn/download" },
+                { text: "下载 3.0.0 Beta", link: "/cn/download_beta" },
                 { text: "更新日志", link: "/cn/release-note" },
               ],
             },
@@ -486,6 +487,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: "Download", link: "/en/download" },
+            { text: "Download 3.0.0 Beta", link: "/en/download_beta" },
             { text: "Release Note", link: "/en//release-note" },
           ],
         },
