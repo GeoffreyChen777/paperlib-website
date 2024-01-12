@@ -157,6 +157,8 @@ registerSomeCommands() {
 
 3. 所有事件的监听，以及注册等方法，都需要在插件卸载的时候进行 `dispose`，以防止内存泄漏。这些方法都会返回一个函数，调用这个函数，就可以进行相应的 `dispose`。我们将这些函数保存在 `disposeCallbacks` 中，以便在 `dispose` 函数中调用。
 
+4. 另外关于事件的监听，回调中，不要使用 `floating promise`，即，如果你的回调函数中包含 `AsyncFunction`，请务必 `await`，或者 `.catch` 异常。因为 `floating promise` 中的异常无法在 Paperlib 中被捕获，会导致插件崩溃。
+
 这就是一个 `Command Extension` 的主要代码。你可以在事件监听的地方，调用你的其他方法，做任何你需要的事等等。
 
 ### `async dispose()`

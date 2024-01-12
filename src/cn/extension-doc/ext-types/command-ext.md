@@ -21,7 +21,7 @@ class CommandExtension extends PLExtension {
 
     // 在这里注册命令，推荐先监听事件再注册
     this.disposeCallbacks.push(
-      await PLAPI.commandService.registerExternel(...)
+      PLAPI.commandService.registerExternel(...)
     );
 
     ...

@@ -21,7 +21,7 @@ class CommandExtension extends PLExtension {
 
     // Register commands here, it is recommended to listen to events before registering
     this.disposeCallbacks.push(
-      await PLAPI.commandService.registerExternel(...)
+      PLAPI.commandService.registerExternel(...)
     );
 
     ...

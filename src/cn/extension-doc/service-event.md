@@ -30,6 +30,19 @@ PLAPI.serviceName.on(
 
 此时，`key` 字段将会有助于你判断是哪个事件触发了。
 
+**在监听事件回调中，不要使用 `floating promise`，即，如果你的回调函数中包含 `AsyncFunction`，请务必 `await`，或者 `.catch` 异常。因为 `floating promise` 中的异常无法在 Paperlib 中被捕获，会导致插件崩溃：**
+
+```typescript
+// 永远不要做如下:
+PLAPI.serviceName.on('event-id', (newValue: {key: string, value: any}) => {
+    asyncFunction();
+});
+
+async function asyncFunction() {
+    throw new Error('error'); // 这个错误将无法被 Paperlib 捕获，会导致插件崩溃。
+}
+```
+
 ## 取消监听
 
 请注意，你需要保存 `on` 方法返回的函数，以便在不需要监听时取消监听。

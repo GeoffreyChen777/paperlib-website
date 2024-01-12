@@ -155,6 +155,8 @@ In this example, the functionality we want to achieve is that when a user select
 
 3. All event listening, registration, etc., need to be `disposed` when the extension is unloaded to prevent memory leaks. These methods will return a function, calling this function can perform the corresponding `dispose`. We save these functions in `disposeCallbacks` so that they can be called in the `dispose` function.
 
+4. Notablly, in the callback of the event listener, please avoid `floating promise`. That is, if your callback function contains any `AsyncFunction`, please be sure to `await` or `.catch` the error exception. Because the error in the `floating promise` cannot be caught in Paperlib, it will cause the extension to crash.
+
 This is the main code of a `Command Extension`. You can call your other methods, do anything you need, etc., at the place where you listen to events.
 
 ### `async dispose()`

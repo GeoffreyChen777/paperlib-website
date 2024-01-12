@@ -31,6 +31,20 @@ PLAPI.serviceName.on(
 
 Here, the `key` field will help you determine which event was emitted.
 
+**In the callback of the event listener, please avoid `floating promise`. That is, if your callback function contains any `AsyncFunction`, please be sure to `await` or `.catch` the error exception. Because the error in the `floating promise` cannot be caught in Paperlib, it will cause the extension to crash:**
+
+```typescript
+// Never do this:
+PLAPI.serviceName.on('event-id', (newValue: {key: string, value: any}) => {
+    asyncFunction();
+});
+
+async function asyncFunction() {
+    throw new Error('error'); // This error will not be caught by Paperlib, and will cause the extension to crash.
+}
+```
+
+
 ## Cancel Listening
 
 Please note that you need to save the function returned by the `on` method so that you can cancel the listening when you don't need it.
