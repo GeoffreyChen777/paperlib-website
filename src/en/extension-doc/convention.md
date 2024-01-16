@@ -6,8 +6,8 @@ A Paperlib extension is essentially an `npm` package. Therefore, the development
 2. The extension must be able to be packaged as an `npm` package that conforms to the `commonjs` specification.
 3. The extension must be able to be packaged as a single `js` file, and it is recommended to `minify` to reduce the download size. (Except for `New Window` extensions)
 4. Use the appropriate tools to remove the `import` statements of `PLAPI, PLMainAPI, PLExtAPI`, and keep the usage statements of `PLAPI, PLMainAPI, PLExtAPI` in the code after packaging. This ensures the normal operation of the extension in Paperlib. In our provided development environment, we use the `rollup-extension-modify` extension to achieve this. The reason for this constraint is that the `PLAPI, PLMainAPI, PLExtAPI` provided by the `paperlib-api/api` package are only used for code type autocompletion during development, do not contain any functionality, and should not appear in the final code of a extension. After a extension is loaded, the `PLAPI, PLMainAPI, PLExtAPI` objects will be automatically globally injected into its `VM` for directly using.
-5. The `main` field must be included in `package.json`, pointing to the entry file of the extension.
-6. The `manifest_version` field must be included in `package.json` to indicate the API version used by the extension.
+5. The `manifest_version` field must be included in `package.json` to indicate the API version used by the extension. Please keep it consistent with the version of the `paperlib-api` package you actually installed. We recommend that you always use the latest API version.
+6. The `main` field must be included in `package.json`, pointing to the entry file of the extension.
 7. The keywords in `package.json` must contain `paperlib` so that it can be searched in the extension marketplace.
 8. The `name` field in `package.json` must be consistent with the `id` field in the main code of the extension.
 9. The `version` field in `package.json` must comply with the `semver` specification.

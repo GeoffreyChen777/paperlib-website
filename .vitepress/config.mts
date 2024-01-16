@@ -51,10 +51,18 @@ export default defineConfig({
                 { text: "简介", link: "/cn/extension-doc/" },
                 { text: "开发环境准备", link: "/cn/extension-doc/env" },
                 {
+                  text: "Manifest Version",
+                  link: "/cn/extension-doc/manifest-version",
+                },
+                {
                   text: "开发规范与约定",
                   link: "/cn/extension-doc/convention",
                 },
                 { text: "示例插件", link: "/cn/extension-doc/demo" },
+                {
+                  text: "API 更新日志",
+                  link: "https://github.com/Future-Scholars/paperlib/blob/dev-3.0.0/paperlib-api/release-note.md",
+                },
               ],
             },
             {
@@ -169,10 +177,6 @@ export default defineConfig({
                   text: "uiSlotService",
                   link: "/cn/extension-doc/plapi/uislot-service",
                 },
-                {
-                  text: "networkTool",
-                  link: "/cn/extension-doc/plapi/network-tool",
-                },
               ],
             },
             {
@@ -210,6 +214,10 @@ export default defineConfig({
                 {
                   text: "extensionPreferenceService",
                   link: "/cn/extension-doc/plextapi/extensionpreference-service",
+                },
+                {
+                  text: "networkTool",
+                  link: "/cn/extension-doc/plextapi/network-tool",
                 },
               ],
             },
@@ -317,8 +325,16 @@ export default defineConfig({
           items: [
             { text: "Introduction", link: "/en/extension-doc/" },
             { text: "Development Prepare", link: "/en/extension-doc/env" },
+            {
+              text: "Manifest Version",
+              link: "/en/extension-doc/manifest-version",
+            },
             { text: "Conventions", link: "/en/extension-doc/convention" },
             { text: "Demo Extension", link: "/en/extension-doc/demo" },
+            {
+              text: "API Release Note",
+              link: "https://github.com/Future-Scholars/paperlib/blob/dev-3.0.0/paperlib-api/release-note.md",
+            },
           ],
         },
         {
@@ -436,10 +452,6 @@ export default defineConfig({
               text: "uiSlotService",
               link: "/en/extension-doc/plapi/uislot-service",
             },
-            {
-              text: "networkTool",
-              link: "/en/extension-doc/plapi/network-tool",
-            },
           ],
         },
         {
@@ -477,6 +489,10 @@ export default defineConfig({
             {
               text: "extensionPreferenceService",
               link: "/en/extension-doc/plextapi/extensionpreference-service",
+            },
+            {
+              text: "networkTool",
+              link: "/en/extension-doc/plextapi/network-tool",
             },
           ],
         },

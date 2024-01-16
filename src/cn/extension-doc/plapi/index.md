@@ -28,4 +28,3 @@ const results = await PLAPI.serviceName.methodName(...)
 - `uiStateService`：UI 状态服务，用于操作 UI 状态。
 - `preferenceService`：设置服务，用于操作设置。
 - `uiSlotService`：UI 插槽服务，用于操作 UI 插槽。
-- `networkTool`：网络工具，提供 `get`，`post`，`download` 等方法。

@@ -28,4 +28,3 @@ const results = await PLAPI.serviceName.methodName(...)
 - `uiStateService`: UI state service, used to operate UI state.
 - `preferenceService`: Preference service, used to operate preferences.
 - `uiSlotService`: UI slot service, used to operate UI slots.
-- `networkTool`: Network tool, provides methods such as `get`, `post`, `download`.

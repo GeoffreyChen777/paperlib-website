@@ -17,3 +17,4 @@ const asyncResults = await PLExtAPI.serviceName.methodName(...)
 
 - `extensionManagementService`：插件管理服务，负责插件安装、载入、卸载等。
 - `extensionPreferenceService`：插件偏好设置服务，负责插件偏好设置的读取和写入。
+- `networkTool`：网络工具，提供 `get`，`post`，`download` 等方法。

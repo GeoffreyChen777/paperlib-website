@@ -3,9 +3,9 @@
 ## Call
 
 ```typescript
-import { PLAPI } from "paperlib-api/api";
+import { PLExtAPI } from "paperlib-api/api";
 
-PLAPI.networkTool.methodname(...);
+PLExtAPI.networkTool.methodname(...);
 ```
 
 ## Avaliable Methods
@@ -15,9 +15,10 @@ PLAPI.networkTool.methodname(...);
 ```typescript
 /**
  * Set proxy agent
- * @param proxy - Proxy url
+ * @param httpproxy - HTTP proxy
+ * @param httpsproxy - HTTPS proxy
  */
-setProxyAgent(proxy?: string): Promise<void>;
+setProxyAgent(httpproxy?: string, httpsproxy?: string): void;
 ```
 
 ### `checkSystemProxy`
@@ -26,7 +27,7 @@ setProxyAgent(proxy?: string): Promise<void>;
 /**
  * Check system proxy, if exists, set it as proxy agent
  */
-checkSystemProxy(): Promise<void>;
+checkProxy(): Promise<void>;
 ```
 
 ### `get`
@@ -39,9 +40,15 @@ checkSystemProxy(): Promise<void>;
  * @param retry - Retry times
  * @param timeout - Timeout
  * @param cache - Use cache
+ * @param parse - Try to parse response body
  * @returns Response
  */
-get(url: string, headers?: Record<string, string>, retry?: number, timeout?: number, cache?: boolean): Promise<Response>;
+get(url: string, headers?: Record<string, string>, retry?: number, timeout?: number, cache?: boolean, parse?: boolean): Promise<{
+    body: any;
+    status: number;
+    statusText: string;
+    headers: Record<string, string>;
+}>;
 ```
 
 ### `post`
@@ -55,9 +62,15 @@ get(url: string, headers?: Record<string, string>, retry?: number, timeout?: num
  * @param retry - Retry times
  * @param timeout - Timeout
  * @param compress - Compress data
+ * @param parse - Try to parse response body
  * @returns Response
  */
-post(url: string, data: Record<string, any> | string, headers?: Record<string, string>, retry?: number, timeout?: number, compress?: boolean): Promise<Response>;
+post(url: string, data: Record<string, any> | string, headers?: Record<string, string>, retry?: number, timeout?: number, compress?: boolean, parse?: boolean): Promise<{
+    body: any;
+    status: number;
+    statusText: string;
+    headers: Record<string, string>;
+}>;
 ```
 
 ### `postForm`
@@ -72,7 +85,12 @@ post(url: string, data: Record<string, any> | string, headers?: Record<string, s
  * @param timeout - Timeout
  * @returns Response
  */
-postForm(url: string, data: FormData, headers?: Record<string, string>, retry?: number, timeout?: number): Promise<Response_2<string>>;
+postForm(url: string, data: FormData, headers?: Record<string, string>, retry?: number, timeout?: number, parse?: boolean): Promise<{
+    body: any;
+    status: number;
+    statusText: string;
+    headers: Record<string, string>;
+}>;
 ```
 
 ### `download`
@@ -108,14 +126,4 @@ downloadPDFs(urlList: string[], cookies?: CookieJar | ICookieObject[]): Promise<
  * @returns Whether the network is connected
  */
 connected(): Promise<boolean>;
-```
-
-## Response Type
-
-```typescript
-interface Response {
-  body: string;
-  headers: Record<string, string>;
-  statusCode: number;
-}
 ```
