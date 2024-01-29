@@ -84,8 +84,8 @@ colorize(id: OID, color: Colors, type: CategorizerType): Promise<void>;
  * @param type - The type of the categorizer.
  * @returns
  */
-```
 rename(id: OID, name: string, type: CategorizerType): Promise<void>;
+```
 
 ### `update`
 
