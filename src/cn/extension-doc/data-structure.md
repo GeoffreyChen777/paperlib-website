@@ -60,6 +60,7 @@ interface Categorizer {
     name: string;
     count: number;
     color?: string;
+    children: Categorizer[]; // Readonly. Cannot be used when create or update.
 }
 
 interface PaperTag {
@@ -68,6 +69,7 @@ interface PaperTag {
     name: string;
     count: number;
     color?: string;
+    children: PaperTag[]; // Readonly. Cannot be used when create or update.
 }
 
 interface PaperFolder {
@@ -76,6 +78,7 @@ interface PaperFolder {
     name: string;
     count: number;
     color?: string;
+    children: PaperFolder[]; // Readonly. Cannot be used when create or update.;
 }
 ```
 
@@ -84,12 +87,13 @@ interface PaperFolder {
 ## `PaperSmartFilter`
 
 ```typescript
-interface IPaperSmartFilterDraft {
+interface IPaperSmartFilter {
     _id: OID;
     _partition: string;
     name: string;
     filter: string;
     color?: string;
+    children: PaperSmartFilter[]; // Readonly. Cannot be used when create or update.
 }
 ```
 
@@ -170,7 +174,7 @@ const options: PaperFilterOptions = {
 // We can use this options to filter out the papers we want.
 // The results are papers that contain 'LLM' in their title,
 // and are flaged, and have tag 'tag1'.
-const results = await PLAPI.paperService.load(options)
+const results = await PLAPI.paperService.load(options.toString(), ...)
 ```
 
 ## `FeedEntityFilterOptions`

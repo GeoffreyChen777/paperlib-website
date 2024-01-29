@@ -23,6 +23,17 @@ PLAPI.smartFilterService.methodname(...);
 load(type: PaperSmartFilterType, sortBy: string, sortOrder: string): Promise<IPaperSmartFilterCollection>;
 ```
 
+### `loadByIds`
+
+```typescript
+/**
+ * Load smartfilters by ids.
+ * @param ids - The ids of the smartfilters
+ * @returns
+ */
+loadByIds(ids: OID[]): Promise<IPaperSmartFilterCollection>;
+```
+
 ### `delete`
 
 ```typescript
@@ -40,22 +51,36 @@ delete(type: PaperSmartFilterType, ids?: OID[], smartfilters?: IPaperSmartFilter
 ```typescript
 /**
  * Colorize a smartfilter.
- * @param color - The color
- * @param type - The type of the smartfilter
- * @param id - The id of the smartfilter
- * @param smartfilter - The smartfilter
+ * @param id - The id of the smartfilter.
+ * @param color - The color.
+ * @param type - The type of the smartfilter.
+ * @returns
  */
-colorize(color: Colors, type: PaperSmartFilterType, id?: OID, smartfilter?: PaperSmartFilter): Promise<void>;
+colorize(id: OID, color: Colors, type: PaperSmartFilterType): Promise<void>;
 ```
 
-### `insert`
+### `rename`
+```typescript
+ /**
+ * Rename a smartfilter.
+ * @param id - The id of the smartfilter.
+ * @param name - The new name of the smartfilter.
+ * @param type - The type of the smartfilter.
+ * @returns
+ */
+rename(id: OID, name: string, type: PaperSmartFilterType): Promise<void>;
+```
+
+### `update`
 ```typescript
 /**
- * Insert a smartfilter.
- * @param smartfilter - The smartfilter
+ * Update/Insert a smartfilter.
  * @param type - The type of the smartfilter
+ * @param smartfilter - The smartfilter
+ * @param parentSmartfilter - The parent smartfilter
+ * @returns
  */
-insert(smartfilter: PaperSmartFilter, type: PaperSmartFilterType): Promise<void>;
+update(type: PaperSmartFilterType, smartfilter: PaperSmartFilter, parentSmartfilter?: PaperSmartFilter): Promise<IPaperSmartFilterCollection>;
 ```
 
 

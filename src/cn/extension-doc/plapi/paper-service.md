@@ -15,12 +15,12 @@ PLAPI.paperService.methodname(...);
 ```typescript
 /**
  * Load paper entities with filter and sort.
- * @param filterOptions - filter object
+ * @param querySentence - Query sentence, string or PaperFilterOptions
  * @param sortBy - Sort by
  * @param sortOrder - Sort order
  * @returns Paper entities
  */
-load(filterOptions: PaperFilterOptions, sortBy: string, sortOrder: "asce" | "desc"): Promise<IPaperEntityCollection>;
+load(querySentence: string, sortBy: string | undefined, sortOrder: "asce" | "desc", fulltextQuerySentence?: string): Promise<IPaperEntityCollection>;
 ```
 
 ### `loadByIds`

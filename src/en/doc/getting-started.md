@@ -41,7 +41,7 @@ The metadata of each imported paper will be automaticlly scraped. Some papers ma
 - Add: open the edit view, add or create your preferred tags and folders. You can also drag-drop an item to a tag/folder in the sidebar to add it to the tag/folder.
 - Colorize: right click a tag or a folder in the sidebar list can change its color.
 
-> By default, the `tag` is the inherent attributes of a paper such as `computer-vision`. The `folder` indicates the attributes given by users such as `good-writing`. But you can use them in any way you like.
+> By default, the `tag` is the inherent attributes of a paper such as `computer-vision`. The `folder` indicates the attributes given by users such as `good-writing`. But you can use them in any way you like. In Paperlib 3.0, we provide hierarchical folders.
 
 ![](/assets/images/getting-started/edit.png)
 

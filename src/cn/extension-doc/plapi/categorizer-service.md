@@ -23,6 +23,18 @@ PLAPI.categorizerService.methodname(...);
 load(type: CategorizerType, sortBy: string, sortOrder: string): Promise<ICategorizerCollection>;
 ```
 
+### `loadByIds`
+
+```typescript
+/**
+ * Load categorizers by ids.
+ * @param type - The type of the categorizer.
+ * @param ids - The ids of the categorizers.
+ * @returns
+ */
+loadByIds(type: CategorizerType, ids: OID[]): Promise<ICategorizerCollection>;
+```
+
 ### `create`
 
 ```typescript
@@ -30,9 +42,10 @@ load(type: CategorizerType, sortBy: string, sortOrder: string): Promise<ICategor
  * Update a categorizer.
  * @param type - The type of categorizer.
  * @param categorizer - The categorizer.
+ * @param parent - The parent categorizer.
  * @returns
  */
-create(type: CategorizerType, categorizer: Categorizer): Promise<ICategorizerRealmObject | (Categorizer & Realm.Object<unknown, never>)>;
+create(type: CategorizerType, categorizer: Categorizer, parent?: Categorizer): Promise<ICategorizerCollection>;
 ```
 
 ### `delete`
@@ -53,13 +66,12 @@ delete(type: CategorizerType, ids?: OID[], categorizers?: ICategorizerCollection
 ```typescript
 /**
  * Colorize a categorizer.
+ * @param id - The id of the categorizer.
  * @param color - The color.
  * @param type - The type of the categorizer.
- * @param name - The name of the categorizer.
- * @param categorizer - The categorizer.
  * @returns
  */
-colorize(color: Colors, type: CategorizerType, id?: OID, categorizer?: ICategorizerObject): Promise<void>;
+colorize(id: OID, color: Colors, type: CategorizerType): Promise<void>;
 ```
 
 ### `rename`
@@ -67,12 +79,29 @@ colorize(color: Colors, type: CategorizerType, id?: OID, categorizer?: ICategori
 ```typescript
 /**
  * Rename a categorizer.
- * @param oldName - The old name.
- * @param newName - The new name.
+ * @param id - The id of the categorizer.
+ * @param name - The new name of the categorizer.
  * @param type - The type of the categorizer.
  * @returns
  */
-rename(oldName: string, newName: string, type: CategorizerType): Promise<void>;
+```
+rename(id: OID, name: string, type: CategorizerType): Promise<void>;
+
+### `update`
+
+```typescript
+/**
+ * Update/Insert a categorizer.
+ * @param type - The type of the categorizer.
+ * @param categorizer - The categorizer.
+ * @param parentCategorizer - The parent categorizer to insert.
+ * @returns
+ */
+update(
+    type: CategorizerType, 
+    categorizer: Categorizer, 
+    parentCategorizer?: Categorizer
+): Promise<ICategorizerCollection>;
 ```
 
 ## Events

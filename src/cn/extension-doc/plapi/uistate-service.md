@@ -78,8 +78,11 @@ interface IUIStateServiceState {
   // It can be accessed in any component. But it is read-only. It can be only changed by the event listener of selectedIndex in the dataview.
   selectedPaperEntities: Array<PaperEntity>;
   selectedFeedEntities: Array<FeedEntity>;
-  selectedCategorizer: string;
+  selectedQuerySentenceId: string;
   selectedFeed: string;
+  editingPaperSmartFilter: PaperSmartFilter;
+  querySentenceSidebar: string;
+  querySentenceCommandbar: string;
 
   dragingIds: Array<string>;
 
