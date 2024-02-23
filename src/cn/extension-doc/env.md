@@ -13,7 +13,7 @@
 你可以通过以下命令下载：
 
 ```shell
-git clone https://github.com/Future-Scholars/paperlib-extension-develop-env.git
+git clone https://github.com/Future-Scholars/paperlib-extension-dev-env.git
 ```
 
 ## 安装依赖

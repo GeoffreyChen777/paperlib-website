@@ -13,7 +13,7 @@ We provide a basic development environment that you can use as a starting point 
 You can download it using the following command:
 
 ```shell
-git clone https://github.com/Future-Scholars/paperlib-extension-develop-env.git
+git clone https://github.com/Future-Scholars/paperlib-extension-dev-env.git
 ```
 
 ## Install Dependencies
