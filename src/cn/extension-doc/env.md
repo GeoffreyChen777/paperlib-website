@@ -19,7 +19,7 @@ git clone https://github.com/Future-Scholars/paperlib-extension-dev-env.git
 ## 安装依赖
 
 ```shell
-cd paperlib-extension-develop-env
+cd paperlib-extension-dev-env
 npm install
 ```
 
