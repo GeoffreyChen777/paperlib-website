@@ -112,6 +112,7 @@ declare interface IPreferenceStore {
     mainviewSortBy: string;
     mainviewSortOrder: "desc" | "asce";
     mainviewType: string;
+    mainviewShortAuthor: boolean;
     pluginLinkedFolder: string;
     selectedPDFViewer: string;
     selectedPDFViewerPath: string;

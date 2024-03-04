@@ -75,6 +75,24 @@ exportPlainText(cite: Cite): Promise<string>;
 exportCSV(papers: PaperEntity[]): Promise<string>;
 ```
 
+### `exportBibTexKeyInFolder`
+```typescript
+/**
+ * Export BibTex body string in folder.
+ * @param folderName - The folder name.
+ */
+exportBibTexBodyInFolder(folderName: string): Promise<string>;
+```
+
+### `exportBibTexBodyInFolder`
+```typescript
+/**
+ * Export plain text in folder.
+ * @param folderName - The folder name.
+ */
+exportPlainTextInFolder(folderName: string): Promise<string>;
+```
+
 ### `export`
 
 ```typescript
