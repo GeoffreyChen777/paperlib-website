@@ -1,8 +1,6 @@
 # Extension System
 
-We are pleased to announce that in Paperlib 3.0, we will introduce an extension system, which means you can develop extensions for feature expansion in Paperlib! 🎉🎉🎉
-
-The extension system is nearly complete and is in the testing phase. We will release the extension system to all users when the 3.0 official version is released. Before that, we sincerely invite interested extension developers to try it out.
+We are pleased to announce that in Paperlib 3.0, which means you can develop extensions for feature expansion in Paperlib! 🎉🎉🎉
 
 ## Preface
 

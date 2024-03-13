@@ -14,7 +14,7 @@ Open the preference window, choose a folder to store all your paper PDF files an
 
 ## Metadata Scrapers
 
-We build a data pipeline to scrape the metadata from many databases for each paper. Many metadata scrapers are available. You can select your preferred scrapers in the preference window.
+We build a data pipeline to scrape the metadata from many databases for each paper. We achieve this via an extension `paperlib-metadata-scrape-extension`. You can select your preferred scrapers in the preference window.
 
 > ⚠️ Please choose a proper scraper combination for the best retrieval rate.
 
@@ -23,6 +23,8 @@ We build a data pipeline to scrape the metadata from many databases for each pap
 ## Import New Papers
 
 Drag and drop PDF files onto the main view of Paperlib. You can also import a paper from a website by clicking the [browser extension](./extensions/browser-extension).
+
+The `.bib` file and the `.csv` file exported from Zotero are also supported.
 
 ![](/assets/images/getting-started/add.png)
 
@@ -34,11 +36,12 @@ The metadata of each imported paper will be automaticlly scraped. Some papers ma
 
 - Open a paper: double click an item in the main view. 
 - Preview a paper: press `Space` or switch to the Table and Reader view.
+- For Windows / Linux users, please install the `paperlib-preview-extension` from our extension marketplace.
 
 ![](/assets/images/getting-started/preview.png)
 
 ## Tags / Folders
-- Add: open the edit view, add or create your preferred tags and folders. You can also drag-drop an item to a tag/folder in the sidebar to add it to the tag/folder.
+- Add: open the edit view, add or create your preferred tags. You can also drag-drop an item to a tag/folder in the sidebar to add it to the tag/folder. In the left sidebar, you can also create a new tag or folder by clicking the `+` button.
 - Colorize: right click a tag or a folder in the sidebar list can change its color.
 
 > By default, the `tag` is the inherent attributes of a paper such as `computer-vision`. The `folder` indicates the attributes given by users such as `good-writing`. But you can use them in any way you like. In Paperlib 3.0, we provide hierarchical folders.
@@ -53,7 +56,7 @@ Drag and drop some files onto the detail view (right panel) of a paper to attach
 
 ## Locate Available PDF
 
-For a paper without a PDF file, click the button called 'Locate' in the details panel to download the PDF file from internet.
+For a paper without a PDF file, click the button called 'Locate' in the details panel to download the PDF file from internet. Please install the `paperlib-paper-locate-extension` to use it.
 
 Paperlib provides some PDF downloaders such as arXiv, Unpaywall etc.. For xxx-hub (that very famous paper download website XD), we cannot directly provide it because of the legal issue. You can manually input the URL of it in the `preference - downloader` to use it.
 
@@ -61,13 +64,11 @@ Paperlib provides some PDF downloaders such as arXiv, Unpaywall etc.. For xxx-hu
 
 ## Search
 
-Paperlib provides three search modes: `general`, `fulltext`, and `advanced` mode. Click the button in the search bar to switch between them.
+Paperlib provides three search modes: `general`, `fulltext`, and `advanced` mode. You can use `\search`, `\search_fulltext`, and `\search_advanced` in the command bar to switch between them.
 
 ## Quick Copy-paste Plugin
 
 When you are writing a paper, you can use the Quick Copy-paste Plugin to copy-paste the BibTex of a paper in your library. Just press `CTRL/CMD+SHIFT+I`, search a paper, and press `Enter`. Now, the BibTex is copied to your clipboard. You can also link this plugin to a folder. All papers copied by this plugin will be added to that folder. Thus, you can export all the BibTex once you finish writing your draft paper.
-
-The Microsoft Word plugin is in Beta now.
 
 <img style="box-shadow: none" src="/assets/images/getting-started/plugin.png" />
 

@@ -59,3 +59,4 @@ title: "亮点"
 -  macOS spotlight 一样的快速复制粘贴引用插件， MS Word 插件。
 -  云同步，三平台支持：macOS, Windows, Linux。
 -  干净整洁的 UI。
+-  支持插件。

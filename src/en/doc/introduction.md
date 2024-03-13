@@ -60,3 +60,4 @@ That is Paperlib.
 -   macOS spotlight-like plugin to copy-paste references easily when writing a draft paper. Also supports MS Word.
 -   Cloud sync, supports macOS, Linux, and Windows.
 -   Beautiful and clean UI.
+-   Extensible

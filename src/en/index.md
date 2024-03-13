@@ -27,8 +27,8 @@ features:
   details: Flag, tag, and create folders to let your library clean and tidy. Also support markdown and plain text notes
 - title: Export References
   details: Export references by using the Quick Copy-paste plugin when you write your draft paper. Also supports Word plugin
-- title: Three Search Modes
-  details: General search, advanced search, and full-text search
+- title: Extensible
+  details: Develop and publish your own extensions.
 - title: RSS Feed
   details: Subscribe to RSS feed to get new papers
 - title: Modern UI, Cross Platform and Cloud Sync

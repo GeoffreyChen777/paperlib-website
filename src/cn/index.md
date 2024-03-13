@@ -27,8 +27,8 @@ features:
   details: 为论文评分，分配标签、组，方便进行分类检索。支持 markdown 和纯文本笔记
 - title: 导出引用
   details: 导出论文引用到 BibTex 或者 Plain Text 格式，快速导出插件让你一键复制 BibTex。同时支持 Word 插件
-- title: 三种搜索模式
-  details: 普通搜索，高级搜索，和全文搜索，快速检索论文库
+- title: 插件系统
+  details: 开发并发布你自己的插件吧！
 - title: RSS 订阅
   details: 订阅 RSS 信息流来获取最新论文
 - title: 现代UI，多平台、云同步

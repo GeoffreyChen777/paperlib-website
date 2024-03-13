@@ -27,7 +27,7 @@ For advanced users, you can create a smart filter from an advanced search query 
 
 ## Case sensitive
 
-All string operations, such as `CONTAINS`, are case insensitive. If you want to ignore case, you can use `CONTAINS[c]` by editing the query string manually.
+All string operations, such as `CONTAINS`, are case insensitive. If you want to ignore case, you can use `CONTAINS[c]`.
 
 ## Examples
 
