@@ -58,7 +58,6 @@ PLAPI.commandService.registerExternel({
 
 ## Command Event
 
-当用户在 Paperlib 中选择了某个命令时，插件会收到一个事件通知，我们可以通过 `PLAPI.commandService.on` 方法来监听该事件。该事件监听同样需要在插件销毁时运行 `disposeCallback` 来取消注册。
 When a user selects a command in Paperlib, the extension will receive an event. We can use the `PLAPI.commandService.on` method to listen to this event. This event listener also needs to run `disposeCallback` when the extension is destroyed to cancel the registration.
 
 The arguments of this method are as follows:

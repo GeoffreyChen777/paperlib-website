@@ -28,6 +28,16 @@ enableAll(): void;
 disableAll(): void;
 ```
 
+### `click`
+
+```typescript
+/**
+ * Click menu item in a programmatic way.
+ * @param key
+ */
+click(key: keyof IMenuServiceState): void;
+```
+
 ## Events
 
 | Event ID | Callback Value | Description |
