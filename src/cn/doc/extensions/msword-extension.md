@@ -12,7 +12,7 @@
 
 ### Web Office
 
-下载并保存 `https://paperlib.app/distribution/word_addin/manifest.xml`
+下载并保存 `https://distribution.paperlib.app/word_addin/manifest.xml`
 
 点击 Paperlib Web Office 的工具栏上的 'Add-in' 按钮。
 

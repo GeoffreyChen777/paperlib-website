@@ -28,7 +28,7 @@ Arch Linux: sudo pacman -S libsecret
 Download the latest AppImage file.
 
 ```
-curl -L https://paperlib.app/distribution/electron-linux/Paperlib_latest.AppImage -o Paperlib.AppImage
+curl -L https://distribution.paperlib.app/electron-linux/Paperlib_latest.AppImage -o Paperlib.AppImage
 ```
 
 Then give it execute permission.

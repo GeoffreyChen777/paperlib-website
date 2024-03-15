@@ -14,15 +14,15 @@ onMounted(async () => {
 
 const donwloadUrls = [{
   name: 'macOS (Intel)',
-  url: 'https://paperlib.app/distribution/electron-mac/latest.dmg'
+  url: 'https://distribution.paperlib.app/electron-mac/latest.dmg'
 },
 {
   name: 'macOS (silicon)',
-  url: 'https://paperlib.app/distribution/electron-mac-arm/latest.dmg'
+  url: 'https://distribution.paperlib.app/electron-mac-arm/latest.dmg'
 },
 {
   name: 'Windows',
-  url: 'https://paperlib.app/distribution/electron-win/latest.zip'
+  url: 'https://distribution.paperlib.app/electron-win/latest.zip'
 },
 {
   name: 'Linux',

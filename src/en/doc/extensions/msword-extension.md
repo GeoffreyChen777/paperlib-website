@@ -12,7 +12,7 @@ Then, restart Microsoft Word.
 
 ### Web Office
 
-Download and save `https://paperlib.app/distribution/word_addin/manifest.xml`
+Download and save `https://distribution.paperlib.app/word_addin/manifest.xml`
 
 Click the `Add-in` button on the toolbar of the web office.
 
