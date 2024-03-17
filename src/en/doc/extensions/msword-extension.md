@@ -4,7 +4,7 @@ This article introduces how to use the Paperlib Microsoft Word Add-in.
 
 ## Install 
 
-## Extension
+### Extension
 
 Open the extension market, and download the `paperlib-msword-extension` extension.
 
