@@ -4,9 +4,13 @@ This article introduces how to use the Paperlib Microsoft Word Add-in.
 
 ## Install 
 
+## Extension
+
+Open the extension market, and download the `paperlib-msword-extension` extension.
+
 ### Mac OS and Windows
 
-Open the preference view of Paperlib, go to the `Export` tab, and click the `Install` button. It requires The elevation of administrator privileges on Windows.
+When installing the extension, it will automatically inject the extension into MS Word. It requires The elevation of administrator privileges on MacOS and Windows.
 
 Then, restart Microsoft Word.
 
@@ -62,7 +66,7 @@ Click the `Update Bibilography` button.
 
 ## Others
 
-You can change the citation style and the reference list style. To import new CSL styles, go to the `Preference - Export` view of Paperlib. More CSL styles are available at [CSL Style Repository](https://github.com/citation-style-language/styles).
+You can change the citation style and the reference list style. To import new CSL styles, go to the preference view of the extension. More CSL styles are available at [CSL Style Repository](https://github.com/citation-style-language/styles).
 
 The link icon means that the add-in cannot communicate with the Paperlib app, so you need to click it to retry, restart Paperlib, or reload the add-in.
 

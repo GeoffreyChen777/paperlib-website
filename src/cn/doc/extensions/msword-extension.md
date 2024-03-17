@@ -4,9 +4,13 @@
 
 ## 安装
 
+### 插件
+
+打开插件市场，下载 `paperlib-msword-extension` 插件。
+
 ### Mac OS and Windows
 
-打开 Paperlib 的偏好设置，进入“导出”选项卡，点击“安装”按钮。Windows 需要管理员权限。
+插件安装时，会自动向 MS Word 注入插件。可能需要操作系统的管理员权限。
 
 然后，重启 Microsoft Word。
 
@@ -62,7 +66,7 @@
 
 ## 其他
 
-你可以设置不同的引用格式，同时你也可以从 Paperlib 的偏好设置界面的导出选项卡中中导入新的 CSL 格式，CSL 格式仓库详见 [CSL Style Repository](https://github.com/citation-style-language/styles)。
+你可以设置不同的引用格式，同时你也可以从插件的偏好设置界面的中导入新的 CSL 格式，CSL 格式仓库详见 [CSL Style Repository](https://github.com/citation-style-language/styles)。
 
 链接图标表示无法与 Paperlib 通信，点击它可以重新连接或者重启 Paperlib 重试。
 
