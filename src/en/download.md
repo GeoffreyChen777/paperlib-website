@@ -7,6 +7,8 @@
 - [<i class="bi bi-microsoft"></i> Windows](https://distribution.paperlib.app/electron-win/latest.zip)
 - [<i class="bi bi-ubuntu"></i> Linux](./download-linux)
 
+As we don't have funding to buy a code sign. On Windows, the Windows Defender might treat Paperlib as a virus. I hate it. Please go to Windows Defender - Virus & threat protection - Allowed threats - Allow my App - redownload!
+
 ## Browser Extensions
 
 - [<i class="bi bi-browser-chrome"></i> Chrome / Edge](https://chrome.google.com/webstore/detail/paperlib/kgnpnfbjckgddlednhoblgfdfohhapng)
