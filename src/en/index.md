@@ -116,5 +116,8 @@ const users = [
 <div class="flex flex-col mt-20">
   <div class="m-auto text-2xl font-bold"> Sponsors </div>
   <hr class='max-w-[250px] w-[250px] mx-auto mt-4 mb-8' />
-  <img class="m-auto h-20 bg-white" src="/assets/images/sponsors/MacStadium.png" style="box-shadow: none" />
+  <div class="flex justify-center space-x-10">
+    <img class="my-auto h-20 bg-white" src="/assets/images/sponsors/MacStadium.png" style="box-shadow: none" />
+    <img class="my-auto h-10 bg-white" src="/assets/images/sponsors/digitalocean.svg" style="box-shadow: none" />
+  </div>
 </div>
