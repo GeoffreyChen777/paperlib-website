@@ -52,13 +52,13 @@ check(): Promise<boolean | undefined>;
 
 ``` typescript
 /**
-* Move files of a paper entity to the library folder
-* @param paperEntity - Paper entity to move
-* @param fourceDelete - Force to delete the source file
-* @param forceNotLink - Force to do not use link
-* @returns The paper entity with the new file URL
-*/
-move(paperEntity: PaperEntity, fourceDelete?: boolean, forceNotLink?: boolean): Promise<PaperEntity>;
+ * Move files of a paper entity to the library folder
+ * @param paperEntity - Paper entity to move
+ * @param moveMain - Move the main file
+ * @param moveSups - Move the supplementary files
+ * @returns
+ */
+move(paperEntity: PaperEntity, moveMain?: boolean, moveSups?: boolean): Promise<PaperEntity>;
 ```
 
 ### `moveFile`
@@ -68,11 +68,9 @@ move(paperEntity: PaperEntity, fourceDelete?: boolean, forceNotLink?: boolean): 
  * Move a file
  * @param sourceURL - Source file URL
  * @param targetURL - Target file URL
- * @param fourceDelete - Force to delete the source file
- * @param forceNotLink - Force to do not use link
  * @returns The target file URL
  */
-moveFile(sourceURL: string, targetURL: string, fourceDelete?: boolean, forceNotLink?: boolean): Promise<string>;
+moveFile(sourceURL: string, targetURL: string): Promise<string>;
 ```
 
 ### `remove`
@@ -164,6 +162,15 @@ preview(url: string): Promise<void>;
 
 ```
 
+### `inferRelativeFileName`
+```typescript
+/**
+ * Infer the relative path of a paper entity.
+ * @param paperEntity - Paper entity to infer the relative path
+ */
+inferRelativeFileName(paperEntity: PaperEntity): Promise<string>;
+```
+
 
 ## Events
 
@@ -171,4 +178,6 @@ preview(url: string): Promise<void>;
 | --- | --- | --- |
 | `backend` | `{key: 'backend', value: backendName}` | When file backend is changed |
 | `available` | `{key: 'available', value: available}` | When file backend available status is changed |
+| `backendInitializing` | `{key: 'backendInitializing'}` | When file backend is initializing |
+| `backendInitialized` | `{key: 'backendInitialized'}` | When file backend is initialized |
 

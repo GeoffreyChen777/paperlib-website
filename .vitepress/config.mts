@@ -265,9 +265,13 @@ export default defineConfig({
               items: [{ text: "介绍", link: "/cn/doc/smart-filter/" }],
             },
             {
+              text: "自定义根证书",
+              link: "/cn/doc/custom-ca",
+            },
+            {
               text: "插件开发",
               link: "/cn/extension-doc/",
-            },
+            }
           ],
         },
         outline: {
@@ -537,6 +541,10 @@ export default defineConfig({
           text: "Smart Filter",
           collapsed: false,
           items: [{ text: "Smart Filter", link: "/en//doc/smart-filter/" }],
+        },
+        {
+          text: "Custom CA",
+          link: "/en/doc/custom-ca",
         },
         {
           text: "Extension Development",

@@ -107,6 +107,7 @@ declare interface IPreferenceStore {
     shortcutEdit: string;
     shortcutFlag: string;
     shortcutCopyKey: string;
+    shortcutDelete: string;
     sidebarWidth: number;
     detailPanelWidth: number;
     mainviewSortBy: string;
@@ -129,4 +130,3 @@ declare interface IPreferenceStore {
 | Event ID | Callback Value | Description |
 | --- | --- | --- |
 | any preference key listed above | `{key: prefKey, value: newValue}` | When preference is changed |
-

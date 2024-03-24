@@ -29,6 +29,30 @@ registerScraperExtension(extID: string, scrapers: {
 unregisterScraperExtension(extID: string): Promise<void>;
 ```
 
+### `registerContextMenu`
+```typescript
+/**
+ * Registers context menus form extensions.
+ * @param extID - The id of the extension to register menus
+ * @param items - The menu items to be registered
+ */
+registerContextMenu(extID: string, items: {
+    id: string;
+    label: string;
+}[]): void;
+```
+
+### `unregisterContextMenu`
+```typescript
+/**
+ * Registers context menus form extensions.
+ * @param extID - The id of the extension to unregister menu items
+ */
+unregisterContextMenu(extID: string): void;
+```
+
+
+
 ## Events
 
 | Event ID | Callback Value | Description |
@@ -54,3 +78,4 @@ unregisterScraperExtension(extID: string): Promise<void>;
 | `thumbnailContextMenuReplaceClicked` | `{key: 'thumbnailContextMenuReplaceClicked'}` | When `Replace` is clicked in the context menu of a thumbnail in the library |
 | `thumbnailContextMenuRefreshClicked` | `{key: 'thumbnailContextMenuRefreshClicked'}` | When `Refresh` is clicked in the context menu of a thumbnail in the library |
 | `linkToFolderClicked` | `{key: 'linkToFolderClicked'}` | When `Link to Folder` is clicked in Quickpaste UI |
+| `dataContextMenuFromExtensionsClicked` | `{ extID: string; itemID: string}` | When a context menu item from an extension is clicked |

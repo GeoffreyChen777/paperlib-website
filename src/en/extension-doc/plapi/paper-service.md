@@ -40,9 +40,11 @@ loadByIds(ids: OID[]): Promise<never[] | Realm.Results<PaperEntity & Realm.Objec
 /**
  * Update paper entities.
  * @param paperEntityDrafts - paper entity drafts
+ * @param updateCache - Update cache, default is true
+ * @param isUpdate - Is update, default is false, if false, it is insert. This is for preventing insert duplicated papers.
  * @returns Updated paper entities
  */
-update(paperEntityDrafts: IPaperEntityCollection): Promise<IPaperEntityCollection>;
+update(paperEntityDrafts: IPaperEntityCollection, updateCache?: boolean, isUpdate?: boolean): Promise<IPaperEntityCollection>;
 ```
 
 ### `updateWithCategorizer`
@@ -55,6 +57,30 @@ update(paperEntityDrafts: IPaperEntityCollection): Promise<IPaperEntityCollectio
  * @param type - The type of the categorizer.
  */
 updateWithCategorizer(ids: OID[], categorizer: Categorizer, type: CategorizerType): Promise<void>;
+```
+
+### `updateMainURL`
+
+```typescript
+/**
+ * Update the main file of a paper entity.
+ * @param paperEntity - The paper entity.
+ * @param url - The URL of the main file.
+ * @returns The updated paper entity.
+ */
+updateMainURL(paperEntity: PaperEntity, url: string): Promise<PaperEntity | undefined>;
+```
+
+### `updateSupURLs`
+
+```typescript
+/**
+ * Update the supplementary files of a paper entity.
+ * @param paperEntity - The paper entity.
+ * @param urls - The URLs of the supplementary files.
+ */
+updateSupURLs(paperEntity: PaperEntity, urls: string[]): Promise<void>;
+
 ```
 
 ### `delete`
@@ -139,4 +165,3 @@ renameAll(): Promise<void>;
 | --- | --- | --- |
 | `updated` | `{key: 'updated'}` | When PaperEntity database is updated |
 | `count` | `{key: 'count', value: count | When FeedEntity database count is changed |
-
