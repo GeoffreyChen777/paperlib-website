@@ -5,34 +5,31 @@
 Paperlib use MongoDB Atlas as the cloud database backend. You can create your own cloud database and use it to sync your Paperlib data across your devices. The free tier of MongoDB Atlas is enough for Paperlib. When everything is set up, you can safely store the metadata of your papers in the cloud without any maintenance operation.
 
 ## Create a MongoDB Atlas DB
-1. Open [https://account.mongodb.com/account/login](https://account.mongodb.com/account/login), sign up and login to your account.
+1. Open [https://account.mongodb.com/account/login](https://account.mongodb.com/account/login), sign up and login to your account. Close all the guides and click `Create`.
 
 ![](/assets/images/guide/cloud-sync/n1.png)
 
-2. Choose the free dataset plan.
+2. Choose the free dataset plan. Uncheck the two options in the red box. Select the best server location according to your country. Click `Create Deployment`.
 
 ![](/assets/images/guide/cloud-sync/n2.png)
 
-3. Create a database, select the best server location according to your country.
+3. Close the popup window.
 
 ![](/assets/images/guide/cloud-sync/n3.png)
 
-4. set the superuser of the database.
+4. Go to the App Services page, create an APP.
 
 ![](/assets/images/guide/cloud-sync/n4.png)
+
+5. Make sure the Data Source is the one you just created. Select the location for deployment. Click `Create App`.
+
 ![](/assets/images/guide/cloud-sync/n5.png)
 
-5. Go to the App Services page, create a APP.
+6. Close the popup window.
 
 ![](/assets/images/guide/cloud-sync/n6.png)
 
-![](/assets/images/guide/cloud-sync/n7.png)
-
-Connect Atlas, rename your APP, select location for deployment.
-
-![](/assets/images/guide/cloud-sync/n8.png)
-
-6.Since then, the MongoDB Atlas is ready.
+7.Since then, the MongoDB Atlas is ready.
 
 ## Create a User
 
@@ -58,22 +55,25 @@ A User is a person who can access the cloud database.
 
 ## Create a Data Table.
 
-The data scheme can be automatically created based on the data sent by the Paperlib APP.
+The data schema can be automatically created based on the data sent by the Paperlib APP.
 
 1. In the `Device Sync` page, click `Start Sync`. It enables the your APP to sync data with the backend database cluster. In the popup dialog, click `No thanks, continue to Sync`.
 
-![](/assets/images/guide/cloud-sync/n9.png)
+![](/assets/images/guide/cloud-sync/n7.png)
 
-2. Open the `Development Mode` to allow MongoDB Altas automatically create data scheme based on the data sent by the Paperlib APP. Other configurations are as shown below. Leave the Queryable Fields setting as default.
+2. Open the `Development Mode` to allow MongoDB Altas automatically create data schema based on the data sent by the Paperlib APP. Other configurations are as shown below. Leave the Queryable Fields setting as default.
 
-
-![](/assets/images/guide/cloud-sync/n10.png)
+![](/assets/images/guide/cloud-sync/n8.png)
 
 3. Click `Enable Sync`.
 
 4. Click the upper banner `REVIEW DRAFT & DEPLOY` again.
 
-5. Since then, the cloud database is ready.
+5. In the popup dialog, choose `Users can read and write all data`.
+
+6. Click the upper banner `REVIEW DRAFT & DEPLOY` again.
+
+7. Since then, the cloud database is ready.
 
 ## Connect Paperlib to your MongoDB Atlas DB
 
